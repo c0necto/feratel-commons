@@ -17,34 +17,20 @@ final class SerializationTest extends TestCase
 {
     public function testSerialization(): void
     {
-        $request = new RequestType();
-
         // authenticate the request
-        $request->setOriginator("FERATEL");
-        $request->setCompany("FERATEL");
+        $request = new RequestType("FERATEL", "FERATEL");
 
         // limit scope to range
-        $range = new RangeType();
-        $range->setCode("RG");
-        $item = new ItemType();
-        $item->setId("F180FFD5-4FBF-4F2C-AC00-7E8B94462F2C");
-        $range->setItem([$item]);
+        $range = new RangeType("RG", [new ItemType("F180FFD5-4FBF-4F2C-AC00-7E8B94462F2C")]);
         $request->setRange($range);
 
         // specify request content
-        $keyvalues = new KeyValuesType();
-        $keyvalues->setGetLocalValues(false);
-        $keyvalues->setDateFrom(new DateTime("2000-01-01"));
-
-        $towns = new RequestedWithTranslationType();
-        $towns->setShow(true);
-        $towns->setIncludeTranslations(false);
-        $keyvalues->setTowns($towns);
+        $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
+        $keyvalues->setTowns(new RequestedWithTranslationType(false, true));
         $request->setKeyValues($keyvalues);
 
         // embed into request wrapper
-        $dsiRequest = new FeratelDsiRQ();
-        $dsiRequest->setRequest($request);
+        $dsiRequest = new FeratelDsiRQ($request);
 
         // serialize
         // - setup serializer with custom types to deal with xsd2php's way of dates and lists.
