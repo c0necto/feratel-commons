@@ -38,7 +38,7 @@ final class FirstContactTest extends FeratelTestCase
         // - serialize
         $xmlRequest = $this->serializer->serialize($dsiRequest, 'xml');
 
-        $client = new SoapClient($this->config->feratelDsiUrl);
+        $client = new SoapClient($this->config->feratelDsiUrl . 'KeyValue.asmx?WSDL');
         $response = $client->GetKeyValues(['xmlString' => $xmlRequest]);
         self::assertIsObject($response);
         $result = $this->serializer->deserialize($response->GetKeyValuesResult, FeratelDsiRS::class, 'xml');
