@@ -15,7 +15,7 @@ final class FeratelHelperTest extends FeratelTestCase
      */
     public function testFeratelHelperOnline(): void
     {
-        $dut = new FeratelHelper();
+        $dut = FeratelHelper::getInstance();
 
         // specify request content
         $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
@@ -28,11 +28,10 @@ final class FeratelHelperTest extends FeratelTestCase
 
     /**
      * @throws DsiException
-     * @throws ReflectionException
      */
     public function testFeratelHelperMockup(): void
     {
-        $dut = new FeratelHelper();
+        $dut = FeratelHelper::getInstance();
         $reflection = new ReflectionClass(FeratelHelper::class);
         $reflection->getProperty('connector')->setValue($dut, new FeratelMockupConnector());
 
