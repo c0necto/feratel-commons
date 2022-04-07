@@ -1,8 +1,8 @@
 <?php
 require('./vendor/autoload.php');
 
-use App\Helpers\DsiException;
-use App\Helpers\FeratelHelper;
+use App\Helpers\FeratelDsi\CommunicationsHub;
+use App\Helpers\FeratelDsi\Util\DsiException;
 use Feratel\DSI\KeyValuesType;
 use Feratel\DSI\LanguageType;
 use Feratel\DSI\RequestedWithTranslationType;
@@ -15,7 +15,7 @@ final class FeratelHelperTest extends FeratelTestCase
      */
     public function testFeratelHelperOnline(): void
     {
-        $dut = FeratelHelper::getInstance();
+        $dut = CommunicationsHub::getInstance();
 
         // specify request content
         $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
@@ -31,9 +31,9 @@ final class FeratelHelperTest extends FeratelTestCase
      */
     public function testFeratelHelperMockup(): void
     {
-        $dut = FeratelHelper::getInstance();
-        $reflection = new ReflectionClass(FeratelHelper::class);
-        $reflection->getProperty('connector')->setValue($dut, new FeratelMockupConnector());
+        $dut = CommunicationsHub::getInstance();
+        $reflection = new ReflectionClass(CommunicationsHub::class);
+        $reflection->getProperty('connector')->setValue($dut, new MockupConnector());
 
         // specify request content
         $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
