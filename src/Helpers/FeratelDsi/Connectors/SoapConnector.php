@@ -6,7 +6,6 @@ use App\Helpers\FeratelDsi\Connector;
 use App\Helpers\FeratelDsi\Util\DsiException;
 use SoapClient;
 use SoapFault;
-use function App\Helpers\str_contains;
 
 class SoapConnector implements Connector
 {
