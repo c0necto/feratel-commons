@@ -54,7 +54,7 @@ class CommunicationsHub
         $this->connector = new SoapConnector();
     }
 
-    private function setRequest(RequestType &$requestType, mixed $request)
+    private function setRequest(RequestType &$requestType, mixed $request): void
     {
         if ($request instanceof KeyValuesType)
             $requestType->setKeyValues($request);
