@@ -40,4 +40,7 @@ class DsiConstants
 
     // document classes for documents
     const DOCUMENT_CLASS_IMAGE = "Image";
+
+    // filter types for service provider search
+    const SERVICE_PROVIDER_FILTER_TYPE_ACCOMMODATION = 'Accommodation';
 }
