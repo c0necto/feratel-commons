@@ -32,4 +32,12 @@ class DsiConstants
     // connected entry types for infrastructures (doc p116)
     const CONNECTED_ENTRIES_INFRASTRUCTURE_SERVICEPROVIDER = 'InfrastructureServiceProvider';
     const CONNECTED_ENTRIES_INFRASTRUCTURE_INFRASTRUCTURE = 'InfrastructureInfrastructure';
+
+    // document types for documents
+    const DOCUMENT_TYPE_SERVICE_PROVIDER = "ServiceProvider";
+    const DOCUMENT_TYPE_SERVICE_PROVIDER_SERVICE = "Service";
+    const DOCUMENT_TYPE_SERVICE_PROVIDER_LOGO = "ServiceProviderLogo";
+
+    // document classes for documents
+    const DOCUMENT_CLASS_IMAGE = "Image";
 }
