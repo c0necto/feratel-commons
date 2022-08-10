@@ -39,6 +39,7 @@ class DsiConstants
     const DOCUMENT_TYPE_SERVICE_PROVIDER_LOGO = "ServiceProviderLogo";
     const DOCUMENT_TYPE_EVENT_EVENTHEADER = "EventHeader";
     const DOCUMENT_TYPE_EVENT_EVENTGROUP = "EventGroup";
+    const DOCUMENT_TYPE_INFRASTRUCTURE = "Infrastructure";
 
     // document classes for documents
     const DOCUMENT_CLASS_IMAGE = "Image";
