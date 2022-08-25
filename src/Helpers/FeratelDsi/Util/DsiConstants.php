@@ -40,9 +40,12 @@ class DsiConstants
     const DOCUMENT_TYPE_EVENT_EVENTHEADER = "EventHeader";
     const DOCUMENT_TYPE_EVENT_EVENTGROUP = "EventGroup";
     const DOCUMENT_TYPE_INFRASTRUCTURE = "Infrastructure";
+    const DOCUMENT_TYPE_SHOPITEM = "ShopItem";
+    const DOCUMENT_TYPE_SHOPITEM_VARIATION = "ShopItemVariation";
 
     // document classes for documents
     const DOCUMENT_CLASS_IMAGE = "Image";
+    const DOCUMENT_CLASS_DOCUMENT = "Document";
 
     // filter types for service provider search
     const SERVICE_PROVIDER_FILTER_TYPE_ACCOMMODATION = 'Accommodation';
