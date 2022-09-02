@@ -37,6 +37,7 @@ class DsiConstants
     const DOCUMENT_TYPE_SERVICE_PROVIDER = "ServiceProvider";
     const DOCUMENT_TYPE_SERVICE_PROVIDER_SERVICE = "Service";
     const DOCUMENT_TYPE_SERVICE_PROVIDER_LOGO = "ServiceProviderLogo";
+    const DOCUMENT_TYPE_SERVICE_PROVIDER_SERVICE_PRODUCT = 'Product';
     const DOCUMENT_TYPE_EVENT_EVENTHEADER = "EventHeader";
     const DOCUMENT_TYPE_EVENT_EVENTGROUP = "EventGroup";
     const DOCUMENT_TYPE_INFRASTRUCTURE = "Infrastructure";
