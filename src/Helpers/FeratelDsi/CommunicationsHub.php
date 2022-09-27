@@ -40,7 +40,8 @@ class CommunicationsHub
     {
         // setup serializer with custom types to deal with xsd2php's way of dates and lists.
         $serializerBuilder = SerializerBuilder::create();
-        $serializerBuilder->addMetadataDir("./src/generated/DSI/metadata", "Feratel\DSI");
+        $path = str_replace('bin/console', '', $_SERVER['PATH_TRANSLATED']);
+        $serializerBuilder->addMetadataDir($path . 'src/generated/DSI/metadata', 'Feratel\DSI');
         $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
             $serializerBuilder->addDefaultHandlers();
             $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling
@@ -49,7 +50,7 @@ class CommunicationsHub
         $this->serializer = $serializerBuilder->build();
 
         // load config
-        $this->config = include('./feratel.conf.php');
+        $this->config = include($path . 'feratel.conf.php');
 
         $this->connector = new SoapConnector();
     }
