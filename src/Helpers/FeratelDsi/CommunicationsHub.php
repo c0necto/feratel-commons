@@ -40,7 +40,7 @@ class CommunicationsHub
     {
         // setup serializer with custom types to deal with xsd2php's way of dates and lists.
         $serializerBuilder = SerializerBuilder::create();
-        $path = str_replace('bin/console', '', $_SERVER['PATH_TRANSLATED']);
+        $path = PIMCORE_PROJECT_ROOT . DIRECTORY_SEPARATOR;
         $serializerBuilder->addMetadataDir($path . 'src/generated/DSI/metadata', 'Feratel\DSI');
         $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
             $serializerBuilder->addDefaultHandlers();
@@ -92,5 +92,10 @@ class CommunicationsHub
             throw new DsiException($response->getStatus(), $response->getMessage());
 
         return $response->getResult()[0];
+    }
+
+    public function getSalesChannel()
+    {
+        return $this->config->salesChannel;
     }
 }
