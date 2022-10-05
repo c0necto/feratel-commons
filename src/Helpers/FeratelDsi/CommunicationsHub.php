@@ -93,4 +93,9 @@ class CommunicationsHub
 
         return $response->getResult()[0];
     }
+
+    public function getSalesChannel()
+    {
+        return $this->config->salesChannel;
+    }
 }
