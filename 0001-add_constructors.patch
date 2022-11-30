@@ -1,0 +1,73 @@
+Index: vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php
+--- a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php	
++++ b/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php	(date 1646215110318)
+@@ -19,6 +19,8 @@
+ {
+     private function handleBody(Generator\ClassGenerator $class, PHPClass $type)
+     {
++        $this->createConstructor($class, $type);
++
+         foreach ($type->getProperties() as $prop) {
+             if ($prop->getName() !== '__value') {
+                 $this->handleProperty($class, $prop);
+@@ -37,6 +39,55 @@
+         return true;
+     }
+ 
++    private function createConstructor(Generator\ClassGenerator $generator, PHPClass $type) {
++        // check if this PHPClass is a "simple type"
++        // - i.e. whether this class only has a single value property
++        // because in that case, a constructor is created already
++        if ($extends = $type->getExtends())
++            if ($extends->isSimpleType())
++                return;
++
++        $parameters = array();
++        $body = '';
++
++        // find parameters and create a parameter list and the constructor body
++        foreach ($type->getProperties() as $prop) {
++            $parameters[] = $this->getParameterHelper($prop);
++            $body .= '$this->' . $prop->getName() . ' = $' . $prop->getName() . ';' . PHP_EOL;
++        }
++
++        // find parameters of supertype, add to the parameter list and the constructor body
++        if($extends = $type->getExtends()) {
++            $body .= 'parent::__construct(';
++            foreach ($extends->getProperties() as $prop) {
++                $parameters[] = $this->getParameterHelper($prop);
++                $body .= '$' . $prop->getName() . ',';
++            }
++            if($extends = $extends->getExtends())
++                foreach ($extends->getProperties() as $prop) {
++                    $parameters[] = $this->getParameterHelper($prop);
++                    $body .= '$' . $prop->getName() . ',';
++                }
++            $body = rtrim($body, ',') . ');';
++        }
++
++        $method = new MethodGenerator('__construct', $parameters);
++        $method->setBody($body);
++        $generator->addMethodFromGenerator($method);
++    }
++
++    /**
++     * @param PHPProperty $property
++     * @return ParameterGenerator
++     */
++    private function getParameterHelper(PHPProperty $property): ParameterGenerator
++    {
++        $parameter = new ParameterGenerator($property->getName());
++        $parameter->setDefaultValue($property->getDefault());
++        $parameter->setType($property->getType()->getPhpType());
++        return $parameter;
++    }
++
+     private function handleValueMethod(Generator\ClassGenerator $generator, PHPProperty $prop, PHPClass $class, $all = true)
+     {
+         $type = $prop->getType();

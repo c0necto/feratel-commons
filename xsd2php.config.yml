@@ -1,0 +1,15 @@
+# config.yml
+# Linux Users: PHP Namespaces use back slash \ rather than a forward slash /
+# So for destinations_php, the namespace would be TestNs\MyApp
+
+xsd2php:
+  namespaces:
+    'http://interface.deskline.net/DSI/XSD': 'Conecto\FeratelDsi\Dtos'
+  destinations_php: 
+    'Conecto\FeratelDsi\Dtos': src/Dtos/src
+
+  destinations_jms:
+    'Conecto\FeratelDsi\Dtos': src/Dtos/metadata
+
+  configs_jms: #optional
+    xml_cdata: false # Disables CDATA

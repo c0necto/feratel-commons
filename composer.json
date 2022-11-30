@@ -1,0 +1,31 @@
+{
+  "name": "conecto/feratel-lib",
+  "description": "Creates and holds PHP code generated from Feratels DSI XSD specifications.",
+  "type": "library",
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "process-timeout": 0
+  },
+  "require-dev": {
+    "goetas-webservices/xsd2php": "^0.4"
+  },
+  "scripts": {
+    "generate-patch": [
+      "git apply 000*.patch"
+    ],
+    "generate": [
+      "wget -qi xsdlist.txt",
+      "./vendor/bin/xsd2php convert xsd2php.config.yml DSI_Request.xsd DSI_Response.xsd",
+      "composer dump-autoload",
+      "rm DSI_*.xsd*"
+    ],
+    "create-dsi-src-dir": [
+      "mkdir -p src/Commons/Dtos/src/"
+    ]
+  },
+  "scripts-descriptions": {
+    "generate": "Generate Feratel DSI Classes. If that fails, try \"composer generate-patch\" first.",
+    "generate-patch": "Apply necessary patches to xsd2php tool."
+  }
+}

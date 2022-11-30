@@ -1,0 +1,15 @@
+http://interface.deskline.net/XSD/DSI/DSI_Request.xsd
+http://interface.deskline.net/XSD/DSI/DSI_Response.xsd
+http://interface.deskline.net/XSD/DSI/DSI_SimpleTypes.xsd
+http://interface.deskline.net/XSD/DSI/DSI_ComplexTypes.xsd
+http://interface.deskline.net/XSD/DSI/DSI_AttributeGroups.xsd
+http://interface.deskline.net/XSD/DSI/DSI_ShoppingCart.xsd
+http://interface.deskline.net/XSD/DSI/DSI_Booking.xsd
+http://interface.deskline.net/XSD/DSI/DSI_Guest.xsd
+http://interface.deskline.net/XSD/DSI/DSI_DynamicService.xsd
+http://interface.deskline.net/XSD/DSI/DSI_OrganisationData.xsd
+http://interface.deskline.net/XSD/DSI/DSI_CheckEffect.xsd
+http://interface.deskline.net/XSD/DSI/DSI_ImportBasicDataSTU.xsd
+http://interface.deskline.net/XSD/DSI/DSI_Newsletter.xsd
+http://interface.deskline.net/XSD/DSI/DSI_SPRequestPool.xsd
+
