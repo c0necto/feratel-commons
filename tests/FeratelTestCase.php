@@ -16,7 +16,7 @@ class FeratelTestCase extends TestCase
     {
         // - setup serializer with custom types to deal with xsd2php's way of dates and lists.
         $serializerBuilder = SerializerBuilder::create();
-        $serializerBuilder->addMetadataDir("./src/generated/DSI/metadata", "Feratel\DSI");
+        $serializerBuilder->addMetadataDir("src/Dtos/metadata", "Conecto\FeratelDsi\Dtos");
         $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
             $serializerBuilder->addDefaultHandlers();
             $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling

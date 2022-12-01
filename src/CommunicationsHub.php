@@ -41,7 +41,7 @@ class CommunicationsHub
         // setup serializer with custom types to deal with xsd2php's way of dates and lists.
         $serializerBuilder = SerializerBuilder::create();
         $path = PIMCORE_PROJECT_ROOT . DIRECTORY_SEPARATOR;
-        $serializerBuilder->addMetadataDir($path . 'src/generated/DSI/metadata', 'Feratel\DSI');
+        $serializerBuilder->addMetadataDir($path . '"src/Dtos/metadata"', 'Conecto\FeratelDsi\Dtos');
         $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
             $serializerBuilder->addDefaultHandlers();
             $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling
