@@ -5,9 +5,9 @@ use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
 use JMS\Serializer\Handler\HandlerRegistryInterface;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
-use Pimcore\Test\WebTestCase;
+use PHPUnit\Framework\TestCase;
 
-class FeratelTestCase extends WebTestCase
+class FeratelTestCase extends TestCase
 {
     protected mixed $config;
     protected Serializer $serializer;
