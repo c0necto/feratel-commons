@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Helpers\FeratelDsi;
+namespace Conecto\FeratelDsi;
 
 
-use App\Helpers\FeratelDsi\Connectors\SoapConnector;
-use App\Helpers\FeratelDsi\Util\DsiException;
-use Feratel\DSI\BasicDataType;
-use Feratel\DSI\FeratelDsiRQ;
-use Feratel\DSI\FeratelDsiRS;
-use Feratel\DSI\ItemType;
-use Feratel\DSI\KeyValuesType;
-use Feratel\DSI\RangeType;
-use Feratel\DSI\RequestType;
-use Feratel\DSI\ResponseType;
+use Conecto\FeratelDsi\Connectors\SoapConnector;
+use Conecto\FeratelDsi\Util\DsiException;
+use Conecto\FeratelDsi\Dtos\BasicDataType;
+use Conecto\FeratelDsi\Dtos\FeratelDsiRQ;
+use Conecto\FeratelDsi\Dtos\FeratelDsiRS;
+use Conecto\FeratelDsi\Dtos\ItemType;
+use Conecto\FeratelDsi\Dtos\KeyValuesType;
+use Conecto\FeratelDsi\Dtos\RangeType;
+use Conecto\FeratelDsi\Dtos\RequestType;
+use Conecto\FeratelDsi\Dtos\ResponseType;
 use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
 use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
 use JMS\Serializer\Handler\HandlerRegistryInterface;

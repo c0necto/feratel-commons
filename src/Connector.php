@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\FeratelDsi;
+namespace Conecto\FeratelDsi;
 
 interface Connector
 {

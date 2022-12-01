@@ -1,11 +1,11 @@
 <?php
 require('./vendor/autoload.php');
 
-use App\Helpers\FeratelDsi\CommunicationsHub;
-use App\Helpers\FeratelDsi\Util\DsiException;
-use Feratel\DSI\KeyValuesType;
-use Feratel\DSI\LanguageType;
-use Feratel\DSI\RequestedWithTranslationType;
+use Conecto\FeratelDsi\CommunicationsHub;
+use Conecto\FeratelDsi\Util\DsiException;
+use Conecto\FeratelDsi\Dtos\KeyValuesType;
+use Conecto\FeratelDsi\Dtos\LanguageType;
+use Conecto\FeratelDsi\Dtos\RequestedWithTranslationType;
 
 
 final class FeratelHelperTest extends FeratelTestCase

@@ -1,13 +1,13 @@
 <?php
 require('./vendor/autoload.php');
 
-use Feratel\DSI\FeratelDsiRQ;
-use Feratel\DSI\FeratelDsiRS;
-use Feratel\DSI\ItemType;
-use Feratel\DSI\KeyValuesType;
-use Feratel\DSI\RangeType;
-use Feratel\DSI\RequestedWithTranslationType;
-use Feratel\DSI\RequestType;
+use Conecto\FeratelDsi\Dtos\FeratelDsiRQ;
+use Conecto\FeratelDsi\Dtos\FeratelDsiRS;
+use Conecto\FeratelDsi\Dtos\ItemType;
+use Conecto\FeratelDsi\Dtos\KeyValuesType;
+use Conecto\FeratelDsi\Dtos\RangeType;
+use Conecto\FeratelDsi\Dtos\RequestedWithTranslationType;
+use Conecto\FeratelDsi\Dtos\RequestType;
 
 final class SerializationTest extends FeratelTestCase
 {

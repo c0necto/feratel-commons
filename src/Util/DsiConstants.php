@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\FeratelDsi\Util;
+namespace Conecto\FeratelDsi\Util;
 
 class DsiConstants
 {

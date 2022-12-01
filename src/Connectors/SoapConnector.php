@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Helpers\FeratelDsi\Connectors;
+namespace Conecto\FeratelDsi\Connectors;
 
-use App\Helpers\FeratelDsi\Connector;
-use App\Helpers\FeratelDsi\Util\DsiException;
+use Conecto\FeratelDsi\Connector;
+use Conecto\FeratelDsi\Util\DsiException;
 use SoapClient;
 use SoapFault;
 
