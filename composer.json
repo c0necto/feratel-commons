@@ -7,8 +7,18 @@
     "sort-packages": true,
     "process-timeout": 0
   },
+  "require": {
+    "ext-soap": "*",
+    "goetas-webservices/xsd2php-runtime": "^0.2.2",
+    "jms/serializer": "^3.17"
+  },
   "require-dev": {
     "goetas-webservices/xsd2php": "^0.4"
+  },
+  "autoload": {
+    "classmap": [
+      "src/Dtos/src/"
+    ]
   },
   "scripts": {
     "generate-patch": [
@@ -21,7 +31,7 @@
       "rm DSI_*.xsd*"
     ],
     "create-dsi-src-dir": [
-      "mkdir -p src/Commons/Dtos/src/"
+      "mkdir -p src/Dtos/src/"
     ]
   },
   "scripts-descriptions": {
