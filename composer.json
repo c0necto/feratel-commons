@@ -1,5 +1,5 @@
 {
-  "name": "conecto/feratel-lib",
+  "name": "conecto/feratel-commons",
   "description": "Creates and holds PHP code generated from Feratels DSI XSD specifications.",
   "type": "library",
   "config": {
