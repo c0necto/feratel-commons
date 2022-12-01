@@ -40,8 +40,11 @@ class CommunicationsHub
     {
         // setup serializer with custom types to deal with xsd2php's way of dates and lists.
         $serializerBuilder = SerializerBuilder::create();
-        $path = PIMCORE_PROJECT_ROOT . DIRECTORY_SEPARATOR;
-        $serializerBuilder->addMetadataDir($path . '"src/Dtos/metadata"', 'Conecto\FeratelDsi\Dtos');
+
+        $reflection = new \ReflectionClass(CommunicationsHub::class);
+        $vendorDir = dirname($reflection->getFileName(), 2);
+
+        $serializerBuilder->addMetadataDir(str_replace("/", DIRECTORY_SEPARATOR, $vendorDir . '/src/Dtos/metadata'), 'Conecto\FeratelDsi\Dtos');
         $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
             $serializerBuilder->addDefaultHandlers();
             $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling
@@ -50,7 +53,7 @@ class CommunicationsHub
         $this->serializer = $serializerBuilder->build();
 
         // load config
-        $this->config = include($path . 'feratel.conf.php');
+        $this->config = include($vendorDir . DIRECTORY_SEPARATOR . 'feratel.conf.php');
 
         $this->connector = new SoapConnector();
     }

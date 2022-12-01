@@ -25,22 +25,4 @@ final class FeratelHelperTest extends FeratelTestCase
         $result = $dut->send($keyvalues);
         self::assertNotNull($result);
     }
-
-    /**
-     * @throws DsiException
-     */
-    public function testFeratelHelperMockup(): void
-    {
-        $dut = CommunicationsHub::getInstance();
-        $reflection = new ReflectionClass(CommunicationsHub::class);
-        $reflection->getProperty('connector')->setValue($dut, new MockupConnector());
-
-        // specify request content
-        $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
-        $keyvalues->setTranslations([new LanguageType("de")]);
-        $keyvalues->setTowns(new RequestedWithTranslationType(false, true));
-
-        $result = $dut->send($keyvalues);
-        self::assertNotNull($result);
-    }
 }

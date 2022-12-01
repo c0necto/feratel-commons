@@ -13,11 +13,13 @@
     "jms/serializer": "^3.17"
   },
   "require-dev": {
-    "goetas-webservices/xsd2php": "^0.4"
+    "goetas-webservices/xsd2php": "^0.4",
+    "phpunit/phpunit": "^9.5"
   },
   "autoload": {
     "classmap": [
-      "src/Dtos/src/"
+      "src/",
+      "tests/"
     ]
   },
   "scripts": {
@@ -32,6 +34,9 @@
     ],
     "create-dsi-src-dir": [
       "mkdir -p src/Dtos/src/"
+    ],
+    "test": [
+      "vendor/bin/phpunit tests/ --verbose"
     ]
   },
   "scripts-descriptions": {

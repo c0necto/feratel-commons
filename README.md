@@ -21,3 +21,8 @@ Maintenance might be necessary on Feratel Dsi changes.
   ```shell
   composer generate
   ```
+
+- Run tests to see if anything breaks
+  ```shell
+  composer test
+  ```
