@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\BookingPaymentDetailType:
+    properties:
+        amount:
+            expose: true
+            access_type: public_method
+            serialized_name: Amount
+            accessor:
+                getter: getAmount
+                setter: setAmount
+            xml_attribute: true
+            type: float
+        dueDate:
+            expose: true
+            access_type: public_method
+            serialized_name: DueDate
+            accessor:
+                getter: getDueDate
+                setter: setDueDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        recipient:
+            expose: true
+            access_type: public_method
+            serialized_name: Recipient
+            accessor:
+                getter: getRecipient
+                setter: setRecipient
+            xml_attribute: true
+            type: string

@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\OccupancyType:
+    properties:
+        standard:
+            expose: true
+            access_type: public_method
+            serialized_name: Standard
+            accessor:
+                getter: getStandard
+                setter: setStandard
+            xml_attribute: true
+            type: int
+        min:
+            expose: true
+            access_type: public_method
+            serialized_name: Min
+            accessor:
+                getter: getMin
+                setter: setMin
+            xml_attribute: true
+            type: int
+        max:
+            expose: true
+            access_type: public_method
+            serialized_name: Max
+            accessor:
+                getter: getMax
+                setter: setMax
+            xml_attribute: true
+            type: int

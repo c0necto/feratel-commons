@@ -1,0 +1,174 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType:
+    properties:
+        unitPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: UnitPrice
+            accessor:
+                getter: getUnitPrice
+                setter: setUnitPrice
+            xml_attribute: true
+            type: float
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dateTo:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTo
+            accessor:
+                getter: getDateTo
+                setter: setDateTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            xml_attribute: true
+            type: int
+        payNights:
+            expose: true
+            access_type: public_method
+            serialized_name: PayNights
+            accessor:
+                getter: getPayNights
+                setter: setPayNights
+            xml_attribute: true
+            type: int
+        splitPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SplitPrice
+            accessor:
+                getter: getSplitPrice
+                setter: setSplitPrice
+            xml_attribute: true
+            type: bool
+        mealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: MealCode
+            accessor:
+                getter: getMealCode
+                setter: setMealCode
+            xml_attribute: true
+            type: string
+        bookable:
+            expose: true
+            access_type: public_method
+            serialized_name: Bookable
+            accessor:
+                getter: getBookable
+                setter: setBookable
+            xml_attribute: true
+            type: string
+        inGap:
+            expose: true
+            access_type: public_method
+            serialized_name: InGap
+            accessor:
+                getter: getInGap
+                setter: setInGap
+            xml_attribute: true
+            type: bool
+        isBestPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBestPrice
+            accessor:
+                getter: getIsBestPrice
+                setter: setIsBestPrice
+            xml_attribute: true
+            type: bool
+        specialPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SpecialPrice
+            accessor:
+                getter: getSpecialPrice
+                setter: setSpecialPrice
+            xml_attribute: true
+            type: string
+        specialPriceName:
+            expose: true
+            access_type: public_method
+            serialized_name: SpecialPriceName
+            accessor:
+                getter: getSpecialPriceName
+                setter: setSpecialPriceName
+            xml_attribute: true
+            type: string
+        amountSaved:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountSaved
+            accessor:
+                getter: getAmountSaved
+                setter: setAmountSaved
+            xml_attribute: true
+            type: float
+        revenueName:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueName
+            accessor:
+                getter: getRevenueName
+                setter: setRevenueName
+            xml_attribute: true
+            type: string
+        revenueAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueAmount
+            accessor:
+                getter: getRevenueAmount
+                setter: setRevenueAmount
+            xml_attribute: true
+            type: float
+        priceDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceDetails
+                setter: setPriceDetails
+            type: Conecto\FeratelDsi\Dtos\PriceDetailsType
+        baseInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: BaseInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBaseInformation
+                setter: setBaseInformation
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType\BaseInformationAType
+        cancellationInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInformation
+                setter: setCancellationInformation
+            xml_list:
+                inline: true
+                entry_name: CancellationInformation
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType\CancellationInformationAType>

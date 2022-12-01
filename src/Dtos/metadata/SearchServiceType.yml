@@ -1,0 +1,104 @@
+Conecto\FeratelDsi\Dtos\SearchServiceType:
+    properties:
+        lastAvailabilityChangeDays:
+            expose: true
+            access_type: public_method
+            serialized_name: LastAvailabilityChangeDays
+            accessor:
+                getter: getLastAvailabilityChangeDays
+                setter: setLastAvailabilityChangeDays
+            xml_attribute: true
+            type: int
+        minRooms:
+            expose: true
+            access_type: public_method
+            serialized_name: MinRooms
+            accessor:
+                getter: getMinRooms
+                setter: setMinRooms
+            xml_attribute: true
+            type: float
+        minSleepingRooms:
+            expose: true
+            access_type: public_method
+            serialized_name: MinSleepingRooms
+            accessor:
+                getter: getMinSleepingRooms
+                setter: setMinSleepingRooms
+            xml_attribute: true
+            type: int
+        minRoomSize:
+            expose: true
+            access_type: public_method
+            serialized_name: MinRoomSize
+            accessor:
+                getter: getMinRoomSize
+                setter: setMinRoomSize
+            xml_attribute: true
+            type: int
+        codeType:
+            expose: true
+            access_type: public_method
+            serialized_name: CodeType
+            accessor:
+                getter: getCodeType
+                setter: setCodeType
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        serviceFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceFacility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceFacility
+                setter: setServiceFacility
+            type: array<Conecto\FeratelDsi\Dtos\SearchServiceType\ServiceFacilityAType\ItemAType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceClassification:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceClassification
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceClassification
+                setter: setServiceClassification
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceHandicapFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceHandicapFacility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceHandicapFacility
+                setter: setServiceHandicapFacility
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

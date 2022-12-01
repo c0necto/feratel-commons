@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplateMealListType:
+    properties:
+        meal:
+            expose: true
+            access_type: public_method
+            serialized_name: Meal
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMeal
+                setter: setMeal
+            xml_list:
+                inline: true
+                entry_name: Meal
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplateMealListType\MealAType>

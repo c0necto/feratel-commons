@@ -1,0 +1,50 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType:
+    properties:
+        serviceProviderPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProviderPayment
+                setter: setServiceProviderPayment
+            xml_list:
+                inline: true
+                entry_name: ServiceProviderPayment
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\ServiceProviderPaymentAType>
+        organisationPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: OrganisationPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOrganisationPayment
+                setter: setOrganisationPayment
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\OrganisationPaymentAType
+        externalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: ExternalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getExternalPayment
+                setter: setExternalPayment
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\ExternalPaymentAType
+        total:
+            expose: true
+            access_type: public_method
+            serialized_name: Total
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotal
+                setter: setTotal
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\TotalAType

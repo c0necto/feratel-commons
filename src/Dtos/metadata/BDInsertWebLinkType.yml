@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDInsertWebLinkType:
+    properties:
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string
+        serviceProviderId:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderId
+            accessor:
+                getter: getServiceProviderId
+                setter: setServiceProviderId
+            xml_attribute: true
+            type: string
+        linkName:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkName
+            accessor:
+                getter: getLinkName
+                setter: setLinkName
+            xml_attribute: true
+            type: string
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            accessor:
+                getter: getURL
+                setter: setURL
+            xml_attribute: true
+            type: string

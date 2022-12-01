@@ -1,0 +1,146 @@
+Conecto\FeratelDsi\Dtos\ONAXBasicDataType:
+    properties:
+        serviceProviderList:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProviderList
+                setter: setServiceProviderList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXServiceProviderItemType>
+            xml_list:
+                inline: false
+                entry_name: ServiceProvider
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceList
+                setter: setServiceList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXServiceItemType>
+            xml_list:
+                inline: false
+                entry_name: Service
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        productList:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProductList
+                setter: setProductList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXProductItemType>
+            xml_list:
+                inline: false
+                entry_name: Product
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        addressList:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressList
+                setter: setAddressList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressItemType>
+            xml_list:
+                inline: false
+                entry_name: Address
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        addressLinkList:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressLinkList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressLinkList
+                setter: setAddressLinkList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressLinkItemType>
+            xml_list:
+                inline: false
+                entry_name: AddressLink
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        addressBankAccountList:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressBankAccountList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressBankAccountList
+                setter: setAddressBankAccountList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressBankAccountItemType>
+            xml_list:
+                inline: false
+                entry_name: AddressBankAccount
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        addressIndividualFieldList:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressIndividualFieldList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressIndividualFieldList
+                setter: setAddressIndividualFieldList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressIndividualFieldItemType>
+            xml_list:
+                inline: false
+                entry_name: AddressIndividualField
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        addressContactList:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressContactList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressContactList
+                setter: setAddressContactList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressContactItemType>
+            xml_list:
+                inline: false
+                entry_name: AddressContact
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        addressContactCodeList:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressContactCodeList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressContactCodeList
+                setter: setAddressContactCodeList
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressContactCodeItemType>
+            xml_list:
+                inline: false
+                entry_name: AddressContactCode
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

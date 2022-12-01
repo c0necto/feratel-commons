@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\ShopItemGroupListType:
+    properties:
+        shopItemGroup:
+            expose: true
+            access_type: public_method
+            serialized_name: ShopItemGroup
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getShopItemGroup
+                setter: setShopItemGroup
+            xml_list:
+                inline: true
+                entry_name: ShopItemGroup
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ShopItemGroupType>

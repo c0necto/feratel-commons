@@ -1,0 +1,84 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\PriceAType:
+    properties:
+        totalSellPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalSellPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalSellPrice
+                setter: setTotalSellPrice
+            type: float
+        adultSellPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: AdultSellPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdultSellPrice
+                setter: setAdultSellPrice
+            type: float
+        childSellPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildSellPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildSellPrice
+                setter: setChildSellPrice
+            type: float
+        visitorTax:
+            expose: true
+            access_type: public_method
+            serialized_name: VisitorTax
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVisitorTax
+                setter: setVisitorTax
+            type: float
+        cancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsurance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsurance
+                setter: setCancellationInsurance
+            type: float
+        bookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingFee
+                setter: setBookingFee
+            type: float
+        details:
+            expose: true
+            access_type: public_method
+            serialized_name: Details
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDetails
+                setter: setDetails
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\PriceAType\DetailsAType\PackageProductItemAType>
+            xml_list:
+                inline: false
+                entry_name: PackageProductItem
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

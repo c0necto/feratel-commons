@@ -1,0 +1,155 @@
+Conecto\FeratelDsi\Dtos\ONAXAddressItemType:
+    properties:
+        adrIdentity:
+            expose: true
+            access_type: public_method
+            serialized_name: adrIdentity
+            accessor:
+                getter: getAdrIdentity
+                setter: setAdrIdentity
+            xml_attribute: true
+            type: string
+        adrProviderID:
+            expose: true
+            access_type: public_method
+            serialized_name: adrProviderID
+            accessor:
+                getter: getAdrProviderID
+                setter: setAdrProviderID
+            xml_attribute: true
+            type: string
+        adrType:
+            expose: true
+            access_type: public_method
+            serialized_name: adrType
+            accessor:
+                getter: getAdrType
+                setter: setAdrType
+            xml_attribute: true
+            type: int
+        adrCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: adrCompany
+            accessor:
+                getter: getAdrCompany
+                setter: setAdrCompany
+            xml_attribute: true
+            type: string
+        adrName:
+            expose: true
+            access_type: public_method
+            serialized_name: adrName
+            accessor:
+                getter: getAdrName
+                setter: setAdrName
+            xml_attribute: true
+            type: string
+        adrAddress1:
+            expose: true
+            access_type: public_method
+            serialized_name: adrAddress1
+            accessor:
+                getter: getAdrAddress1
+                setter: setAdrAddress1
+            xml_attribute: true
+            type: string
+        adrAddress2:
+            expose: true
+            access_type: public_method
+            serialized_name: adrAddress2
+            accessor:
+                getter: getAdrAddress2
+                setter: setAdrAddress2
+            xml_attribute: true
+            type: string
+        adrCountry:
+            expose: true
+            access_type: public_method
+            serialized_name: adrCountry
+            accessor:
+                getter: getAdrCountry
+                setter: setAdrCountry
+            xml_attribute: true
+            type: string
+        adrZipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: adrZipCode
+            accessor:
+                getter: getAdrZipCode
+                setter: setAdrZipCode
+            xml_attribute: true
+            type: string
+        adrCity:
+            expose: true
+            access_type: public_method
+            serialized_name: adrCity
+            accessor:
+                getter: getAdrCity
+                setter: setAdrCity
+            xml_attribute: true
+            type: string
+        adrCurrency:
+            expose: true
+            access_type: public_method
+            serialized_name: adrCurrency
+            accessor:
+                getter: getAdrCurrency
+                setter: setAdrCurrency
+            xml_attribute: true
+            type: string
+        adrActive:
+            expose: true
+            access_type: public_method
+            serialized_name: adrActive
+            accessor:
+                getter: getAdrActive
+                setter: setAdrActive
+            xml_attribute: true
+            type: int
+        adrUIDNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: adrUIDNumber
+            accessor:
+                getter: getAdrUIDNumber
+                setter: setAdrUIDNumber
+            xml_attribute: true
+            type: string
+        adrAccount:
+            expose: true
+            access_type: public_method
+            serialized_name: adrAccount
+            accessor:
+                getter: getAdrAccount
+                setter: setAdrAccount
+            xml_attribute: true
+            type: string
+        adrCreateDate:
+            expose: true
+            access_type: public_method
+            serialized_name: adrCreateDate
+            accessor:
+                getter: getAdrCreateDate
+                setter: setAdrCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        adrChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: adrChangeDate
+            accessor:
+                getter: getAdrChangeDate
+                setter: setAdrChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        adrLoginID:
+            expose: true
+            access_type: public_method
+            serialized_name: adrLoginID
+            accessor:
+                getter: getAdrLoginID
+                setter: setAdrLoginID
+            xml_attribute: true
+            type: string

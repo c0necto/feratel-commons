@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType\BankAccountsAType:
+    properties:
+        bank:
+            expose: true
+            access_type: public_method
+            serialized_name: Bank
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBank
+                setter: setBank
+            xml_list:
+                inline: true
+                entry_name: Bank
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType\BankAccountsAType\BankAType>

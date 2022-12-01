@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\CountClickType:
+    properties:
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        itemID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemID
+            accessor:
+                getter: getItemID
+                setter: setItemID
+            xml_attribute: true
+            type: string
+        countType:
+            expose: true
+            access_type: public_method
+            serialized_name: CountType
+            accessor:
+                getter: getCountType
+                setter: setCountType
+            xml_attribute: true
+            type: string
+        sessionId:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionId
+            accessor:
+                getter: getSessionId
+                setter: setSessionId
+            xml_attribute: true
+            type: string

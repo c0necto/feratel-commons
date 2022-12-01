@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplatesListType:
+    properties:
+        priceTemplate:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceTemplate
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceTemplate
+                setter: setPriceTemplate
+            xml_list:
+                inline: true
+                entry_name: PriceTemplate
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplateType>

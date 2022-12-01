@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentSettingsAType\PromotionCodeAType:
+    properties:
+        isPossibleToApplyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPossibleToApplyCode
+            accessor:
+                getter: getIsPossibleToApplyCode
+                setter: setIsPossibleToApplyCode
+            xml_attribute: true
+            type: bool
+        appliedCode:
+            expose: true
+            access_type: public_method
+            serialized_name: AppliedCode
+            accessor:
+                getter: getAppliedCode
+                setter: setAppliedCode
+            xml_attribute: true
+            type: string

@@ -1,0 +1,74 @@
+Conecto\FeratelDsi\Dtos\BDEventsFilterType:
+    properties:
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        serialEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: SerialEvent
+            accessor:
+                getter: getSerialEvent
+                setter: setSerialEvent
+            xml_attribute: true
+            type: string
+        visibility:
+            expose: true
+            access_type: public_method
+            serialized_name: Visibility
+            accessor:
+                getter: getVisibility
+                setter: setVisibility
+            xml_attribute: true
+            type: string
+        start:
+            expose: true
+            access_type: public_method
+            serialized_name: Start
+            accessor:
+                getter: getStart
+                setter: setStart
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        end:
+            expose: true
+            access_type: public_method
+            serialized_name: End
+            accessor:
+                getter: getEnd
+                setter: setEnd
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        isTopEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: IsTopEvent
+            accessor:
+                getter: getIsTopEvent
+                setter: setIsTopEvent
+            xml_attribute: true
+            type: bool
+        systems:
+            expose: true
+            access_type: public_method
+            serialized_name: Systems
+            accessor:
+                getter: getSystems
+                setter: setSystems
+            xml_attribute: true
+            type: string

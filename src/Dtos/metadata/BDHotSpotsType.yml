@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\BDHotSpotsType:
+    properties:
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date

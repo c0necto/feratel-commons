@@ -1,0 +1,92 @@
+Conecto\FeratelDsi\Dtos\VisitorTaxType:
+    properties:
+        townId:
+            expose: true
+            access_type: public_method
+            serialized_name: TownId
+            accessor:
+                getter: getTownId
+                setter: setTownId
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        validFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidFrom
+            accessor:
+                getter: getValidFrom
+                setter: setValidFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        currency:
+            expose: true
+            access_type: public_method
+            serialized_name: Currency
+            accessor:
+                getter: getCurrency
+                setter: setCurrency
+            xml_attribute: true
+            type: string
+        childrenFromAge:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildrenFromAge
+            accessor:
+                getter: getChildrenFromAge
+                setter: setChildrenFromAge
+            xml_attribute: true
+            type: int
+        adultFromAge:
+            expose: true
+            access_type: public_method
+            serialized_name: AdultFromAge
+            accessor:
+                getter: getAdultFromAge
+                setter: setAdultFromAge
+            xml_attribute: true
+            type: int
+        taxAdult:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxAdult
+            accessor:
+                getter: getTaxAdult
+                setter: setTaxAdult
+            xml_attribute: true
+            type: float
+        taxChild:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxChild
+            accessor:
+                getter: getTaxChild
+                setter: setTaxChild
+            xml_attribute: true
+            type: float
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

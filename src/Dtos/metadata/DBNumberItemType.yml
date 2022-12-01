@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\DBNumberItemType:
+    properties:
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: Number
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            xml_attribute: true
+            type: string

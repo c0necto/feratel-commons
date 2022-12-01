@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType\BankAccountsAType\BankAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        countryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CountryCode
+            accessor:
+                getter: getCountryCode
+                setter: setCountryCode
+            xml_attribute: true
+            type: string
+        iBAN:
+            expose: true
+            access_type: public_method
+            serialized_name: IBAN
+            accessor:
+                getter: getIBAN
+                setter: setIBAN
+            xml_attribute: true
+            type: string
+        account:
+            expose: true
+            access_type: public_method
+            serialized_name: Account
+            accessor:
+                getter: getAccount
+                setter: setAccount
+            xml_attribute: true
+            type: string

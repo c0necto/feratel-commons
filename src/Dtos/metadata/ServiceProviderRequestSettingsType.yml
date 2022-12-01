@@ -1,0 +1,24 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderRequestSettingsType:
+    properties:
+        sendMail:
+            expose: true
+            access_type: public_method
+            serialized_name: SendMail
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSendMail
+                setter: setSendMail
+            type: bool
+        serviceProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProvider
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProvider
+                setter: setServiceProvider
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderRequestSettingsType\ServiceProviderAType

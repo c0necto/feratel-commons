@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\RatingQuestionListType:
+    properties:
+        ratingQuestion:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingQuestion
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRatingQuestion
+                setter: setRatingQuestion
+            xml_list:
+                inline: true
+                entry_name: RatingQuestion
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\RatingQuestionType>

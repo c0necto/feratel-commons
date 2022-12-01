@@ -1,0 +1,177 @@
+Conecto\FeratelDsi\Dtos\OrganisationInformationResultType:
+    properties:
+        contactData:
+            expose: true
+            access_type: public_method
+            serialized_name: ContactData
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getContactData
+                setter: setContactData
+            type: Conecto\FeratelDsi\Dtos\ContactDataType
+        creditCards:
+            expose: true
+            access_type: public_method
+            serialized_name: CreditCards
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCreditCards
+                setter: setCreditCards
+            type: array<Conecto\FeratelDsi\Dtos\CreditCardType>
+            xml_list:
+                inline: false
+                entry_name: CreditCard
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        merchantID:
+            expose: true
+            access_type: public_method
+            serialized_name: MerchantID
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMerchantID
+                setter: setMerchantID
+            type: Conecto\FeratelDsi\Dtos\MerchantIDType
+        gTCOperator:
+            expose: true
+            access_type: public_method
+            serialized_name: GTCOperator
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGTCOperator
+                setter: setGTCOperator
+            type: string
+        gTCMediator:
+            expose: true
+            access_type: public_method
+            serialized_name: GTCMediator
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGTCMediator
+                setter: setGTCMediator
+            type: string
+        dataSecuritySystem:
+            expose: true
+            access_type: public_method
+            serialized_name: DataSecuritySystem
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDataSecuritySystem
+                setter: setDataSecuritySystem
+            type: string
+        cancellationConditions:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationConditions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationConditions
+                setter: setCancellationConditions
+            type: string
+        dataPrivacyText:
+            expose: true
+            access_type: public_method
+            serialized_name: DataPrivacyText
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDataPrivacyText
+                setter: setDataPrivacyText
+            type: string
+        visitorTaxInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: VisitorTaxInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVisitorTaxInformation
+                setter: setVisitorTaxInformation
+            type: string
+        cancellationProtectionText:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationProtectionText
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationProtectionText
+                setter: setCancellationProtectionText
+            type: string
+        currency:
+            expose: true
+            access_type: public_method
+            serialized_name: Currency
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCurrency
+                setter: setCurrency
+            type: string
+        paymentInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentInformation
+                setter: setPaymentInformation
+            type: Conecto\FeratelDsi\Dtos\PaymentInformationType
+        insuranceAndFeeInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: InsuranceAndFeeInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getInsuranceAndFeeInformation
+                setter: setInsuranceAndFeeInformation
+            type: Conecto\FeratelDsi\Dtos\InsuranceAndFeeInformationType
+        settlementInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlementInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlementInformation
+                setter: setSettlementInformation
+            type: Conecto\FeratelDsi\Dtos\SettlementInformationType
+        revenueSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRevenueSettings
+                setter: setRevenueSettings
+            type: array<Conecto\FeratelDsi\Dtos\BDRevenueSettingType>
+            xml_list:
+                inline: false
+                entry_name: RevenueSetting
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

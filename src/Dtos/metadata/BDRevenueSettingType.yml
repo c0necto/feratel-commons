@@ -1,0 +1,141 @@
+Conecto\FeratelDsi\Dtos\BDRevenueSettingType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        salesPoint:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesPoint
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalesPoint
+                setter: setSalesPoint
+            type: string
+        marketingGroupId:
+            expose: true
+            access_type: public_method
+            serialized_name: MarketingGroupId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMarketingGroupId
+                setter: setMarketingGroupId
+            type: string
+        validFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidFrom
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getValidFrom
+                setter: setValidFrom
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        validTo:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidTo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getValidTo
+                setter: setValidTo
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        validDays:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidDays
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getValidDays
+                setter: setValidDays
+            type: int
+        nightsFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: NightsFrom
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNightsFrom
+                setter: setNightsFrom
+            type: int
+        nightsTo:
+            expose: true
+            access_type: public_method
+            serialized_name: NightsTo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNightsTo
+                setter: setNightsTo
+            type: int
+        objectType:
+            expose: true
+            access_type: public_method
+            serialized_name: ObjectType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getObjectType
+                setter: setObjectType
+            type: Conecto\FeratelDsi\Dtos\BDRevenueSettingType\ObjectTypeAType
+        priceRule:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceRule
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceRule
+                setter: setPriceRule
+            type: Conecto\FeratelDsi\Dtos\BDRevenueSettingType\PriceRuleAType
+        includedExtras:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludedExtras
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getIncludedExtras
+                setter: setIncludedExtras
+            type: Conecto\FeratelDsi\Dtos\BDRevenueSettingType\IncludedExtrasAType

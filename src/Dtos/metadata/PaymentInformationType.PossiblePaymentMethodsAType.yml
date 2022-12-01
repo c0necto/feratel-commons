@@ -1,0 +1,92 @@
+Conecto\FeratelDsi\Dtos\PaymentInformationType\PossiblePaymentMethodsAType:
+    properties:
+        invoicePossibleDays:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoicePossibleDays
+            accessor:
+                getter: getInvoicePossibleDays
+                setter: setInvoicePossibleDays
+            xml_attribute: true
+            type: int
+        invoice:
+            expose: true
+            access_type: public_method
+            serialized_name: Invoice
+            accessor:
+                getter: getInvoice
+                setter: setInvoice
+            xml_attribute: true
+            type: bool
+        creditCard:
+            expose: true
+            access_type: public_method
+            serialized_name: CreditCard
+            accessor:
+                getter: getCreditCard
+                setter: setCreditCard
+            xml_attribute: true
+            type: bool
+        eLV:
+            expose: true
+            access_type: public_method
+            serialized_name: ELV
+            accessor:
+                getter: getELV
+                setter: setELV
+            xml_attribute: true
+            type: bool
+        sofortueberweisung:
+            expose: true
+            access_type: public_method
+            serialized_name: Sofortueberweisung
+            accessor:
+                getter: getSofortueberweisung
+                setter: setSofortueberweisung
+            xml_attribute: true
+            type: bool
+        iDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: iDeal
+            accessor:
+                getter: getIDeal
+                setter: setIDeal
+            xml_attribute: true
+            type: bool
+        payPal:
+            expose: true
+            access_type: public_method
+            serialized_name: PayPal
+            accessor:
+                getter: getPayPal
+                setter: setPayPal
+            xml_attribute: true
+            type: bool
+        tWINT:
+            expose: true
+            access_type: public_method
+            serialized_name: TWINT
+            accessor:
+                getter: getTWINT
+                setter: setTWINT
+            xml_attribute: true
+            type: bool
+        paymentLink:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentLink
+            accessor:
+                getter: getPaymentLink
+                setter: setPaymentLink
+            xml_attribute: true
+            type: bool
+        cash:
+            expose: true
+            access_type: public_method
+            serialized_name: Cash
+            accessor:
+                getter: getCash
+                setter: setCash
+            xml_attribute: true
+            type: bool

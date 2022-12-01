@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\PackageCalculationAssignmentItemType\PriceAType:
+    properties:
+        children:
+            expose: true
+            access_type: public_method
+            serialized_name: Children
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildren
+                setter: setChildren
+            type: array<Conecto\FeratelDsi\Dtos\PackageCalculationAssignmentItemType\PriceAType\ChildrenAType\PriceChildAType>
+            xml_list:
+                inline: false
+                entry_name: PriceChild
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        total:
+            expose: true
+            access_type: public_method
+            serialized_name: Total
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotal
+                setter: setTotal
+            type: Conecto\FeratelDsi\Dtos\PackageCalculationAssignmentItemType\PriceAType\TotalAType

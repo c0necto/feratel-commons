@@ -1,0 +1,92 @@
+Conecto\FeratelDsi\Dtos\PriceDetailsType:
+    properties:
+        totalAdultPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAdultPrice
+            accessor:
+                getter: getTotalAdultPrice
+                setter: setTotalAdultPrice
+            xml_attribute: true
+            type: float
+        totalAdultMeal:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAdultMeal
+            accessor:
+                getter: getTotalAdultMeal
+                setter: setTotalAdultMeal
+            xml_attribute: true
+            type: float
+        totalAdultVT:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAdultVT
+            accessor:
+                getter: getTotalAdultVT
+                setter: setTotalAdultVT
+            xml_attribute: true
+            type: float
+        totalChildrenPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalChildrenPrice
+            accessor:
+                getter: getTotalChildrenPrice
+                setter: setTotalChildrenPrice
+            xml_attribute: true
+            type: float
+        totalChildrenMeal:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalChildrenMeal
+            accessor:
+                getter: getTotalChildrenMeal
+                setter: setTotalChildrenMeal
+            xml_attribute: true
+            type: float
+        totalChildrenVT:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalChildrenVT
+            accessor:
+                getter: getTotalChildrenVT
+                setter: setTotalChildrenVT
+            xml_attribute: true
+            type: float
+        totalBedlinen:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalBedlinen
+            accessor:
+                getter: getTotalBedlinen
+                setter: setTotalBedlinen
+            xml_attribute: true
+            type: float
+        totalFinalCleaning:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalFinalCleaning
+            accessor:
+                getter: getTotalFinalCleaning
+                setter: setTotalFinalCleaning
+            xml_attribute: true
+            type: float
+        totalUserExtra:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalUserExtra
+            accessor:
+                getter: getTotalUserExtra
+                setter: setTotalUserExtra
+            xml_attribute: true
+            type: float
+        extraName:
+            expose: true
+            access_type: public_method
+            serialized_name: ExtraName
+            accessor:
+                getter: getExtraName
+                setter: setExtraName
+            xml_attribute: true
+            type: string

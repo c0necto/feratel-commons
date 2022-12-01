@@ -1,0 +1,65 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType\CancellationInformationAType:
+    properties:
+        freeCancellation:
+            expose: true
+            access_type: public_method
+            serialized_name: FreeCancellation
+            accessor:
+                getter: getFreeCancellation
+                setter: setFreeCancellation
+            xml_attribute: true
+            type: bool
+        dateUntil:
+            expose: true
+            access_type: public_method
+            serialized_name: DateUntil
+            accessor:
+                getter: getDateUntil
+                setter: setDateUntil
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        timeUntil:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeUntil
+            accessor:
+                getter: getTimeUntil
+                setter: setTimeUntil
+            xml_attribute: true
+            type: string
+        calculationBase:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculationBase
+            accessor:
+                getter: getCalculationBase
+                setter: setCalculationBase
+            xml_attribute: true
+            type: int
+        percentage:
+            expose: true
+            access_type: public_method
+            serialized_name: Percentage
+            accessor:
+                getter: getPercentage
+                setter: setPercentage
+            xml_attribute: true
+            type: float
+        amount:
+            expose: true
+            access_type: public_method
+            serialized_name: Amount
+            accessor:
+                getter: getAmount
+                setter: setAmount
+            xml_attribute: true
+            type: float
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            xml_attribute: true
+            type: string

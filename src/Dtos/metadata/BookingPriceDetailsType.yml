@@ -1,0 +1,156 @@
+Conecto\FeratelDsi\Dtos\BookingPriceDetailsType:
+    properties:
+        mealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: MealCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMealCode
+                setter: setMealCode
+            type: string
+        totalPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalPrice
+                setter: setTotalPrice
+            type: float
+        totalAdultPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAdultPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalAdultPrice
+                setter: setTotalAdultPrice
+            type: float
+        totalAdultMeal:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAdultMeal
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalAdultMeal
+                setter: setTotalAdultMeal
+            type: float
+        totalAdultVT:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAdultVT
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalAdultVT
+                setter: setTotalAdultVT
+            type: float
+        totalChildrenPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalChildrenPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalChildrenPrice
+                setter: setTotalChildrenPrice
+            type: float
+        totalChildrenMeal:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalChildrenMeal
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalChildrenMeal
+                setter: setTotalChildrenMeal
+            type: float
+        totalChildrenVT:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalChildrenVT
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalChildrenVT
+                setter: setTotalChildrenVT
+            type: float
+        totalBedlinen:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalBedlinen
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalBedlinen
+                setter: setTotalBedlinen
+            type: float
+        totalFinalCleaning:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalFinalCleaning
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalFinalCleaning
+                setter: setTotalFinalCleaning
+            type: float
+        totalExtras:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalExtras
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalExtras
+                setter: setTotalExtras
+            type: float
+        payNights:
+            expose: true
+            access_type: public_method
+            serialized_name: PayNights
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPayNights
+                setter: setPayNights
+            type: int
+        promotionCodeCalcRule:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionCodeCalcRule
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPromotionCodeCalcRule
+                setter: setPromotionCodeCalcRule
+            type: string
+        promotionCodePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionCodePrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPromotionCodePrice
+                setter: setPromotionCodePrice
+            type: float

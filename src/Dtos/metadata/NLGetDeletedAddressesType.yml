@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\NLGetDeletedAddressesType:
+    properties:
+        changedDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangedDate
+            accessor:
+                getter: getChangedDate
+                setter: setChangedDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date

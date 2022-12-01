@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\BasketSummaryAdvPaymentType:
+    properties:
+        vATAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: VATAmount
+            accessor:
+                getter: getVATAmount
+                setter: setVATAmount
+            xml_attribute: true
+            type: float

@@ -1,0 +1,82 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType:
+    properties:
+        accommodations:
+            expose: true
+            access_type: public_method
+            serialized_name: Accommodations
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAccommodations
+                setter: setAccommodations
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\AccommodationsAType\AccommodationItemAType>
+            xml_list:
+                inline: false
+                entry_name: AccommodationItem
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        additionalServices:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalServices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdditionalServices
+                setter: setAdditionalServices
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\AdditionalServicesAType\AdditionalServiceItemAType>
+            xml_list:
+                inline: false
+                entry_name: AdditionalServiceItem
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        brochures:
+            expose: true
+            access_type: public_method
+            serialized_name: Brochures
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBrochures
+                setter: setBrochures
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\BrochuresAType\BrochureItemAType>
+            xml_list:
+                inline: false
+                entry_name: BrochureItem
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        shopArticles:
+            expose: true
+            access_type: public_method
+            serialized_name: ShopArticles
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getShopArticles
+                setter: setShopArticles
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\ShopArticlesAType\ShopArticleItemAType>
+            xml_list:
+                inline: false
+                entry_name: ShopArticleItem
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        packages:
+            expose: true
+            access_type: public_method
+            serialized_name: Packages
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPackages
+                setter: setPackages
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType>
+            xml_list:
+                inline: false
+                entry_name: PackageItem
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

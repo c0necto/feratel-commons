@@ -1,0 +1,71 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\BrochuresAType\BrochureItemAType:
+    properties:
+        shopItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ShopItemId
+            accessor:
+                getter: getShopItemId
+                setter: setShopItemId
+            xml_attribute: true
+            type: string
+        shoppingCartItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ShoppingCartItemId
+            accessor:
+                getter: getShoppingCartItemId
+                setter: setShoppingCartItemId
+            xml_attribute: true
+            type: string
+        itemName:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemName
+            accessor:
+                getter: getItemName
+                setter: setItemName
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        numberOfItems:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfItems
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNumberOfItems
+                setter: setNumberOfItems
+            type: int
+        variation:
+            expose: true
+            access_type: public_method
+            serialized_name: Variation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVariation
+                setter: setVariation
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\BrochuresAType\BrochureItemAType\VariationAType
+        weight:
+            expose: true
+            access_type: public_method
+            serialized_name: Weight
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getWeight
+                setter: setWeight
+            type: int

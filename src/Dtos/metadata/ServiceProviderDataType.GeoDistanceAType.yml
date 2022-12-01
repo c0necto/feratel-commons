@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\GeoDistanceAType:
+    properties:
+        hotSpotName:
+            expose: true
+            access_type: public_method
+            serialized_name: HotSpotName
+            accessor:
+                getter: getHotSpotName
+                setter: setHotSpotName
+            xml_attribute: true
+            type: string
+        distance:
+            expose: true
+            access_type: public_method
+            serialized_name: Distance
+            accessor:
+                getter: getDistance
+                setter: setDistance
+            xml_attribute: true
+            type: float

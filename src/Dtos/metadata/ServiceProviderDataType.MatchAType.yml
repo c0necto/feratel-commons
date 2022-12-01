@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\MatchAType:
+    properties:
+        facility:
+            expose: true
+            access_type: public_method
+            serialized_name: Facility
+            accessor:
+                getter: getFacility
+                setter: setFacility
+            xml_attribute: true
+            type: int
+        handicapFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: HandicapFacility
+            accessor:
+                getter: getHandicapFacility
+                setter: setHandicapFacility
+            xml_attribute: true
+            type: int

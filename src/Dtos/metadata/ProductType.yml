@@ -1,0 +1,119 @@
+Conecto\FeratelDsi\Dtos\ProductType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        availability:
+            expose: true
+            access_type: public_method
+            serialized_name: Availability
+            accessor:
+                getter: getAvailability
+                setter: setAvailability
+            xml_attribute: true
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        bookable:
+            expose: true
+            access_type: public_method
+            serialized_name: Bookable
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookable
+                setter: setBookable
+            type: string
+        occupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: Occupancy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOccupancy
+                setter: setOccupancy
+            type: Conecto\FeratelDsi\Dtos\OccupancyType
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\PricesType
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dateTo:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDateTo
+                setter: setDateTo
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        mealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: MealCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMealCode
+                setter: setMealCode
+            type: string
+        settlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlerCode
+                setter: setSettlerCode
+            type: string
+        searchLineNo:
+            expose: true
+            access_type: public_method
+            serialized_name: SearchLineNo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSearchLineNo
+                setter: setSearchLineNo
+            type: int

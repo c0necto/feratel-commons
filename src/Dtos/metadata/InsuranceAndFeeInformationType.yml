@@ -1,0 +1,61 @@
+Conecto\FeratelDsi\Dtos\InsuranceAndFeeInformationType:
+    properties:
+        cancellationInsurances:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsurances
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsurances
+                setter: setCancellationInsurances
+            type: array<Conecto\FeratelDsi\Dtos\CancellationInsuranceType>
+            xml_list:
+                inline: false
+                entry_name: CancellationInsurance
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        cancellationFees:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationFees
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationFees
+                setter: setCancellationFees
+            type: array<Conecto\FeratelDsi\Dtos\CancellationFeeDetailsType>
+            xml_list:
+                inline: false
+                entry_name: CancellationFeeDetail
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        bookingFees:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFees
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingFees
+                setter: setBookingFees
+            type: array<Conecto\FeratelDsi\Dtos\BookinFeeDetailType>
+            xml_list:
+                inline: false
+                entry_name: BookinFeeDetail
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        insuranceData:
+            expose: true
+            access_type: public_method
+            serialized_name: InsuranceData
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getInsuranceData
+                setter: setInsuranceData
+            type: Conecto\FeratelDsi\Dtos\ContactDataType

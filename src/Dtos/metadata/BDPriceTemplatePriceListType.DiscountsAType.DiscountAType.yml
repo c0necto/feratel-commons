@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType\DiscountsAType\DiscountAType:
+    properties:
+        occupancyFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: OccupancyFrom
+            accessor:
+                getter: getOccupancyFrom
+                setter: setOccupancyFrom
+            xml_attribute: true
+            type: int
+        occupancyTo:
+            expose: true
+            access_type: public_method
+            serialized_name: OccupancyTo
+            accessor:
+                getter: getOccupancyTo
+                setter: setOccupancyTo
+            xml_attribute: true
+            type: int
+        stayFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: StayFrom
+            accessor:
+                getter: getStayFrom
+                setter: setStayFrom
+            xml_attribute: true
+            type: int
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: float

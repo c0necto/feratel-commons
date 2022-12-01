@@ -1,0 +1,159 @@
+Conecto\FeratelDsi\Dtos\TransactionType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        createDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: CreateDateTime
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCreateDateTime
+                setter: setCreateDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        lastChangeDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: LastChangeDateTime
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLastChangeDateTime
+                setter: setLastChangeDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        settlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlerCode
+                setter: setSettlerCode
+            type: string
+        dbCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DbCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDbCode
+                setter: setDbCode
+            type: string
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: Number
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            type: int
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getType
+                setter: setType
+            type: Conecto\FeratelDsi\Dtos\TransactionType\TypeAType
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            type: string
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            type: string
+        currencyFactor:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyFactor
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCurrencyFactor
+                setter: setCurrencyFactor
+            type: Conecto\FeratelDsi\Dtos\TransactionType\CurrencyFactorAType
+        toscLinkKey:
+            expose: true
+            access_type: public_method
+            serialized_name: ToscLinkKey
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getToscLinkKey
+                setter: setToscLinkKey
+            type: string
+        bookingOptions:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingOptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingOptions
+                setter: setBookingOptions
+            type: Conecto\FeratelDsi\Dtos\BookingOptionsType
+        details:
+            expose: true
+            access_type: public_method
+            serialized_name: Details
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDetails
+                setter: setDetails
+            type: array<Conecto\FeratelDsi\Dtos\BookingDetailType>
+            xml_list:
+                inline: false
+                entry_name: Detail
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        guest:
+            expose: true
+            access_type: public_method
+            serialized_name: Guest
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGuest
+                setter: setGuest
+            type: Conecto\FeratelDsi\Dtos\BookingGuestType

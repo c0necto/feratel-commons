@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\ExternalPaymentAType\AmountPrePaymentAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: float
+            xml_element:
+                cdata: false
+        paymenMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymenMethod
+            accessor:
+                getter: getPaymenMethod
+                setter: setPaymenMethod
+            xml_attribute: true
+            type: string

@@ -1,0 +1,33 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\PriceAType\DetailsAType\PackageProductItemAType\ParentAType:
+    properties:
+        locationId:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationId
+            accessor:
+                getter: getLocationId
+                setter: setLocationId
+            xml_attribute: true
+            type: string
+        serviceProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProvider
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProvider
+                setter: setServiceProvider
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\PriceAType\DetailsAType\PackageProductItemAType\ParentAType\ServiceProviderAType
+        service:
+            expose: true
+            access_type: public_method
+            serialized_name: Service
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getService
+                setter: setService
+            type: string

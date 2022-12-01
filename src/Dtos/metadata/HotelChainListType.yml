@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\HotelChainListType:
+    properties:
+        hotelChain:
+            expose: true
+            access_type: public_method
+            serialized_name: HotelChain
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHotelChain
+                setter: setHotelChain
+            xml_list:
+                inline: true
+                entry_name: HotelChain
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ClassificationType>

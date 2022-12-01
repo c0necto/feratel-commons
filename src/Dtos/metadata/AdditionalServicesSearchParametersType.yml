@@ -1,0 +1,94 @@
+Conecto\FeratelDsi\Dtos\AdditionalServicesSearchParametersType:
+    properties:
+        index:
+            expose: true
+            access_type: public_method
+            serialized_name: Index
+            accessor:
+                getter: getIndex
+                setter: setIndex
+            xml_attribute: true
+            type: int
+        salesChannel:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannel
+            accessor:
+                getter: getSalesChannel
+                setter: setSalesChannel
+            xml_attribute: true
+            type: string
+        units:
+            expose: true
+            access_type: public_method
+            serialized_name: Units
+            accessor:
+                getter: getUnits
+                setter: setUnits
+            xml_attribute: true
+            type: int
+        days:
+            expose: true
+            access_type: public_method
+            serialized_name: Days
+            accessor:
+                getter: getDays
+                setter: setDays
+            xml_attribute: true
+            type: int
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        preSelectedServiceProviderIDs:
+            expose: true
+            access_type: public_method
+            serialized_name: PreSelectedServiceProviderIDs
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPreSelectedServiceProviderIDs
+                setter: setPreSelectedServiceProviderIDs
+            type: array<Conecto\FeratelDsi\Dtos\GuidListType\ItemAType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProvider
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProvider
+                setter: setServiceProvider
+            type: Conecto\FeratelDsi\Dtos\SearchAdditionalServiceProviderType
+        bookOnly:
+            expose: true
+            access_type: public_method
+            serialized_name: BookOnly
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookOnly
+                setter: setBookOnly
+            type: Conecto\FeratelDsi\Dtos\BookOnlyType

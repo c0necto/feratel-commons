@@ -1,0 +1,44 @@
+Conecto\FeratelDsi\Dtos\BDQualityDetailsType:
+    properties:
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        contentScore:
+            expose: true
+            access_type: public_method
+            serialized_name: ContentScore
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getContentScore
+                setter: setContentScore
+            type: float
+        bestPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: BestPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBestPrice
+                setter: setBestPrice
+            type: int
+        availUpdCheck:
+            expose: true
+            access_type: public_method
+            serialized_name: AvailUpdCheck
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAvailUpdCheck
+                setter: setAvailUpdCheck
+            type: int

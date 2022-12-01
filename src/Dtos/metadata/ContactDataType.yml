@@ -1,0 +1,112 @@
+Conecto\FeratelDsi\Dtos\ContactDataType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            type: string
+        address:
+            expose: true
+            access_type: public_method
+            serialized_name: Address
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddress
+                setter: setAddress
+            type: string
+        altAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: AltAddress
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAltAddress
+                setter: setAltAddress
+            type: string
+        zipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ZipCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getZipCode
+                setter: setZipCode
+            type: string
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: City
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCity
+                setter: setCity
+            type: string
+        phone:
+            expose: true
+            access_type: public_method
+            serialized_name: Phone
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPhone
+                setter: setPhone
+            type: string
+        fax:
+            expose: true
+            access_type: public_method
+            serialized_name: Fax
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFax
+                setter: setFax
+            type: string
+        eMail:
+            expose: true
+            access_type: public_method
+            serialized_name: EMail
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getEMail
+                setter: setEMail
+            type: string
+        url:
+            expose: true
+            access_type: public_method
+            serialized_name: Url
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUrl
+                setter: setUrl
+            type: string

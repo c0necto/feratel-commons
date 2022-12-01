@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDPackageCategoryListType:
+    properties:
+        packageCategory:
+            expose: true
+            access_type: public_method
+            serialized_name: PackageCategory
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPackageCategory
+                setter: setPackageCategory
+            xml_list:
+                inline: true
+                entry_name: PackageCategory
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPackageCategoryItemType>

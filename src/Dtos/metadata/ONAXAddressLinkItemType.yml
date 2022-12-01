@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\ONAXAddressLinkItemType:
+    properties:
+        adlProviderID:
+            expose: true
+            access_type: public_method
+            serialized_name: adlProviderID
+            accessor:
+                getter: getAdlProviderID
+                setter: setAdlProviderID
+            xml_attribute: true
+            type: string
+        adlContactID:
+            expose: true
+            access_type: public_method
+            serialized_name: adlContactID
+            accessor:
+                getter: getAdlContactID
+                setter: setAdlContactID
+            xml_attribute: true
+            type: string
+        adlLinkType:
+            expose: true
+            access_type: public_method
+            serialized_name: adlLinkType
+            accessor:
+                getter: getAdlLinkType
+                setter: setAdlLinkType
+            xml_attribute: true
+            type: int

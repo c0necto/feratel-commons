@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\ElectronicPaymentCheckOutTypeRSType:
+    properties:
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            accessor:
+                getter: getURL
+                setter: setURL
+            xml_attribute: true
+            type: string
+        datatransTransactionID:
+            expose: true
+            access_type: public_method
+            serialized_name: DatatransTransactionID
+            accessor:
+                getter: getDatatransTransactionID
+                setter: setDatatransTransactionID
+            xml_attribute: true
+            type: string

@@ -1,0 +1,68 @@
+Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType:
+    properties:
+        daysUntilArrival:
+            expose: true
+            access_type: public_method
+            serialized_name: DaysUntilArrival
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDaysUntilArrival
+                setter: setDaysUntilArrival
+            type: int
+        minStay:
+            expose: true
+            access_type: public_method
+            serialized_name: MinStay
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMinStay
+                setter: setMinStay
+            type: int
+        maxStay:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxStay
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMaxStay
+                setter: setMaxStay
+            type: int
+        interval:
+            expose: true
+            access_type: public_method
+            serialized_name: Interval
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getInterval
+                setter: setInterval
+            type: int
+        arrivalDays:
+            expose: true
+            access_type: public_method
+            serialized_name: ArrivalDays
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getArrivalDays
+                setter: setArrivalDays
+            type: Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\ArrivalDaysAType
+        departureDays:
+            expose: true
+            access_type: public_method
+            serialized_name: DepartureDays
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDepartureDays
+                setter: setDepartureDays
+            type: Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\DepartureDaysAType

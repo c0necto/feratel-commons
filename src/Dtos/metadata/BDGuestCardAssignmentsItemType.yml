@@ -1,0 +1,63 @@
+Conecto\FeratelDsi\Dtos\BDGuestCardAssignmentsItemType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        usageType:
+            expose: true
+            access_type: public_method
+            serialized_name: UsageType
+            accessor:
+                getter: getUsageType
+                setter: setUsageType
+            xml_attribute: true
+            type: string
+        validFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidFrom
+            accessor:
+                getter: getValidFrom
+                setter: setValidFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        validTo:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidTo
+            accessor:
+                getter: getValidTo
+                setter: setValidTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        descriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: Descriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescriptions
+                setter: setDescriptions
+            type: array<Conecto\FeratelDsi\Dtos\DescriptionType>
+            xml_list:
+                inline: false
+                entry_name: Description
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

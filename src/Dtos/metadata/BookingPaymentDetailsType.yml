@@ -1,0 +1,33 @@
+Conecto\FeratelDsi\Dtos\BookingPaymentDetailsType:
+    properties:
+        transactionGuaranteePaymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionGuaranteePaymentMethod
+            accessor:
+                getter: getTransactionGuaranteePaymentMethod
+                setter: setTransactionGuaranteePaymentMethod
+            xml_attribute: true
+            type: string
+        prePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrePayment
+                setter: setPrePayment
+            type: Conecto\FeratelDsi\Dtos\BookingPaymentDetailType
+        finalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: FinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFinalPayment
+                setter: setFinalPayment
+            type: Conecto\FeratelDsi\Dtos\BookingPaymentDetailType

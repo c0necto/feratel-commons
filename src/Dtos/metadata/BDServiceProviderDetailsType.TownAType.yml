@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType\TownAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        vTCode:
+            expose: true
+            access_type: public_method
+            serialized_name: VTCode
+            accessor:
+                getter: getVTCode
+                setter: setVTCode
+            xml_attribute: true
+            type: string

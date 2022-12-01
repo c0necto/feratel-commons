@@ -1,0 +1,83 @@
+Conecto\FeratelDsi\Dtos\ONAXAddressBankAccountItemType:
+    properties:
+        abaAddressID:
+            expose: true
+            access_type: public_method
+            serialized_name: abaAddressID
+            accessor:
+                getter: getAbaAddressID
+                setter: setAbaAddressID
+            xml_attribute: true
+            type: string
+        abaBankName:
+            expose: true
+            access_type: public_method
+            serialized_name: abaBankName
+            accessor:
+                getter: getAbaBankName
+                setter: setAbaBankName
+            xml_attribute: true
+            type: string
+        abaBankCode:
+            expose: true
+            access_type: public_method
+            serialized_name: abaBankCode
+            accessor:
+                getter: getAbaBankCode
+                setter: setAbaBankCode
+            xml_attribute: true
+            type: string
+        abaCountryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: abaCountryCode
+            accessor:
+                getter: getAbaCountryCode
+                setter: setAbaCountryCode
+            xml_attribute: true
+            type: string
+        abaIBAN:
+            expose: true
+            access_type: public_method
+            serialized_name: abaIBAN
+            accessor:
+                getter: getAbaIBAN
+                setter: setAbaIBAN
+            xml_attribute: true
+            type: string
+        abaAccount:
+            expose: true
+            access_type: public_method
+            serialized_name: abaAccount
+            accessor:
+                getter: getAbaAccount
+                setter: setAbaAccount
+            xml_attribute: true
+            type: string
+        abaStreet:
+            expose: true
+            access_type: public_method
+            serialized_name: abaStreet
+            accessor:
+                getter: getAbaStreet
+                setter: setAbaStreet
+            xml_attribute: true
+            type: string
+        abaZipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: abaZipCode
+            accessor:
+                getter: getAbaZipCode
+                setter: setAbaZipCode
+            xml_attribute: true
+            type: string
+        abaCity:
+            expose: true
+            access_type: public_method
+            serialized_name: abaCity
+            accessor:
+                getter: getAbaCity
+                setter: setAbaCity
+            xml_attribute: true
+            type: string

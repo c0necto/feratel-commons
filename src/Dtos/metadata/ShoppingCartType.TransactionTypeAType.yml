@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\TransactionTypeAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        validForHours:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidForHours
+            accessor:
+                getter: getValidForHours
+                setter: setValidForHours
+            xml_attribute: true
+            type: int

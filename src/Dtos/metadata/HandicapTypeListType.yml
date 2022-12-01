@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\HandicapTypeListType:
+    properties:
+        handicapType:
+            expose: true
+            access_type: public_method
+            serialized_name: 'HandicapType '
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHandicapType
+                setter: setHandicapType
+            xml_list:
+                inline: true
+                entry_name: 'HandicapType '
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\HandicapBaseItemType>

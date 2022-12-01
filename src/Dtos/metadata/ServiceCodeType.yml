@@ -1,0 +1,54 @@
+Conecto\FeratelDsi\Dtos\ServiceCodeType:
+    properties:
+        serviceType:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceType
+            accessor:
+                getter: getServiceType
+                setter: setServiceType
+            xml_attribute: true
+            type: string
+        codeType:
+            expose: true
+            access_type: public_method
+            serialized_name: CodeType
+            accessor:
+                getter: getCodeType
+                setter: setCodeType
+            xml_attribute: true
+            type: string
+        srcCode:
+            expose: true
+            access_type: public_method
+            serialized_name: srcCode
+            accessor:
+                getter: getSrcCode
+                setter: setSrcCode
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

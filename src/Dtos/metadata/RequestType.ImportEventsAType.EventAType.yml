@@ -1,0 +1,111 @@
+Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType:
+    properties:
+        partnerId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartnerId
+            accessor:
+                getter: getPartnerId
+                setter: setPartnerId
+            xml_attribute: true
+            type: string
+        partnerChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: PartnerChangeDate
+            accessor:
+                getter: getPartnerChangeDate
+                setter: setPartnerChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        details:
+            expose: true
+            access_type: public_method
+            serialized_name: Details
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDetails
+                setter: setDetails
+            type: Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType
+        addresses:
+            expose: true
+            access_type: public_method
+            serialized_name: Addresses
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddresses
+                setter: setAddresses
+            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\AddressesAType\AddressAType>
+            xml_list:
+                inline: false
+                entry_name: Address
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        descriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: Descriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescriptions
+                setter: setDescriptions
+            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DescriptionsAType\DescriptionAType>
+            xml_list:
+                inline: false
+                entry_name: Description
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        documents:
+            expose: true
+            access_type: public_method
+            serialized_name: Documents
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDocuments
+                setter: setDocuments
+            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DocumentsAType\DocumentAType>
+            xml_list:
+                inline: false
+                entry_name: Document
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        links:
+            expose: true
+            access_type: public_method
+            serialized_name: Links
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLinks
+                setter: setLinks
+            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\LinksAType\LinkAType>
+            xml_list:
+                inline: false
+                entry_name: Link
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        facilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Facilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFacilities
+                setter: setFacilities
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Facility
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

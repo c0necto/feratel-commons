@@ -1,0 +1,56 @@
+Conecto\FeratelDsi\Dtos\ONAXServiceProviderItemType:
+    properties:
+        sprIdentity:
+            expose: true
+            access_type: public_method
+            serialized_name: sprIdentity
+            accessor:
+                getter: getSprIdentity
+                setter: setSprIdentity
+            xml_attribute: true
+            type: string
+        sprName:
+            expose: true
+            access_type: public_method
+            serialized_name: sprName
+            accessor:
+                getter: getSprName
+                setter: setSprName
+            xml_attribute: true
+            type: string
+        sprCode:
+            expose: true
+            access_type: public_method
+            serialized_name: sprCode
+            accessor:
+                getter: getSprCode
+                setter: setSprCode
+            xml_attribute: true
+            type: string
+        sprCreateDate:
+            expose: true
+            access_type: public_method
+            serialized_name: sprCreateDate
+            accessor:
+                getter: getSprCreateDate
+                setter: setSprCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        sprChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: sprChangeDate
+            accessor:
+                getter: getSprChangeDate
+                setter: setSprChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        sprLoginID:
+            expose: true
+            access_type: public_method
+            serialized_name: sprLoginID
+            accessor:
+                getter: getSprLoginID
+                setter: setSprLoginID
+            xml_attribute: true
+            type: string

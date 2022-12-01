@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\BDRevenueSettingType\IncludedExtrasAType:
+    properties:
+        meals:
+            expose: true
+            access_type: public_method
+            serialized_name: Meals
+            accessor:
+                getter: getMeals
+                setter: setMeals
+            xml_attribute: true
+            type: bool
+        bedLineFinalCleaning:
+            expose: true
+            access_type: public_method
+            serialized_name: BedLineFinalCleaning
+            accessor:
+                getter: getBedLineFinalCleaning
+                setter: setBedLineFinalCleaning
+            xml_attribute: true
+            type: bool
+        userExtras:
+            expose: true
+            access_type: public_method
+            serialized_name: UserExtras
+            accessor:
+                getter: getUserExtras
+                setter: setUserExtras
+            xml_attribute: true
+            type: bool

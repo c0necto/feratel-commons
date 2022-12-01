@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDAnnotationsType:
+    properties:
+        skipEmail:
+            expose: true
+            access_type: public_method
+            serialized_name: SkipEmail
+            accessor:
+                getter: getSkipEmail
+                setter: setSkipEmail
+            xml_attribute: true
+            type: bool
+        skipPhone:
+            expose: true
+            access_type: public_method
+            serialized_name: SkipPhone
+            accessor:
+                getter: getSkipPhone
+                setter: setSkipPhone
+            xml_attribute: true
+            type: bool

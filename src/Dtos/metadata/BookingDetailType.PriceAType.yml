@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\BookingDetailType\PriceAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: float
+            xml_element:
+                cdata: false
+        commissionBasePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: CommissionBasePrice
+            accessor:
+                getter: getCommissionBasePrice
+                setter: setCommissionBasePrice
+            xml_attribute: true
+            type: float

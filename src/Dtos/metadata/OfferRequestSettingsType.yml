@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\OfferRequestSettingsType:
+    properties:
+        serviceProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProvider
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProvider
+                setter: setServiceProvider
+            type: Conecto\FeratelDsi\Dtos\OfferRequestSettingsType\ServiceProviderAType

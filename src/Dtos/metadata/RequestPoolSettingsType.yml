@@ -1,0 +1,24 @@
+Conecto\FeratelDsi\Dtos\RequestPoolSettingsType:
+    properties:
+        maxTickets:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxTickets
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMaxTickets
+                setter: setMaxTickets
+            type: int
+        contactBy:
+            expose: true
+            access_type: public_method
+            serialized_name: ContactBy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getContactBy
+                setter: setContactBy
+            type: string

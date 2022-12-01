@@ -1,0 +1,164 @@
+Conecto\FeratelDsi\Dtos\ONAXProductItemType:
+    properties:
+        prdIdentity:
+            expose: true
+            access_type: public_method
+            serialized_name: prdIdentity
+            accessor:
+                getter: getPrdIdentity
+                setter: setPrdIdentity
+            xml_attribute: true
+            type: string
+        prdServiceID:
+            expose: true
+            access_type: public_method
+            serialized_name: prdServiceID
+            accessor:
+                getter: getPrdServiceID
+                setter: setPrdServiceID
+            xml_attribute: true
+            type: string
+        prdName:
+            expose: true
+            access_type: public_method
+            serialized_name: prdName
+            accessor:
+                getter: getPrdName
+                setter: setPrdName
+            xml_attribute: true
+            type: string
+        prdCode:
+            expose: true
+            access_type: public_method
+            serialized_name: prdCode
+            accessor:
+                getter: getPrdCode
+                setter: setPrdCode
+            xml_attribute: true
+            type: string
+        prdProductType:
+            expose: true
+            access_type: public_method
+            serialized_name: prdProductType
+            accessor:
+                getter: getPrdProductType
+                setter: setPrdProductType
+            xml_attribute: true
+            type: int
+        prdAccoType:
+            expose: true
+            access_type: public_method
+            serialized_name: prdAccoType
+            accessor:
+                getter: getPrdAccoType
+                setter: setPrdAccoType
+            xml_attribute: true
+            type: int
+        prdActive:
+            expose: true
+            access_type: public_method
+            serialized_name: prdActive
+            accessor:
+                getter: getPrdActive
+                setter: setPrdActive
+            xml_attribute: true
+            type: int
+        prdMinBed:
+            expose: true
+            access_type: public_method
+            serialized_name: prdMinBed
+            accessor:
+                getter: getPrdMinBed
+                setter: setPrdMinBed
+            xml_attribute: true
+            type: int
+        prdMaxBed:
+            expose: true
+            access_type: public_method
+            serialized_name: prdMaxBed
+            accessor:
+                getter: getPrdMaxBed
+                setter: setPrdMaxBed
+            xml_attribute: true
+            type: int
+        prdMinAdult:
+            expose: true
+            access_type: public_method
+            serialized_name: prdMinAdult
+            accessor:
+                getter: getPrdMinAdult
+                setter: setPrdMinAdult
+            xml_attribute: true
+            type: int
+        prdMaxAdult:
+            expose: true
+            access_type: public_method
+            serialized_name: prdMaxAdult
+            accessor:
+                getter: getPrdMaxAdult
+                setter: setPrdMaxAdult
+            xml_attribute: true
+            type: int
+        prdMinChild:
+            expose: true
+            access_type: public_method
+            serialized_name: prdMinChild
+            accessor:
+                getter: getPrdMinChild
+                setter: setPrdMinChild
+            xml_attribute: true
+            type: int
+        prdMaxChild:
+            expose: true
+            access_type: public_method
+            serialized_name: prdMaxChild
+            accessor:
+                getter: getPrdMaxChild
+                setter: setPrdMaxChild
+            xml_attribute: true
+            type: int
+        prdStdOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: prdStdOccupancy
+            accessor:
+                getter: getPrdStdOccupancy
+                setter: setPrdStdOccupancy
+            xml_attribute: true
+            type: int
+        prdBookable:
+            expose: true
+            access_type: public_method
+            serialized_name: prdBookable
+            accessor:
+                getter: getPrdBookable
+                setter: setPrdBookable
+            xml_attribute: true
+            type: int
+        prdCreateDate:
+            expose: true
+            access_type: public_method
+            serialized_name: prdCreateDate
+            accessor:
+                getter: getPrdCreateDate
+                setter: setPrdCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        prdChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: prdChangeDate
+            accessor:
+                getter: getPrdChangeDate
+                setter: setPrdChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        prdLoginID:
+            expose: true
+            access_type: public_method
+            serialized_name: prdLoginID
+            accessor:
+                getter: getPrdLoginID
+                setter: setPrdLoginID
+            xml_attribute: true
+            type: string

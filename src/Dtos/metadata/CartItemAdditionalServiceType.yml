@@ -1,0 +1,101 @@
+Conecto\FeratelDsi\Dtos\CartItemAdditionalServiceType:
+    properties:
+        itemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemId
+            accessor:
+                getter: getItemId
+                setter: setItemId
+            xml_attribute: true
+            type: string
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        startTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartTime
+            accessor:
+                getter: getStartTime
+                setter: setStartTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Time
+        durationType:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationType
+            accessor:
+                getter: getDurationType
+                setter: setDurationType
+            xml_attribute: true
+            type: string
+        durationValue:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationValue
+            accessor:
+                getter: getDurationValue
+                setter: setDurationValue
+            xml_attribute: true
+            type: int
+        numberOfItems:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfItems
+            accessor:
+                getter: getNumberOfItems
+                setter: setNumberOfItems
+            xml_attribute: true
+            type: int
+        guestSettlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestSettlerCode
+            accessor:
+                getter: getGuestSettlerCode
+                setter: setGuestSettlerCode
+            xml_attribute: true
+            type: string
+        paymentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentType
+            accessor:
+                getter: getPaymentType
+                setter: setPaymentType
+            xml_attribute: true
+            type: string
+        paymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentMethod
+            accessor:
+                getter: getPaymentMethod
+                setter: setPaymentMethod
+            xml_attribute: true
+            type: string
+        itemName:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemName
+            accessor:
+                getter: getItemName
+                setter: setItemName
+            xml_attribute: true
+            type: string
+        itemPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemPrice
+            accessor:
+                getter: getItemPrice
+                setter: setItemPrice
+            xml_attribute: true
+            type: float

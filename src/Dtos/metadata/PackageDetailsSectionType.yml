@@ -1,0 +1,137 @@
+Conecto\FeratelDsi\Dtos\PackageDetailsSectionType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        isArrivalDateOK:
+            expose: true
+            access_type: public_method
+            serialized_name: isArrivalDateOK
+            accessor:
+                getter: getIsArrivalDateOK
+                setter: setIsArrivalDateOK
+            xml_attribute: true
+            type: bool
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        productType:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductType
+            accessor:
+                getter: getProductType
+                setter: setProductType
+            xml_attribute: true
+            type: string
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dateTo:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTo
+            accessor:
+                getter: getDateTo
+                setter: setDateTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            xml_attribute: true
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        availabilityCheck:
+            expose: true
+            access_type: public_method
+            serialized_name: AvailabilityCheck
+            accessor:
+                getter: getAvailabilityCheck
+                setter: setAvailabilityCheck
+            xml_attribute: true
+            type: bool
+        maxUnit:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxUnit
+            accessor:
+                getter: getMaxUnit
+                setter: setMaxUnit
+            xml_attribute: true
+            type: int
+        unitType:
+            expose: true
+            access_type: public_method
+            serialized_name: UnitType
+            accessor:
+                getter: getUnitType
+                setter: setUnitType
+            xml_attribute: true
+            type: string
+        parentId:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentId
+            accessor:
+                getter: getParentId
+                setter: setParentId
+            xml_attribute: true
+            type: string
+        addPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: AddPrice
+            accessor:
+                getter: getAddPrice
+                setter: setAddPrice
+            xml_attribute: true
+            type: bool
+        showPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowPrice
+            accessor:
+                getter: getShowPrice
+                setter: setShowPrice
+            xml_attribute: true
+            type: bool

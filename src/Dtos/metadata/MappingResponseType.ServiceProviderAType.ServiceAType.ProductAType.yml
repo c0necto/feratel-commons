@@ -1,0 +1,92 @@
+Conecto\FeratelDsi\Dtos\MappingResponseType\ServiceProviderAType\ServiceAType\ProductAType:
+    properties:
+        mappingCode:
+            expose: true
+            access_type: public_method
+            serialized_name: MappingCode
+            accessor:
+                getter: getMappingCode
+                setter: setMappingCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        minOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: MinOccupancy
+            accessor:
+                getter: getMinOccupancy
+                setter: setMinOccupancy
+            xml_attribute: true
+            type: int
+        maxOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxOccupancy
+            accessor:
+                getter: getMaxOccupancy
+                setter: setMaxOccupancy
+            xml_attribute: true
+            type: int
+        standardOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardOccupancy
+            accessor:
+                getter: getStandardOccupancy
+                setter: setStandardOccupancy
+            xml_attribute: true
+            type: int
+        priceRule:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceRule
+            accessor:
+                getter: getPriceRule
+                setter: setPriceRule
+            xml_attribute: true
+            type: string
+        nights:
+            expose: true
+            access_type: public_method
+            serialized_name: Nights
+            accessor:
+                getter: getNights
+                setter: setNights
+            xml_attribute: true
+            type: int
+        standardMealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardMealCode
+            accessor:
+                getter: getStandardMealCode
+                setter: setStandardMealCode
+            xml_attribute: true
+            type: string
+        useMinStayOnlyFromArrivalDay:
+            expose: true
+            access_type: public_method
+            serialized_name: UseMinStayOnlyFromArrivalDay
+            accessor:
+                getter: getUseMinStayOnlyFromArrivalDay
+                setter: setUseMinStayOnlyFromArrivalDay
+            xml_attribute: true
+            type: bool

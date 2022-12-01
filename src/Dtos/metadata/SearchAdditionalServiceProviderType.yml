@@ -1,0 +1,67 @@
+Conecto\FeratelDsi\Dtos\SearchAdditionalServiceProviderType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        facility:
+            expose: true
+            access_type: public_method
+            serialized_name: Facility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFacility
+                setter: setFacility
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        service:
+            expose: true
+            access_type: public_method
+            serialized_name: Service
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getService
+                setter: setService
+            type: Conecto\FeratelDsi\Dtos\SearchAdditionalServiceType
+        product:
+            expose: true
+            access_type: public_method
+            serialized_name: Product
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProduct
+                setter: setProduct
+            type: Conecto\FeratelDsi\Dtos\SearchProductType

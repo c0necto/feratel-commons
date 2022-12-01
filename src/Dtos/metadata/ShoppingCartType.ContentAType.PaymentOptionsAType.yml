@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType:
+    properties:
+        calculatedBasketResult:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculatedBasketResult
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCalculatedBasketResult
+                setter: setCalculatedBasketResult
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType
+        possiblePaymentsMethods:
+            expose: true
+            access_type: public_method
+            serialized_name: PossiblePaymentsMethods
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPossiblePaymentsMethods
+                setter: setPossiblePaymentsMethods
+            type: array<Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\PossiblePaymentsMethodsAType\OptionAType>
+            xml_list:
+                inline: false
+                entry_name: Option
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

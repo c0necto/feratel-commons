@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType:
+    properties:
+        infrastructureItem:
+            expose: true
+            access_type: public_method
+            serialized_name: 'InfrastructureItem '
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getInfrastructureItem
+                setter: setInfrastructureItem
+            xml_list:
+                inline: true
+                entry_name: 'InfrastructureItem '
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType>

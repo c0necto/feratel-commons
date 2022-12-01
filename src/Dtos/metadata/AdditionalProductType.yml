@@ -1,0 +1,119 @@
+Conecto\FeratelDsi\Dtos\AdditionalProductType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        availability:
+            expose: true
+            access_type: public_method
+            serialized_name: Availability
+            accessor:
+                getter: getAvailability
+                setter: setAvailability
+            xml_attribute: true
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        bookable:
+            expose: true
+            access_type: public_method
+            serialized_name: Bookable
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookable
+                setter: setBookable
+            type: string
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\PricesType
+        startDay:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDay
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStartDay
+                setter: setStartDay
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        startTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartTime
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStartTime
+                setter: setStartTime
+            type: string
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: Conecto\FeratelDsi\Dtos\AdditionalProductType\DurationAType
+        minParticipants:
+            expose: true
+            access_type: public_method
+            serialized_name: MinParticipants
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMinParticipants
+                setter: setMinParticipants
+            type: int
+        settlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlerCode
+                setter: setSettlerCode
+            type: string
+        serviceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceId
+                setter: setServiceId
+            type: string

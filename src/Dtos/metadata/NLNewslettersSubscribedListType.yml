@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\NLNewslettersSubscribedListType:
+    properties:
+        newsletterSubscribed:
+            expose: true
+            access_type: public_method
+            serialized_name: NewsletterSubscribed
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNewsletterSubscribed
+                setter: setNewsletterSubscribed
+            xml_list:
+                inline: true
+                entry_name: NewsletterSubscribed
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\NLNewslettersSubscribedType>

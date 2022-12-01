@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDPackageCalculationType\BookingFeeAType:
+    properties:
+        included:
+            expose: true
+            access_type: public_method
+            serialized_name: Included
+            accessor:
+                getter: getIncluded
+                setter: setIncluded
+            xml_attribute: true
+            type: bool
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: float

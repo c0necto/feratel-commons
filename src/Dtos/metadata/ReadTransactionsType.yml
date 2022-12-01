@@ -1,0 +1,101 @@
+Conecto\FeratelDsi\Dtos\ReadTransactionsType:
+    properties:
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        dateType:
+            expose: true
+            access_type: public_method
+            serialized_name: DateType
+            accessor:
+                getter: getDateType
+                setter: setDateType
+            xml_attribute: true
+            type: string
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dbCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DbCode
+            accessor:
+                getter: getDbCode
+                setter: setDbCode
+            xml_attribute: true
+            type: string
+        dataOwner:
+            expose: true
+            access_type: public_method
+            serialized_name: DataOwner
+            accessor:
+                getter: getDataOwner
+                setter: setDataOwner
+            xml_attribute: true
+            type: string
+        guestEmail:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestEmail
+            accessor:
+                getter: getGuestEmail
+                setter: setGuestEmail
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        includePriceDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludePriceDetails
+            accessor:
+                getter: getIncludePriceDetails
+                setter: setIncludePriceDetails
+            xml_attribute: true
+            type: bool
+        includePaymentDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludePaymentDetails
+            accessor:
+                getter: getIncludePaymentDetails
+                setter: setIncludePaymentDetails
+            xml_attribute: true
+            type: bool
+        includeCancellationDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludeCancellationDetails
+            accessor:
+                getter: getIncludeCancellationDetails
+                setter: setIncludeCancellationDetails
+            xml_attribute: true
+            type: bool

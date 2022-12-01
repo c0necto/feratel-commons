@@ -1,0 +1,77 @@
+Conecto\FeratelDsi\Dtos\SPRequestType:
+    properties:
+        agentDutyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: AgentDutyCode
+            accessor:
+                getter: getAgentDutyCode
+                setter: setAgentDutyCode
+            xml_attribute: true
+            type: string
+        getRequestPoolList:
+            expose: true
+            access_type: public_method
+            serialized_name: GetRequestPoolList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGetRequestPoolList
+                setter: setGetRequestPoolList
+            type: Conecto\FeratelDsi\Dtos\SPRequestType\GetRequestPoolListAType
+        getRequestPoolDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: GetRequestPoolDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGetRequestPoolDetails
+                setter: setGetRequestPoolDetails
+            type: Conecto\FeratelDsi\Dtos\SPRequestType\GetRequestPoolDetailsAType
+        activateRequestPool:
+            expose: true
+            access_type: public_method
+            serialized_name: ActivateRequestPool
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getActivateRequestPool
+                setter: setActivateRequestPool
+            type: Conecto\FeratelDsi\Dtos\SPRequestType\ActivateRequestPoolAType
+        setRequestPoolStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: SetRequestPoolStatus
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSetRequestPoolStatus
+                setter: setSetRequestPoolStatus
+            type: Conecto\FeratelDsi\Dtos\SPRequestType\SetRequestPoolStatusAType
+        setEBModuleStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: SetEBModuleStatus
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSetEBModuleStatus
+                setter: setSetEBModuleStatus
+            type: Conecto\FeratelDsi\Dtos\SPRequestType\SetEBModuleStatusAType
+        checkEBModuleStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckEBModuleStatus
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCheckEBModuleStatus
+                setter: setCheckEBModuleStatus
+            type: Conecto\FeratelDsi\Dtos\SPRequestType\CheckEBModuleStatusAType

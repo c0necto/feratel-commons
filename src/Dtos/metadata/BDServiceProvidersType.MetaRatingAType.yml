@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\BDServiceProvidersType\MetaRatingAType:
+    properties:
+        checkMinAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckMinAmount
+            accessor:
+                getter: getCheckMinAmount
+                setter: setCheckMinAmount
+            xml_attribute: true
+            type: bool

@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\HandicapGlobalItemType:
+    properties:
+        global:
+            expose: true
+            access_type: public_method
+            serialized_name: Global
+            accessor:
+                getter: getGlobal
+                setter: setGlobal
+            xml_attribute: true
+            type: bool

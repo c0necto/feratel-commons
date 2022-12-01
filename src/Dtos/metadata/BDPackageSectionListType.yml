@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionListType:
+    properties:
+        section:
+            expose: true
+            access_type: public_method
+            serialized_name: Section
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSection
+                setter: setSection
+            xml_list:
+                inline: true
+                entry_name: Section
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPackageSectionItemType>

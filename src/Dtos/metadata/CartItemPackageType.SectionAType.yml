@@ -1,0 +1,56 @@
+Conecto\FeratelDsi\Dtos\CartItemPackageType\SectionAType:
+    properties:
+        sectionId:
+            expose: true
+            access_type: public_method
+            serialized_name: SectionId
+            accessor:
+                getter: getSectionId
+                setter: setSectionId
+            xml_attribute: true
+            type: string
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            xml_attribute: true
+            type: string
+        numberOfItems:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfItems
+            accessor:
+                getter: getNumberOfItems
+                setter: setNumberOfItems
+            xml_attribute: true
+            type: int
+        additionalNights:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalNights
+            accessor:
+                getter: getAdditionalNights
+                setter: setAdditionalNights
+            xml_attribute: true
+            type: int
+        adults:
+            expose: true
+            access_type: public_method
+            serialized_name: Adults
+            accessor:
+                getter: getAdults
+                setter: setAdults
+            xml_attribute: true
+            type: int
+        children:
+            expose: true
+            access_type: public_method
+            serialized_name: Children
+            accessor:
+                getter: getChildren
+                setter: setChildren
+            xml_attribute: true
+            type: string

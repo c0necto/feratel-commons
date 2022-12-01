@@ -1,0 +1,293 @@
+Conecto\FeratelDsi\Dtos\BookingDetailType:
+    properties:
+        weight:
+            expose: true
+            access_type: public_method
+            serialized_name: Weight
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getWeight
+                setter: setWeight
+            type: int
+        groupNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupNumber
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGroupNumber
+                setter: setGroupNumber
+            type: int
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getType
+                setter: setType
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            type: int
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dateTo:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDateTo
+                setter: setDateTo
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        timeFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeFrom
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTimeFrom
+                setter: setTimeFrom
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Time
+        timeTo:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeTo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTimeTo
+                setter: setTimeTo
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Time
+        unitNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: UnitNumber
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUnitNumber
+                setter: setUnitNumber
+            type: int
+        adultNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: AdultNumber
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdultNumber
+                setter: setAdultNumber
+            type: int
+        childrenNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildrenNumber
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildrenNumber
+                setter: setChildrenNumber
+            type: int
+        childrenAges:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildrenAges
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildrenAges
+                setter: setChildrenAges
+            type: string
+        serviceProviderId:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProviderId
+                setter: setServiceProviderId
+            type: string
+        serviceProviderName:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProviderName
+                setter: setServiceProviderName
+            type: string
+        serviceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceId
+                setter: setServiceId
+            type: string
+        serviceName:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceName
+                setter: setServiceName
+            type: string
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            type: string
+        productName:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProductName
+                setter: setProductName
+            type: string
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            type: Conecto\FeratelDsi\Dtos\BookingDetailType\PriceAType
+        mealType:
+            expose: true
+            access_type: public_method
+            serialized_name: MealType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMealType
+                setter: setMealType
+            type: string
+        vatAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: VatAmount
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVatAmount
+                setter: setVatAmount
+            type: Conecto\FeratelDsi\Dtos\BookingDetailType\VatAmountAType
+        paymentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentType
+                setter: setPaymentType
+            type: string
+        externalTransactionDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: ExternalTransactionDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getExternalTransactionDetails
+                setter: setExternalTransactionDetails
+            type: string
+        priceDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceDetails
+                setter: setPriceDetails
+            type: Conecto\FeratelDsi\Dtos\BookingPriceDetailsType
+        paymentDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentDetails
+                setter: setPaymentDetails
+            type: Conecto\FeratelDsi\Dtos\BookingPaymentDetailsType
+        cancellationDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationDetails
+                setter: setCancellationDetails
+            type: array<Conecto\FeratelDsi\Dtos\BookingCancellationInformationType>
+            xml_list:
+                inline: false
+                entry_name: CancellationInformation
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

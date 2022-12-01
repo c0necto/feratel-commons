@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\TransactionType\TypeAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        validUntil:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidUntil
+            accessor:
+                getter: getValidUntil
+                setter: setValidUntil
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

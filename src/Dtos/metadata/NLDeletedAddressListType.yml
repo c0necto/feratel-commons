@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\NLDeletedAddressListType:
+    properties:
+        deletedAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: DeletedAddress
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDeletedAddress
+                setter: setDeletedAddress
+            xml_list:
+                inline: true
+                entry_name: DeletedAddress
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\NLDeletedAddressType>

@@ -1,0 +1,101 @@
+Conecto\FeratelDsi\Dtos\RequestPoolListType\RequestPoolAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: Number
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            xml_attribute: true
+            type: int
+        lastName:
+            expose: true
+            access_type: public_method
+            serialized_name: LastName
+            accessor:
+                getter: getLastName
+                setter: setLastName
+            xml_attribute: true
+            type: string
+        firstName:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstName
+            accessor:
+                getter: getFirstName
+                setter: setFirstName
+            xml_attribute: true
+            type: string
+        createDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreateDate
+            accessor:
+                getter: getCreateDate
+                setter: setCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        arrivalDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ArrivalDate
+            accessor:
+                getter: getArrivalDate
+                setter: setArrivalDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        lengthOfStay:
+            expose: true
+            access_type: public_method
+            serialized_name: LengthOfStay
+            accessor:
+                getter: getLengthOfStay
+                setter: setLengthOfStay
+            xml_attribute: true
+            type: int
+        numAdults:
+            expose: true
+            access_type: public_method
+            serialized_name: NumAdults
+            accessor:
+                getter: getNumAdults
+                setter: setNumAdults
+            xml_attribute: true
+            type: int
+        numChildren:
+            expose: true
+            access_type: public_method
+            serialized_name: NumChildren
+            accessor:
+                getter: getNumChildren
+                setter: setNumChildren
+            xml_attribute: true
+            type: int
+        childrenAges:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildrenAges
+            accessor:
+                getter: getChildrenAges
+                setter: setChildrenAges
+            xml_attribute: true
+            type: string
+        guestComment:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestComment
+            accessor:
+                getter: getGuestComment
+                setter: setGuestComment
+            xml_attribute: true
+            type: string

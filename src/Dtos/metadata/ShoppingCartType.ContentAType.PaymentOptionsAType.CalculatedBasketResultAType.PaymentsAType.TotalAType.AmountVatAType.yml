@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\TotalAType\AmountVatAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: float
+            xml_element:
+                cdata: false
+        showVAT:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowVAT
+            accessor:
+                getter: getShowVAT
+                setter: setShowVAT
+            xml_attribute: true
+            type: bool

@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\BDPriceRangeType:
+    properties:
+        pax:
+            expose: true
+            access_type: public_method
+            serialized_name: Pax
+            accessor:
+                getter: getPax
+                setter: setPax
+            xml_attribute: true
+            type: int
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: float
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: float

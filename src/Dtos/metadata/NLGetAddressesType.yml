@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\NLGetAddressesType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        changedDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangedDate
+            accessor:
+                getter: getChangedDate
+                setter: setChangedDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        newsletter:
+            expose: true
+            access_type: public_method
+            serialized_name: Newsletter
+            accessor:
+                getter: getNewsletter
+                setter: setNewsletter
+            xml_attribute: true
+            type: string
+        responseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ResponseType
+            accessor:
+                getter: getResponseType
+                setter: setResponseType
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string

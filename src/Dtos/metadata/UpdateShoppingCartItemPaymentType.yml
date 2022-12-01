@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\UpdateShoppingCartItemPaymentType:
+    properties:
+        cartItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItemId
+            accessor:
+                getter: getCartItemId
+                setter: setCartItemId
+            xml_attribute: true
+            type: string
+        paymentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentType
+            accessor:
+                getter: getPaymentType
+                setter: setPaymentType
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string

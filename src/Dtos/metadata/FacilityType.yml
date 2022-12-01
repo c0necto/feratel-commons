@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\FacilityType:
+    properties:
+        groupID:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupID
+            accessor:
+                getter: getGroupID
+                setter: setGroupID
+            xml_attribute: true
+            type: string
+        valueType:
+            expose: true
+            access_type: public_method
+            serialized_name: ValueType
+            accessor:
+                getter: getValueType
+                setter: setValueType
+            xml_attribute: true
+            type: string

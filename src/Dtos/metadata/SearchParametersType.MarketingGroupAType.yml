@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\SearchParametersType\MarketingGroupAType:
+    properties:
+        logicalConnectionAND:
+            expose: true
+            access_type: public_method
+            serialized_name: LogicalConnectionAND
+            accessor:
+                getter: getLogicalConnectionAND
+                setter: setLogicalConnectionAND
+            xml_attribute: true
+            type: bool

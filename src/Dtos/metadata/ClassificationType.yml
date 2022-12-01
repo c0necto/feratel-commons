@@ -1,0 +1,54 @@
+Conecto\FeratelDsi\Dtos\ClassificationType:
+    properties:
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            accessor:
+                getter: getURL
+                setter: setURL
+            xml_attribute: true
+            type: string
+        global:
+            expose: true
+            access_type: public_method
+            serialized_name: Global
+            accessor:
+                getter: getGlobal
+                setter: setGlobal
+            xml_attribute: true
+            type: bool
+        showOnWeb:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowOnWeb
+            accessor:
+                getter: getShowOnWeb
+                setter: setShowOnWeb
+            xml_attribute: true
+            type: bool
+        descriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: Descriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescriptions
+                setter: setDescriptions
+            type: array<Conecto\FeratelDsi\Dtos\DescriptionType>
+            xml_list:
+                inline: false
+                entry_name: Description
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\AvailabilityCalendarListType:
+    properties:
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            xml_attribute: true
+            type: string
+        minStayFromArrivalDay:
+            expose: true
+            access_type: public_method
+            serialized_name: MinStayFromArrivalDay
+            accessor:
+                getter: getMinStayFromArrivalDay
+                setter: setMinStayFromArrivalDay
+            xml_attribute: true
+            type: bool
+        aV:
+            expose: true
+            access_type: public_method
+            serialized_name: AV
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAV
+                setter: setAV
+            xml_list:
+                inline: true
+                entry_name: AV
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<string>

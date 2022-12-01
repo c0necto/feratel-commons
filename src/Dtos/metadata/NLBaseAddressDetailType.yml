@@ -1,0 +1,233 @@
+Conecto\FeratelDsi\Dtos\NLBaseAddressDetailType:
+    properties:
+        eMail:
+            expose: true
+            access_type: public_method
+            serialized_name: EMail
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getEMail
+                setter: setEMail
+            type: string
+        eMail2:
+            expose: true
+            access_type: public_method
+            serialized_name: EMail2
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getEMail2
+                setter: setEMail2
+            type: string
+        sex:
+            expose: true
+            access_type: public_method
+            serialized_name: Sex
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSex
+                setter: setSex
+            type: string
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            type: string
+        firstName:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFirstName
+                setter: setFirstName
+            type: string
+        lastName:
+            expose: true
+            access_type: public_method
+            serialized_name: LastName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLastName
+                setter: setLastName
+            type: string
+        street:
+            expose: true
+            access_type: public_method
+            serialized_name: Street
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStreet
+                setter: setStreet
+            type: string
+        street2:
+            expose: true
+            access_type: public_method
+            serialized_name: Street2
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStreet2
+                setter: setStreet2
+            type: string
+        zipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ZipCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getZipCode
+                setter: setZipCode
+            type: string
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: City
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCity
+                setter: setCity
+            type: string
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            type: string
+        phone:
+            expose: true
+            access_type: public_method
+            serialized_name: Phone
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPhone
+                setter: setPhone
+            type: string
+        mobile:
+            expose: true
+            access_type: public_method
+            serialized_name: Mobile
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMobile
+                setter: setMobile
+            type: string
+        fax:
+            expose: true
+            access_type: public_method
+            serialized_name: Fax
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFax
+                setter: setFax
+            type: string
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string
+        companyName:
+            expose: true
+            access_type: public_method
+            serialized_name: CompanyName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCompanyName
+                setter: setCompanyName
+            type: string
+        function:
+            expose: true
+            access_type: public_method
+            serialized_name: Function
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFunction
+                setter: setFunction
+            type: string
+        birthday:
+            expose: true
+            access_type: public_method
+            serialized_name: Birthday
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBirthday
+                setter: setBirthday
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getType
+                setter: setType
+            type: string
+        memo:
+            expose: true
+            access_type: public_method
+            serialized_name: Memo
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMemo
+                setter: setMemo
+            type: string
+        contactType:
+            expose: true
+            access_type: public_method
+            serialized_name: ContactType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getContactType
+                setter: setContactType
+            type: string

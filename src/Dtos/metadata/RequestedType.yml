@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\RequestedType:
+    properties:
+        show:
+            expose: true
+            access_type: public_method
+            serialized_name: Show
+            accessor:
+                getter: getShow
+                setter: setShow
+            xml_attribute: true
+            type: bool
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string

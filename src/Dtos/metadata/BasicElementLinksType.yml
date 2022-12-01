@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\BasicElementLinksType:
+    properties:
+        includeTranslations:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludeTranslations
+            accessor:
+                getter: getIncludeTranslations
+                setter: setIncludeTranslations
+            xml_attribute: true
+            type: bool

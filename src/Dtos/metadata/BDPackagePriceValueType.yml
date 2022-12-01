@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\BDPackagePriceValueType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        ageFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: AgeFrom
+            accessor:
+                getter: getAgeFrom
+                setter: setAgeFrom
+            xml_attribute: true
+            type: int
+        ageTo:
+            expose: true
+            access_type: public_method
+            serialized_name: AgeTo
+            accessor:
+                getter: getAgeTo
+                setter: setAgeTo
+            xml_attribute: true
+            type: int
+        salesPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesPrice
+            accessor:
+                getter: getSalesPrice
+                setter: setSalesPrice
+            xml_attribute: true
+            type: float
+        additionalNight:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalNight
+            accessor:
+                getter: getAdditionalNight
+                setter: setAdditionalNight
+            xml_attribute: true
+            type: float

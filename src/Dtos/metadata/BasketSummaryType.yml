@@ -1,0 +1,90 @@
+Conecto\FeratelDsi\Dtos\BasketSummaryType:
+    properties:
+        cancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsurance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsurance
+                setter: setCancellationInsurance
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryFeePaymentType
+        bookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingFee
+                setter: setBookingFee
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryFeePaymentType
+        prePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrePayment
+                setter: setPrePayment
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryFinalPaymentType
+        finalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: FinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFinalPayment
+                setter: setFinalPayment
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryFinalPaymentType
+        sPPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: SPPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSPPayment
+                setter: setSPPayment
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryBasePaymentType
+        promotionCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPromotionCode
+                setter: setPromotionCode
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryPromotionCodeType
+        totalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalPayment
+                setter: setTotalPayment
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryTotalPaymentType
+        cancellationFee:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationFee
+                setter: setCancellationFee
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryBasePaymentType

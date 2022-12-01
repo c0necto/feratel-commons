@@ -1,0 +1,36 @@
+Conecto\FeratelDsi\Dtos\NLMarketingCodeValueType:
+    properties:
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        names:
+            expose: true
+            access_type: public_method
+            serialized_name: Names
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNames
+                setter: setNames
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

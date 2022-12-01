@@ -1,0 +1,57 @@
+Conecto\FeratelDsi\Dtos\BDAdditionalServicesType:
+    properties:
+        facilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Facilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFacilities
+                setter: setFacilities
+            type: Conecto\FeratelDsi\Dtos\BasicElementType
+        availabilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Availabilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAvailabilities
+                setter: setAvailabilities
+            type: Conecto\FeratelDsi\Dtos\BDAvailabilityType
+        handicapClassifications:
+            expose: true
+            access_type: public_method
+            serialized_name: HandicapClassifications
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHandicapClassifications
+                setter: setHandicapClassifications
+            type: Conecto\FeratelDsi\Dtos\BasicElementType
+        guestCards:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestCards
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGuestCards
+                setter: setGuestCards
+            type: Conecto\FeratelDsi\Dtos\BasicElementType
+        additionalProducts:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalProducts
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdditionalProducts
+                setter: setAdditionalProducts
+            type: Conecto\FeratelDsi\Dtos\BDAdditionalProductsType

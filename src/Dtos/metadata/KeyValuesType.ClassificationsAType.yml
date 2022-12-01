@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\KeyValuesType\ClassificationsAType:
+    properties:
+        includeDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludeDescription
+            accessor:
+                getter: getIncludeDescription
+                setter: setIncludeDescription
+            xml_attribute: true
+            type: bool

@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionDependencyType\DependencyRulesAType:
+    properties:
+        startDaysAfter:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDaysAfter
+            accessor:
+                getter: getStartDaysAfter
+                setter: setStartDaysAfter
+            xml_attribute: true
+            type: int
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        dependendSectionId:
+            expose: true
+            access_type: public_method
+            serialized_name: DependendSectionId
+            accessor:
+                getter: getDependendSectionId
+                setter: setDependendSectionId
+            xml_attribute: true
+            type: string

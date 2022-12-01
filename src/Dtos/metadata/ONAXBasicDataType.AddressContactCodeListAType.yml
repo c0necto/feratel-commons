@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\ONAXBasicDataType\AddressContactCodeListAType:
+    properties:
+        addressContactCode:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressContactCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddressContactCode
+                setter: setAddressContactCode
+            xml_list:
+                inline: true
+                entry_name: AddressContactCode
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ONAXAddressContactCodeItemType>

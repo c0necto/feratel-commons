@@ -1,0 +1,123 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        townId:
+            expose: true
+            access_type: public_method
+            serialized_name: TownId
+            accessor:
+                getter: getTownId
+                setter: setTownId
+            xml_attribute: true
+            type: string
+        townName:
+            expose: true
+            access_type: public_method
+            serialized_name: TownName
+            accessor:
+                getter: getTownName
+                setter: setTownName
+            xml_attribute: true
+            type: string
+        districtName:
+            expose: true
+            access_type: public_method
+            serialized_name: DistrictName
+            accessor:
+                getter: getDistrictName
+                setter: setDistrictName
+            xml_attribute: true
+            type: string
+        databaseCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DatabaseCode
+            accessor:
+                getter: getDatabaseCode
+                setter: setDatabaseCode
+            xml_attribute: true
+            type: string
+        settlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerCode
+            accessor:
+                getter: getSettlerCode
+                setter: setSettlerCode
+            xml_attribute: true
+            type: string
+        rating:
+            expose: true
+            access_type: public_method
+            serialized_name: Rating
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRating
+                setter: setRating
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderDataType\RatingAType
+        match:
+            expose: true
+            access_type: public_method
+            serialized_name: Match
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMatch
+                setter: setMatch
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderDataType\MatchAType
+        geoDistance:
+            expose: true
+            access_type: public_method
+            serialized_name: GeoDistance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGeoDistance
+                setter: setGeoDistance
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderDataType\GeoDistanceAType
+        services:
+            expose: true
+            access_type: public_method
+            serialized_name: Services
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServices
+                setter: setServices
+            type: array<Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType>
+            xml_list:
+                inline: false
+                entry_name: Service
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

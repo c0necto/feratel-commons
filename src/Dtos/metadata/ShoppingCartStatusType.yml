@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartStatusType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        transactionID:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionID
+            accessor:
+                getter: getTransactionID
+                setter: setTransactionID
+            xml_attribute: true
+            type: string

@@ -1,0 +1,131 @@
+Conecto\FeratelDsi\Dtos\BDSalesRuleTemplateType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        validFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidFrom
+            accessor:
+                getter: getValidFrom
+                setter: setValidFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        periods:
+            expose: true
+            access_type: public_method
+            serialized_name: Periods
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPeriods
+                setter: setPeriods
+            type: array<Conecto\FeratelDsi\Dtos\BDPeriodListType\PeriodAType>
+            xml_list:
+                inline: false
+                entry_name: Period
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        offerable:
+            expose: true
+            access_type: public_method
+            serialized_name: Offerable
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOfferable
+                setter: setOfferable
+            type: bool
+        bookable:
+            expose: true
+            access_type: public_method
+            serialized_name: Bookable
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookable
+                setter: setBookable
+            type: bool
+        bookOnRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: BookOnRequest
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookOnRequest
+                setter: setBookOnRequest
+            type: bool
+        useTATO:
+            expose: true
+            access_type: public_method
+            serialized_name: UseTATO
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUseTATO
+                setter: setUseTATO
+            type: bool
+        daysOfferStops:
+            expose: true
+            access_type: public_method
+            serialized_name: DaysOfferStops
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDaysOfferStops
+                setter: setDaysOfferStops
+            type: float
+        daysBookingStops:
+            expose: true
+            access_type: public_method
+            serialized_name: DaysBookingStops
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDaysBookingStops
+                setter: setDaysBookingStops
+            type: float
+        directPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: DirectPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDirectPayment
+                setter: setDirectPayment
+            type: Conecto\FeratelDsi\Dtos\DirectPaymentType

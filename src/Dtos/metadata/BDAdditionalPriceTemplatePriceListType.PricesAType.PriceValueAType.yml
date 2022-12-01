@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDAdditionalPriceTemplatePriceListType\PricesAType\PriceValueAType:
+    properties:
+        durationUnits:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationUnits
+            accessor:
+                getter: getDurationUnits
+                setter: setDurationUnits
+            xml_attribute: true
+            type: int
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            xml_attribute: true
+            type: float

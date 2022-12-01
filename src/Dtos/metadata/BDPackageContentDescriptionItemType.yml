@@ -1,0 +1,101 @@
+Conecto\FeratelDsi\Dtos\BDPackageContentDescriptionItemType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            xml_attribute: true
+            type: string
+        systems:
+            expose: true
+            access_type: public_method
+            serialized_name: Systems
+            accessor:
+                getter: getSystems
+                setter: setSystems
+            xml_attribute: true
+            type: string
+        systemId:
+            expose: true
+            access_type: public_method
+            serialized_name: SystemId
+            accessor:
+                getter: getSystemId
+                setter: setSystemId
+            xml_attribute: true
+            type: string
+        showFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowFrom
+            accessor:
+                getter: getShowFrom
+                setter: setShowFrom
+            xml_attribute: true
+            type: int
+        showTo:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowTo
+            accessor:
+                getter: getShowTo
+                setter: setShowTo
+            xml_attribute: true
+            type: int
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        introText:
+            expose: true
+            access_type: public_method
+            serialized_name: IntroText
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getIntroText
+                setter: setIntroText
+            type: string
+        items:
+            expose: true
+            access_type: public_method
+            serialized_name: Items
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getItems
+                setter: setItems
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

@@ -1,0 +1,104 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCode
+                setter: setCode
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        townName:
+            expose: true
+            access_type: public_method
+            serialized_name: TownName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTownName
+                setter: setTownName
+            type: string
+        districtName:
+            expose: true
+            access_type: public_method
+            serialized_name: DistrictName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDistrictName
+                setter: setDistrictName
+            type: string
+        rating:
+            expose: true
+            access_type: public_method
+            serialized_name: Rating
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRating
+                setter: setRating
+            type: Conecto\FeratelDsi\Dtos\RatingType
+        products:
+            expose: true
+            access_type: public_method
+            serialized_name: Products
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProducts
+                setter: setProducts
+            type: array<Conecto\FeratelDsi\Dtos\ProductType>
+            xml_list:
+                inline: false
+                entry_name: Product
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        additionalServices:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalServices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdditionalServices
+                setter: setAdditionalServices
+            type: Conecto\FeratelDsi\Dtos\AdditionalServicesType
+        databaseCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DatabaseCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDatabaseCode
+                setter: setDatabaseCode
+            type: string

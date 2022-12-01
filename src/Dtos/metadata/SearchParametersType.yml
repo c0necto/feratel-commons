@@ -1,0 +1,339 @@
+Conecto\FeratelDsi\Dtos\SearchParametersType:
+    properties:
+        units:
+            expose: true
+            access_type: public_method
+            serialized_name: Units
+            accessor:
+                getter: getUnits
+                setter: setUnits
+            xml_attribute: true
+            type: int
+        nights:
+            expose: true
+            access_type: public_method
+            serialized_name: Nights
+            accessor:
+                getter: getNights
+                setter: setNights
+            xml_attribute: true
+            type: int
+        adults:
+            expose: true
+            access_type: public_method
+            serialized_name: Adults
+            accessor:
+                getter: getAdults
+                setter: setAdults
+            xml_attribute: true
+            type: int
+        index:
+            expose: true
+            access_type: public_method
+            serialized_name: Index
+            accessor:
+                getter: getIndex
+                setter: setIndex
+            xml_attribute: true
+            type: int
+        salesChannel:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannel
+            accessor:
+                getter: getSalesChannel
+                setter: setSalesChannel
+            xml_attribute: true
+            type: string
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        multilineSearchCondition:
+            expose: true
+            access_type: public_method
+            serialized_name: MultilineSearchCondition
+            accessor:
+                getter: getMultilineSearchCondition
+                setter: setMultilineSearchCondition
+            xml_attribute: true
+            type: string
+        lastMinuteOnly:
+            expose: true
+            access_type: public_method
+            serialized_name: LastMinuteOnly
+            accessor:
+                getter: getLastMinuteOnly
+                setter: setLastMinuteOnly
+            xml_attribute: true
+            type: bool
+        splitOffersOnly:
+            expose: true
+            access_type: public_method
+            serialized_name: SplitOffersOnly
+            accessor:
+                getter: getSplitOffersOnly
+                setter: setSplitOffersOnly
+            xml_attribute: true
+            type: bool
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            xml_attribute: true
+            type: int
+        preSelectedServiceProviderIDs:
+            expose: true
+            access_type: public_method
+            serialized_name: PreSelectedServiceProviderIDs
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPreSelectedServiceProviderIDs
+                setter: setPreSelectedServiceProviderIDs
+            type: array<Conecto\FeratelDsi\Dtos\GuidListType\ItemAType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProvider
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProvider
+                setter: setServiceProvider
+            type: Conecto\FeratelDsi\Dtos\SearchServiceProviderType
+        children:
+            expose: true
+            access_type: public_method
+            serialized_name: Children
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildren
+                setter: setChildren
+            type: string
+        meal:
+            expose: true
+            access_type: public_method
+            serialized_name: Meal
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMeal
+                setter: setMeal
+            type: string
+        maxPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMaxPrice
+                setter: setMaxPrice
+            type: float
+        minPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: MinPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMinPrice
+                setter: setMinPrice
+            type: float
+        bookOnly:
+            expose: true
+            access_type: public_method
+            serialized_name: BookOnly
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookOnly
+                setter: setBookOnly
+            type: Conecto\FeratelDsi\Dtos\BookOnlyType
+        accommodationFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: AccommodationFacility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAccommodationFacility
+                setter: setAccommodationFacility
+            type: array<Conecto\FeratelDsi\Dtos\SearchParametersType\AccommodationFacilityAType\ItemAType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceFacility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceFacility
+                setter: setServiceFacility
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        category:
+            expose: true
+            access_type: public_method
+            serialized_name: Category
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCategory
+                setter: setCategory
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        stars:
+            expose: true
+            access_type: public_method
+            serialized_name: Stars
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStars
+                setter: setStars
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        chain:
+            expose: true
+            access_type: public_method
+            serialized_name: Chain
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChain
+                setter: setChain
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        marketingGroup:
+            expose: true
+            access_type: public_method
+            serialized_name: MarketingGroup
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMarketingGroup
+                setter: setMarketingGroup
+            type: Conecto\FeratelDsi\Dtos\SearchParametersType\MarketingGroupAType
+        classification:
+            expose: true
+            access_type: public_method
+            serialized_name: Classification
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getClassification
+                setter: setClassification
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        hotSpot:
+            expose: true
+            access_type: public_method
+            serialized_name: HotSpot
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHotSpot
+                setter: setHotSpot
+            type: Conecto\FeratelDsi\Dtos\HotSpotSearchItemType
+        accommodationHandicapFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: AccommodationHandicapFacility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAccommodationHandicapFacility
+                setter: setAccommodationHandicapFacility
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        packageContainer:
+            expose: true
+            access_type: public_method
+            serialized_name: PackageContainer
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPackageContainer
+                setter: setPackageContainer
+            type: Conecto\FeratelDsi\Dtos\SearchParametersType\PackageContainerAType
+        totalPriceFilter:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalPriceFilter
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalPriceFilter
+                setter: setTotalPriceFilter
+            type: Conecto\FeratelDsi\Dtos\SearchParametersType\TotalPriceFilterAType

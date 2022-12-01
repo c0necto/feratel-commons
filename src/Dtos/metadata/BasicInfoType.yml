@@ -1,0 +1,46 @@
+Conecto\FeratelDsi\Dtos\BasicInfoType:
+    properties:
+        details:
+            expose: true
+            access_type: public_method
+            serialized_name: Details
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDetails
+                setter: setDetails
+            type: Conecto\FeratelDsi\Dtos\BasicInfoType\DetailsAType
+        documents:
+            expose: true
+            access_type: public_method
+            serialized_name: Documents
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDocuments
+                setter: setDocuments
+            type: Conecto\FeratelDsi\Dtos\BasicSystemDocumentElementType
+        descriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: Descriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescriptions
+                setter: setDescriptions
+            type: Conecto\FeratelDsi\Dtos\BDDescriptionsFilterType
+        links:
+            expose: true
+            access_type: public_method
+            serialized_name: Links
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLinks
+                setter: setLinks
+            type: Conecto\FeratelDsi\Dtos\BasicElementLinksType

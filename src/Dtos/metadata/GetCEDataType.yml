@@ -1,0 +1,36 @@
+Conecto\FeratelDsi\Dtos\GetCEDataType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        cECode:
+            expose: true
+            access_type: public_method
+            serialized_name: CECode
+            accessor:
+                getter: getCECode
+                setter: setCECode
+            xml_attribute: true
+            type: string
+        languages:
+            expose: true
+            access_type: public_method
+            serialized_name: Languages
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLanguages
+                setter: setLanguages
+            type: array<Conecto\FeratelDsi\Dtos\LanguageType>
+            xml_list:
+                inline: false
+                entry_name: Language
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

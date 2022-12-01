@@ -1,0 +1,138 @@
+Conecto\FeratelDsi\Dtos\BDRatingItemType:
+    properties:
+        points:
+            expose: true
+            access_type: public_method
+            serialized_name: Points
+            accessor:
+                getter: getPoints
+                setter: setPoints
+            xml_attribute: true
+            type: float
+        satisfaction:
+            expose: true
+            access_type: public_method
+            serialized_name: Satisfaction
+            accessor:
+                getter: getSatisfaction
+                setter: setSatisfaction
+            xml_attribute: true
+            type: int
+        recommended:
+            expose: true
+            access_type: public_method
+            serialized_name: Recommended
+            accessor:
+                getter: getRecommended
+                setter: setRecommended
+            xml_attribute: true
+            type: int
+        nickname:
+            expose: true
+            access_type: public_method
+            serialized_name: Nickname
+            accessor:
+                getter: getNickname
+                setter: setNickname
+            xml_attribute: true
+            type: string
+        visitorTypeID:
+            expose: true
+            access_type: public_method
+            serialized_name: VisitorTypeID
+            accessor:
+                getter: getVisitorTypeID
+                setter: setVisitorTypeID
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        createDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreateDate
+            accessor:
+                getter: getCreateDate
+                setter: setCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        travelMonth:
+            expose: true
+            access_type: public_method
+            serialized_name: TravelMonth
+            accessor:
+                getter: getTravelMonth
+                setter: setTravelMonth
+            xml_attribute: true
+            type: int
+        travelYear:
+            expose: true
+            access_type: public_method
+            serialized_name: TravelYear
+            accessor:
+                getter: getTravelYear
+                setter: setTravelYear
+            xml_attribute: true
+            type: int
+        userComment:
+            expose: true
+            access_type: public_method
+            serialized_name: UserComment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUserComment
+                setter: setUserComment
+            type: string
+        parentComment:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentComment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getParentComment
+                setter: setParentComment
+            type: string
+        answer:
+            expose: true
+            access_type: public_method
+            serialized_name: Answer
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAnswer
+                setter: setAnswer
+            xml_list:
+                inline: true
+                entry_name: Answer
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDRatingAnswerItemType>

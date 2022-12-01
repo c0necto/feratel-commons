@@ -1,0 +1,71 @@
+Conecto\FeratelDsi\Dtos\BDVariationDetailsType:
+    properties:
+        stock:
+            expose: true
+            access_type: public_method
+            serialized_name: Stock
+            accessor:
+                getter: getStock
+                setter: setStock
+            xml_attribute: true
+            type: int
+        names:
+            expose: true
+            access_type: public_method
+            serialized_name: Names
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNames
+                setter: setNames
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCode
+                setter: setCode
+            type: string
+        weight:
+            expose: true
+            access_type: public_method
+            serialized_name: Weight
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getWeight
+                setter: setWeight
+            type: int
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            type: float

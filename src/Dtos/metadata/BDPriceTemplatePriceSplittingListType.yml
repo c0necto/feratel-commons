@@ -1,0 +1,53 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceSplittingListType:
+    properties:
+        fromDiscounts:
+            expose: true
+            access_type: public_method
+            serialized_name: FromDiscounts
+            accessor:
+                getter: getFromDiscounts
+                setter: setFromDiscounts
+            xml_attribute: true
+            type: bool
+        fromMeals:
+            expose: true
+            access_type: public_method
+            serialized_name: FromMeals
+            accessor:
+                getter: getFromMeals
+                setter: setFromMeals
+            xml_attribute: true
+            type: bool
+        fromExtras:
+            expose: true
+            access_type: public_method
+            serialized_name: FromExtras
+            accessor:
+                getter: getFromExtras
+                setter: setFromExtras
+            xml_attribute: true
+            type: bool
+        fromChildPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: FromChildPrice
+            accessor:
+                getter: getFromChildPrice
+                setter: setFromChildPrice
+            xml_attribute: true
+            type: bool
+        priceSplitting:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceSplitting
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceSplitting
+                setter: setPriceSplitting
+            xml_list:
+                inline: true
+                entry_name: PriceSplitting
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceSplittingListType\PriceSplittingAType>

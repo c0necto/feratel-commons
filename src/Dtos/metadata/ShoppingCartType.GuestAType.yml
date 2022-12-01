@@ -1,0 +1,44 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\GuestAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        wishNotes:
+            expose: true
+            access_type: public_method
+            serialized_name: WishNotes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getWishNotes
+                setter: setWishNotes
+            type: string
+        accompaniedBy:
+            expose: true
+            access_type: public_method
+            serialized_name: AccompaniedBy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAccompaniedBy
+                setter: setAccompaniedBy
+            type: string
+        notes:
+            expose: true
+            access_type: public_method
+            serialized_name: Notes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNotes
+                setter: setNotes
+            type: string

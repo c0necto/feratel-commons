@@ -1,0 +1,74 @@
+Conecto\FeratelDsi\Dtos\ElectronicPaymentCheckOutTypeRQType:
+    properties:
+        shoppingCartId:
+            expose: true
+            access_type: public_method
+            serialized_name: ShoppingCartId
+            accessor:
+                getter: getShoppingCartId
+                setter: setShoppingCartId
+            xml_attribute: true
+            type: string
+        userId:
+            expose: true
+            access_type: public_method
+            serialized_name: UserId
+            accessor:
+                getter: getUserId
+                setter: setUserId
+            xml_attribute: true
+            type: string
+        linkKey:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkKey
+            accessor:
+                getter: getLinkKey
+                setter: setLinkKey
+            xml_attribute: true
+            type: string
+        websiteURL:
+            expose: true
+            access_type: public_method
+            serialized_name: WebsiteURL
+            accessor:
+                getter: getWebsiteURL
+                setter: setWebsiteURL
+            xml_attribute: true
+            type: string
+        cancelURL:
+            expose: true
+            access_type: public_method
+            serialized_name: CancelURL
+            accessor:
+                getter: getCancelURL
+                setter: setCancelURL
+            xml_attribute: true
+            type: string
+        paymentMethods:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentMethods
+            accessor:
+                getter: getPaymentMethods
+                setter: setPaymentMethods
+            xml_attribute: true
+            type: string
+        commissionFromSP:
+            expose: true
+            access_type: public_method
+            serialized_name: CommissionFromSP
+            accessor:
+                getter: getCommissionFromSP
+                setter: setCommissionFromSP
+            xml_attribute: true
+            type: string
+        commissionToPOS:
+            expose: true
+            access_type: public_method
+            serialized_name: CommissionToPOS
+            accessor:
+                getter: getCommissionToPOS
+                setter: setCommissionToPOS
+            xml_attribute: true
+            type: string

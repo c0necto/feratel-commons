@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\NLBaseNewslettersManageResponseType:
+    properties:
+        addressId:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressId
+            accessor:
+                getter: getAddressId
+                setter: setAddressId
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: int
+        message:
+            expose: true
+            access_type: public_method
+            serialized_name: Message
+            accessor:
+                getter: getMessage
+                setter: setMessage
+            xml_attribute: true
+            type: string

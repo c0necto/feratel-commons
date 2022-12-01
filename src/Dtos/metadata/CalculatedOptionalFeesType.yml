@@ -1,0 +1,39 @@
+Conecto\FeratelDsi\Dtos\CalculatedOptionalFeesType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            xml_attribute: true
+            type: string
+        cancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsurance
+            accessor:
+                getter: getCancellationInsurance
+                setter: setCancellationInsurance
+            xml_attribute: true
+            type: float
+        bookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFee
+            accessor:
+                getter: getBookingFee
+                setter: setBookingFee
+            xml_attribute: true
+            type: float

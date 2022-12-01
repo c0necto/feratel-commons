@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\RPOffersListType:
+    properties:
+        offer:
+            expose: true
+            access_type: public_method
+            serialized_name: Offer
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOffer
+                setter: setOffer
+            xml_list:
+                inline: true
+                entry_name: Offer
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\RPOfferType>

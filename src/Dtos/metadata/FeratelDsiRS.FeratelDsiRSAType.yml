@@ -1,0 +1,62 @@
+Conecto\FeratelDsi\Dtos\FeratelDsiRS\FeratelDsiRSAType:
+    properties:
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: int
+        message:
+            expose: true
+            access_type: public_method
+            serialized_name: Message
+            accessor:
+                getter: getMessage
+                setter: setMessage
+            xml_attribute: true
+            type: string
+        result:
+            expose: true
+            access_type: public_method
+            serialized_name: Result
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getResult
+                setter: setResult
+            xml_list:
+                inline: true
+                entry_name: Result
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ResponseType>
+        mappingResult:
+            expose: true
+            access_type: public_method
+            serialized_name: MappingResult
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMappingResult
+                setter: setMappingResult
+            type: array<Conecto\FeratelDsi\Dtos\MappingResponseType\ServiceProviderAType>
+            xml_list:
+                inline: false
+                entry_name: ServiceProvider
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        sPResult:
+            expose: true
+            access_type: public_method
+            serialized_name: SPResult
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSPResult
+                setter: setSPResult
+            type: Conecto\FeratelDsi\Dtos\SPResponseType

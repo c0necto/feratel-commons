@@ -1,0 +1,24 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType:
+    properties:
+        cartItems:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItems
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItems
+                setter: setCartItems
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType
+        paymentOptions:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentOptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentOptions
+                setter: setPaymentOptions
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType

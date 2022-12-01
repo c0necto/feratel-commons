@@ -1,0 +1,22 @@
+Conecto\FeratelDsi\Dtos\BDGapPriceTemplatesListType:
+    properties:
+        useProductPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: UseProductPrice
+            accessor:
+                getter: getUseProductPrice
+                setter: setUseProductPrice
+            xml_attribute: true
+            type: bool
+        priceTemplate:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceTemplate
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceTemplate
+                setter: setPriceTemplate
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplateType

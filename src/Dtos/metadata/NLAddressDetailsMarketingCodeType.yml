@@ -1,0 +1,26 @@
+Conecto\FeratelDsi\Dtos\NLAddressDetailsMarketingCodeType:
+    properties:
+        groupCode:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupCode
+            accessor:
+                getter: getGroupCode
+                setter: setGroupCode
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_list:
+                inline: true
+                entry_name: Code
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<string>

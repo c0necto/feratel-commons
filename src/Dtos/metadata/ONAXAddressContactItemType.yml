@@ -1,0 +1,182 @@
+Conecto\FeratelDsi\Dtos\ONAXAddressContactItemType:
+    properties:
+        adcIdentity:
+            expose: true
+            access_type: public_method
+            serialized_name: adcIdentity
+            accessor:
+                getter: getAdcIdentity
+                setter: setAdcIdentity
+            xml_attribute: true
+            type: string
+        adcAddressID:
+            expose: true
+            access_type: public_method
+            serialized_name: adcAddressID
+            accessor:
+                getter: getAdcAddressID
+                setter: setAdcAddressID
+            xml_attribute: true
+            type: string
+        adcLanguage:
+            expose: true
+            access_type: public_method
+            serialized_name: adcLanguage
+            accessor:
+                getter: getAdcLanguage
+                setter: setAdcLanguage
+            xml_attribute: true
+            type: string
+        adcTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: adcTitle
+            accessor:
+                getter: getAdcTitle
+                setter: setAdcTitle
+            xml_attribute: true
+            type: string
+        adcFirstName:
+            expose: true
+            access_type: public_method
+            serialized_name: adcFirstName
+            accessor:
+                getter: getAdcFirstName
+                setter: setAdcFirstName
+            xml_attribute: true
+            type: string
+        adcLastName:
+            expose: true
+            access_type: public_method
+            serialized_name: adcLastName
+            accessor:
+                getter: getAdcLastName
+                setter: setAdcLastName
+            xml_attribute: true
+            type: string
+        adcSalutation:
+            expose: true
+            access_type: public_method
+            serialized_name: adcSalutation
+            accessor:
+                getter: getAdcSalutation
+                setter: setAdcSalutation
+            xml_attribute: true
+            type: string
+        adcPhone:
+            expose: true
+            access_type: public_method
+            serialized_name: adcPhone
+            accessor:
+                getter: getAdcPhone
+                setter: setAdcPhone
+            xml_attribute: true
+            type: string
+        adcFax:
+            expose: true
+            access_type: public_method
+            serialized_name: adcFax
+            accessor:
+                getter: getAdcFax
+                setter: setAdcFax
+            xml_attribute: true
+            type: string
+        adcMobile:
+            expose: true
+            access_type: public_method
+            serialized_name: adcMobile
+            accessor:
+                getter: getAdcMobile
+                setter: setAdcMobile
+            xml_attribute: true
+            type: string
+        adcEMail:
+            expose: true
+            access_type: public_method
+            serialized_name: adcEMail
+            accessor:
+                getter: getAdcEMail
+                setter: setAdcEMail
+            xml_attribute: true
+            type: string
+        adcEMail2:
+            expose: true
+            access_type: public_method
+            serialized_name: adcEMail2
+            accessor:
+                getter: getAdcEMail2
+                setter: setAdcEMail2
+            xml_attribute: true
+            type: string
+        adcURL:
+            expose: true
+            access_type: public_method
+            serialized_name: adcURL
+            accessor:
+                getter: getAdcURL
+                setter: setAdcURL
+            xml_attribute: true
+            type: string
+        adcCommunication:
+            expose: true
+            access_type: public_method
+            serialized_name: adcCommunication
+            accessor:
+                getter: getAdcCommunication
+                setter: setAdcCommunication
+            xml_attribute: true
+            type: int
+        adcBirthday:
+            expose: true
+            access_type: public_method
+            serialized_name: adcBirthday
+            accessor:
+                getter: getAdcBirthday
+                setter: setAdcBirthday
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        adcMemo:
+            expose: true
+            access_type: public_method
+            serialized_name: adcMemo
+            accessor:
+                getter: getAdcMemo
+                setter: setAdcMemo
+            xml_attribute: true
+            type: string
+        adcDefault:
+            expose: true
+            access_type: public_method
+            serialized_name: adcDefault
+            accessor:
+                getter: getAdcDefault
+                setter: setAdcDefault
+            xml_attribute: true
+            type: int
+        adcCreateDate:
+            expose: true
+            access_type: public_method
+            serialized_name: adcCreateDate
+            accessor:
+                getter: getAdcCreateDate
+                setter: setAdcCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        adcChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: adcChangeDate
+            accessor:
+                getter: getAdcChangeDate
+                setter: setAdcChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        adcLoginID:
+            expose: true
+            access_type: public_method
+            serialized_name: adcLoginID
+            accessor:
+                getter: getAdcLoginID
+                setter: setAdcLoginID
+            xml_attribute: true
+            type: string

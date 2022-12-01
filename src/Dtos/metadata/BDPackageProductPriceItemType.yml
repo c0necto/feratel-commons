@@ -1,0 +1,71 @@
+Conecto\FeratelDsi\Dtos\BDPackageProductPriceItemType:
+    properties:
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dateTo:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTo
+            accessor:
+                getter: getDateTo
+                setter: setDateTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        categoryId:
+            expose: true
+            access_type: public_method
+            serialized_name: CategoryId
+            accessor:
+                getter: getCategoryId
+                setter: setCategoryId
+            xml_attribute: true
+            type: string
+        salesPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesPrice
+            accessor:
+                getter: getSalesPrice
+                setter: setSalesPrice
+            xml_attribute: true
+            type: float
+        additionalNight:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalNight
+            accessor:
+                getter: getAdditionalNight
+                setter: setAdditionalNight
+            xml_attribute: true
+            type: float
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            xml_attribute: true
+            type: int
+        priceValue:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceValue
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceValue
+                setter: setPriceValue
+            xml_list:
+                inline: true
+                entry_name: PriceValue
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPackagePriceValueType>

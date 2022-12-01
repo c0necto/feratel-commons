@@ -1,0 +1,28 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionValidPersonGroupsType:
+    properties:
+        adult:
+            expose: true
+            access_type: public_method
+            serialized_name: Adult
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdult
+                setter: setAdult
+            type: Conecto\FeratelDsi\Dtos\BDPackageSectionValidPersonGroupsType\AdultAType
+        child:
+            expose: true
+            access_type: public_method
+            serialized_name: Child
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChild
+                setter: setChild
+            xml_list:
+                inline: true
+                entry_name: Child
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPackageSectionValidPersonGroupsType\ChildAType>

@@ -1,0 +1,40 @@
+Conecto\FeratelDsi\Dtos\PackagesSearchType:
+    properties:
+        startIndex:
+            expose: true
+            access_type: public_method
+            serialized_name: StartIndex
+            accessor:
+                getter: getStartIndex
+                setter: setStartIndex
+            xml_attribute: true
+            type: int
+        pageSize:
+            expose: true
+            access_type: public_method
+            serialized_name: PageSize
+            accessor:
+                getter: getPageSize
+                setter: setPageSize
+            xml_attribute: true
+            type: int
+        sortOrder:
+            expose: true
+            access_type: public_method
+            serialized_name: SortOrder
+            accessor:
+                getter: getSortOrder
+                setter: setSortOrder
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\SimpleListOf<string>
+        searchParameters:
+            expose: true
+            access_type: public_method
+            serialized_name: SearchParameters
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSearchParameters
+                setter: setSearchParameters
+            type: Conecto\FeratelDsi\Dtos\SearchPackageParametersType

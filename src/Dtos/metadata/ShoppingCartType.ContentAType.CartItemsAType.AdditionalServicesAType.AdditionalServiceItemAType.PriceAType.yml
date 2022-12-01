@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\AdditionalServicesAType\AdditionalServiceItemAType\PriceAType:
+    properties:
+        totalPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalPrice
+                setter: setTotalPrice
+            type: float
+        isBestPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBestPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getIsBestPrice
+                setter: setIsBestPrice
+            type: bool
+        basePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: BasePrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBasePrice
+                setter: setBasePrice
+            type: float

@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\PackageDetailsAssignmentItemType\PriceAType\TotalAType:
+    properties:
+        additionalNight:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalNight
+            accessor:
+                getter: getAdditionalNight
+                setter: setAdditionalNight
+            xml_attribute: true
+            type: float
+        adult:
+            expose: true
+            access_type: public_method
+            serialized_name: Adult
+            accessor:
+                getter: getAdult
+                setter: setAdult
+            xml_attribute: true
+            type: float
+        children:
+            expose: true
+            access_type: public_method
+            serialized_name: Children
+            accessor:
+                getter: getChildren
+                setter: setChildren
+            xml_attribute: true
+            type: float
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            xml_attribute: true
+            type: float

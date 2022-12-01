@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType\CheckInOutTimesAType:
+    properties:
+        checkInFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckInFrom
+            accessor:
+                getter: getCheckInFrom
+                setter: setCheckInFrom
+            xml_attribute: true
+            type: string
+        checkInTo:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckInTo
+            accessor:
+                getter: getCheckInTo
+                setter: setCheckInTo
+            xml_attribute: true
+            type: string
+        checkOutFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckOutFrom
+            accessor:
+                getter: getCheckOutFrom
+                setter: setCheckOutFrom
+            xml_attribute: true
+            type: string
+        checkOutTo:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckOutTo
+            accessor:
+                getter: getCheckOutTo
+                setter: setCheckOutTo
+            xml_attribute: true
+            type: string

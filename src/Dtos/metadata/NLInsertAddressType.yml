@@ -1,0 +1,34 @@
+Conecto\FeratelDsi\Dtos\NLInsertAddressType:
+    properties:
+        holidayThemes:
+            expose: true
+            access_type: public_method
+            serialized_name: HolidayThemes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHolidayThemes
+                setter: setHolidayThemes
+            type: array<Conecto\FeratelDsi\Dtos\NLHolidayThemeType>
+            xml_list:
+                inline: false
+                entry_name: HolidayTheme
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        marketingCodes:
+            expose: true
+            access_type: public_method
+            serialized_name: MarketingCodes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMarketingCodes
+                setter: setMarketingCodes
+            type: array<Conecto\FeratelDsi\Dtos\NLAddressDetailsMarketingCodeType>
+            xml_list:
+                inline: false
+                entry_name: MarketingCode
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

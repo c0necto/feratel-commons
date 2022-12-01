@@ -1,0 +1,24 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionsProductsType:
+    properties:
+        availabilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Availabilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAvailabilities
+                setter: setAvailabilities
+            type: Conecto\FeratelDsi\Dtos\BasicElementType
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\BasicElementType

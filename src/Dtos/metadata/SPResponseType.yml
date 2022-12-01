@@ -1,0 +1,40 @@
+Conecto\FeratelDsi\Dtos\SPResponseType:
+    properties:
+        requestPoolList:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestPoolList
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRequestPoolList
+                setter: setRequestPoolList
+            type: array<Conecto\FeratelDsi\Dtos\RequestPoolListType\RequestPoolAType>
+            xml_list:
+                inline: false
+                entry_name: RequestPool
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        requestPoolDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestPoolDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRequestPoolDetails
+                setter: setRequestPoolDetails
+            type: Conecto\FeratelDsi\Dtos\RequestPoolDetailsType
+        eBModuleStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: EBModuleStatus
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getEBModuleStatus
+                setter: setEBModuleStatus
+            type: Conecto\FeratelDsi\Dtos\EBModuleStatusType

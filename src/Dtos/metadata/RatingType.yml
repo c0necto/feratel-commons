@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\RatingType:
+    properties:
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: float
+        totalRatings:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalRatings
+            accessor:
+                getter: getTotalRatings
+                setter: setTotalRatings
+            xml_attribute: true
+            type: int
+        recommended:
+            expose: true
+            access_type: public_method
+            serialized_name: Recommended
+            accessor:
+                getter: getRecommended
+                setter: setRecommended
+            xml_attribute: true
+            type: int
+        satisfaction:
+            expose: true
+            access_type: public_method
+            serialized_name: Satisfaction
+            accessor:
+                getter: getSatisfaction
+                setter: setSatisfaction
+            xml_attribute: true
+            type: float
+        contentScore:
+            expose: true
+            access_type: public_method
+            serialized_name: ContentScore
+            accessor:
+                getter: getContentScore
+                setter: setContentScore
+            xml_attribute: true
+            type: float

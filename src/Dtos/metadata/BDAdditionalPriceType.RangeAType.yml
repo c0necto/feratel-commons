@@ -1,0 +1,56 @@
+Conecto\FeratelDsi\Dtos\BDAdditionalPriceType\RangeAType:
+    properties:
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: float
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: float
+        average:
+            expose: true
+            access_type: public_method
+            serialized_name: Average
+            accessor:
+                getter: getAverage
+                setter: setAverage
+            xml_attribute: true
+            type: float
+        insteadFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: InsteadFrom
+            accessor:
+                getter: getInsteadFrom
+                setter: setInsteadFrom
+            xml_attribute: true
+            type: float
+        insteadTo:
+            expose: true
+            access_type: public_method
+            serialized_name: InsteadTo
+            accessor:
+                getter: getInsteadTo
+                setter: setInsteadTo
+            xml_attribute: true
+            type: float
+        insteadAverage:
+            expose: true
+            access_type: public_method
+            serialized_name: InsteadAverage
+            accessor:
+                getter: getInsteadAverage
+                setter: setInsteadAverage
+            xml_attribute: true
+            type: float

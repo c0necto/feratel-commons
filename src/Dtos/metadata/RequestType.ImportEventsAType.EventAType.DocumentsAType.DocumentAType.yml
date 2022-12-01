@@ -1,0 +1,67 @@
+Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DocumentsAType\DocumentAType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        class:
+            expose: true
+            access_type: public_method
+            serialized_name: Class
+            accessor:
+                getter: getClass
+                setter: setClass
+            xml_attribute: true
+            type: string
+        extension:
+            expose: true
+            access_type: public_method
+            serialized_name: Extension
+            accessor:
+                getter: getExtension
+                setter: setExtension
+            xml_attribute: true
+            type: string
+        size:
+            expose: true
+            access_type: public_method
+            serialized_name: Size
+            accessor:
+                getter: getSize
+                setter: setSize
+            xml_attribute: true
+            type: int
+        copyright:
+            expose: true
+            access_type: public_method
+            serialized_name: Copyright
+            accessor:
+                getter: getCopyright
+                setter: setCopyright
+            xml_attribute: true
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string

@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\CheckEffectUserType:
+    properties:
+        cECode:
+            expose: true
+            access_type: public_method
+            serialized_name: CECode
+            accessor:
+                getter: getCECode
+                setter: setCECode
+            xml_attribute: true
+            type: string

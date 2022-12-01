@@ -1,0 +1,151 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType:
+    properties:
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            xml_attribute: true
+            type: string
+        shoppingCartItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ShoppingCartItemId
+            accessor:
+                getter: getShoppingCartItemId
+                setter: setShoppingCartItemId
+            xml_attribute: true
+            type: string
+        payType:
+            expose: true
+            access_type: public_method
+            serialized_name: PayType
+            accessor:
+                getter: getPayType
+                setter: setPayType
+            xml_attribute: true
+            type: string
+        arrival:
+            expose: true
+            access_type: public_method
+            serialized_name: Arrival
+            accessor:
+                getter: getArrival
+                setter: setArrival
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        departure:
+            expose: true
+            access_type: public_method
+            serialized_name: Departure
+            accessor:
+                getter: getDeparture
+                setter: setDeparture
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        cancIns:
+            expose: true
+            access_type: public_method
+            serialized_name: CancIns
+            accessor:
+                getter: getCancIns
+                setter: setCancIns
+            xml_attribute: true
+            type: float
+        itemName:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemName
+            accessor:
+                getter: getItemName
+                setter: setItemName
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        numberOfItems:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfItems
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNumberOfItems
+                setter: setNumberOfItems
+            type: int
+        parent:
+            expose: true
+            access_type: public_method
+            serialized_name: Parent
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getParent
+                setter: setParent
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\ParentAType
+        categoryId:
+            expose: true
+            access_type: public_method
+            serialized_name: CategoryId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCategoryId
+                setter: setCategoryId
+            type: string
+        sectionId:
+            expose: true
+            access_type: public_method
+            serialized_name: SectionId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSectionId
+                setter: setSectionId
+            type: string
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\DurationAType
+        occupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: Occupancy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOccupancy
+                setter: setOccupancy
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\OccupancyAType
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\PriceAType

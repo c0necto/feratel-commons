@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\UpdateShoppingCartExternalType\ERVInsuredPersonsAType\PersonAType:
+    properties:
+        firstName:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFirstName
+                setter: setFirstName
+            type: string
+        lastName:
+            expose: true
+            access_type: public_method
+            serialized_name: LastName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLastName
+                setter: setLastName
+            type: string
+        dateOfBirth:
+            expose: true
+            access_type: public_method
+            serialized_name: DateOfBirth
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDateOfBirth
+                setter: setDateOfBirth
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date

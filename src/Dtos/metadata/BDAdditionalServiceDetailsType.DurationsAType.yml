@@ -1,0 +1,26 @@
+Conecto\FeratelDsi\Dtos\BDAdditionalServiceDetailsType\DurationsAType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            xml_list:
+                inline: true
+                entry_name: Duration
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<int>

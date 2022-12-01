@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\TopicsAType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: int
+        mainTopicId:
+            expose: true
+            access_type: public_method
+            serialized_name: MainTopicId
+            accessor:
+                getter: getMainTopicId
+                setter: setMainTopicId
+            xml_attribute: true
+            type: string
+        topic:
+            expose: true
+            access_type: public_method
+            serialized_name: Topic
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTopic
+                setter: setTopic
+            xml_list:
+                inline: true
+                entry_name: Topic
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDTopicType>

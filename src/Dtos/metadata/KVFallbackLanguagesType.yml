@@ -1,0 +1,72 @@
+Conecto\FeratelDsi\Dtos\KVFallbackLanguagesType:
+    properties:
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        default:
+            expose: true
+            access_type: public_method
+            serialized_name: Default
+            accessor:
+                getter: getDefault
+                setter: setDefault
+            xml_attribute: true
+            type: bool
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        fallback:
+            expose: true
+            access_type: public_method
+            serialized_name: Fallback
+            accessor:
+                getter: getFallback
+                setter: setFallback
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

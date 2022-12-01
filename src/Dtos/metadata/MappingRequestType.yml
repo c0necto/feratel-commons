@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\MappingRequestType:
+    properties:
+        agentDutyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: AgentDutyCode
+            accessor:
+                getter: getAgentDutyCode
+                setter: setAgentDutyCode
+            xml_attribute: true
+            type: string
+        filterType:
+            expose: true
+            access_type: public_method
+            serialized_name: FilterType
+            accessor:
+                getter: getFilterType
+                setter: setFilterType
+            xml_attribute: true
+            type: string
+        filter:
+            expose: true
+            access_type: public_method
+            serialized_name: Filter
+            accessor:
+                getter: getFilter
+                setter: setFilter
+            xml_attribute: true
+            type: string
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string

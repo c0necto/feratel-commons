@@ -1,0 +1,79 @@
+Conecto\FeratelDsi\Dtos\BDProductsType:
+    properties:
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\BDProductsType\PricesAType
+        priceDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceDetails
+                setter: setPriceDetails
+            type: Conecto\FeratelDsi\Dtos\BasicSChPeriodicElementType
+        arrivalDepartureTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: ArrivalDepartureTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getArrivalDepartureTemplates
+                setter: setArrivalDepartureTemplates
+            type: Conecto\FeratelDsi\Dtos\BasicSChPeriodicElementType
+        salesRuleTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesRuleTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalesRuleTemplates
+                setter: setSalesRuleTemplates
+            type: Conecto\FeratelDsi\Dtos\BasicSChPeriodicElementType
+        cancellationPaymentTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationPaymentTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationPaymentTemplates
+                setter: setCancellationPaymentTemplates
+            type: Conecto\FeratelDsi\Dtos\BasicSChPeriodicElementType
+        availabilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Availabilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAvailabilities
+                setter: setAvailabilities
+            type: Conecto\FeratelDsi\Dtos\BDProductAvailabilityType
+        gaps:
+            expose: true
+            access_type: public_method
+            serialized_name: Gaps
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGaps
+                setter: setGaps
+            type: Conecto\FeratelDsi\Dtos\BasicPeriodicElementType

@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\BookingOptionsType:
+    properties:
+        basketCalculation:
+            expose: true
+            access_type: public_method
+            serialized_name: BasketCalculation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBasketCalculation
+                setter: setBasketCalculation
+            type: Conecto\FeratelDsi\Dtos\BasketCalculationType

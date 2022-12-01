@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\BDPackageCalculationType:
+    properties:
+        vTIncluded:
+            expose: true
+            access_type: public_method
+            serialized_name: VTIncluded
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVTIncluded
+                setter: setVTIncluded
+            type: bool
+        bookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingFee
+                setter: setBookingFee
+            type: Conecto\FeratelDsi\Dtos\BDPackageCalculationType\BookingFeeAType
+        cancellationInsuranceIncluded:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsuranceIncluded
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsuranceIncluded
+                setter: setCancellationInsuranceIncluded
+            type: bool

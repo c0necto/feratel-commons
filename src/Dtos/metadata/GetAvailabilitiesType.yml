@@ -1,0 +1,65 @@
+Conecto\FeratelDsi\Dtos\GetAvailabilitiesType:
+    properties:
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string
+        months:
+            expose: true
+            access_type: public_method
+            serialized_name: Months
+            accessor:
+                getter: getMonths
+                setter: setMonths
+            xml_attribute: true
+            type: int
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        serviceProviderId:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderId
+            accessor:
+                getter: getServiceProviderId
+                setter: setServiceProviderId
+            xml_attribute: true
+            type: string
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            xml_attribute: true
+            type: string
+        showMinStayLogic:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowMinStayLogic
+            accessor:
+                getter: getShowMinStayLogic
+                setter: setShowMinStayLogic
+            xml_attribute: true
+            type: bool

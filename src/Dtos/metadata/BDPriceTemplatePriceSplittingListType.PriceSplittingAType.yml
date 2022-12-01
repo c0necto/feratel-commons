@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceSplittingListType\PriceSplittingAType:
+    properties:
+        stay:
+            expose: true
+            access_type: public_method
+            serialized_name: Stay
+            accessor:
+                getter: getStay
+                setter: setStay
+            xml_attribute: true
+            type: int
+        pay:
+            expose: true
+            access_type: public_method
+            serialized_name: Pay
+            accessor:
+                getter: getPay
+                setter: setPay
+            xml_attribute: true
+            type: int

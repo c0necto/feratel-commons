@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\DynamicServiceParamsType:
+    properties:
+        parameter:
+            expose: true
+            access_type: public_method
+            serialized_name: Parameter
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getParameter
+                setter: setParameter
+            xml_list:
+                inline: true
+                entry_name: Parameter
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\DynamicServiceParamsType\ParameterAType>

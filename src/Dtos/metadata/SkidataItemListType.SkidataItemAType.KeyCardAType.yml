@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\SkidataItemListType\SkidataItemAType\KeyCardAType:
+    properties:
+        chipId:
+            expose: true
+            access_type: public_method
+            serialized_name: ChipId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChipId
+                setter: setChipId
+            type: string
+        serialNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SerialNumber
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSerialNumber
+                setter: setSerialNumber
+            type: string
+        luhn:
+            expose: true
+            access_type: public_method
+            serialized_name: Luhn
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLuhn
+                setter: setLuhn
+            type: string

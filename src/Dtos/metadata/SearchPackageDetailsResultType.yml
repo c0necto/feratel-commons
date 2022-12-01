@@ -1,0 +1,54 @@
+Conecto\FeratelDsi\Dtos\SearchPackageDetailsResultType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        sections:
+            expose: true
+            access_type: public_method
+            serialized_name: Sections
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSections
+                setter: setSections
+            type: array<Conecto\FeratelDsi\Dtos\PackageDetailsSectionType>
+            xml_list:
+                inline: false
+                entry_name: Section
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        categories:
+            expose: true
+            access_type: public_method
+            serialized_name: Categories
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCategories
+                setter: setCategories
+            type: array<Conecto\FeratelDsi\Dtos\SearchPackageDetailsResultType\CategoriesAType\CategoryAType>
+            xml_list:
+                inline: false
+                entry_name: Category
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        currency:
+            expose: true
+            access_type: public_method
+            serialized_name: Currency
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCurrency
+                setter: setCurrency
+            type: string

@@ -1,0 +1,116 @@
+Conecto\FeratelDsi\Dtos\SearchPackageCalculationResultType:
+    properties:
+        category:
+            expose: true
+            access_type: public_method
+            serialized_name: Category
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCategory
+                setter: setCategory
+            type: Conecto\FeratelDsi\Dtos\SearchPackageCalculationResultType\CategoryAType
+        adultPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: AdultPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdultPrice
+                setter: setAdultPrice
+            type: float
+        bookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingFee
+                setter: setBookingFee
+            type: float
+        cancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsurance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsurance
+                setter: setCancellationInsurance
+            type: float
+        childPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildPrice
+                setter: setChildPrice
+            type: float
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            type: string
+        currencyFactor:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyFactor
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCurrencyFactor
+                setter: setCurrencyFactor
+            type: float
+        totalPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalPrice
+                setter: setTotalPrice
+            type: float
+        visitorTax:
+            expose: true
+            access_type: public_method
+            serialized_name: VisitorTax
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVisitorTax
+                setter: setVisitorTax
+            type: float
+        error:
+            expose: true
+            access_type: public_method
+            serialized_name: Error
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getError
+                setter: setError
+            xml_list:
+                inline: true
+                entry_name: Error
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<string>

@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDCancellationPaymentTemplateType\PaymentInformationAType:
+    properties:
+        useOwnPaymentSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: UseOwnPaymentSettings
+            accessor:
+                getter: getUseOwnPaymentSettings
+                setter: setUseOwnPaymentSettings
+            xml_attribute: true
+            type: bool
+        paymentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentType
+            accessor:
+                getter: getPaymentType
+                setter: setPaymentType
+            xml_attribute: true
+            type: string
+        prePaymentPercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePaymentPercentage
+            accessor:
+                getter: getPrePaymentPercentage
+                setter: setPrePaymentPercentage
+            xml_attribute: true
+            type: float
+        prePaymentFixedAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePaymentFixedAmount
+            accessor:
+                getter: getPrePaymentFixedAmount
+                setter: setPrePaymentFixedAmount
+            xml_attribute: true
+            type: float

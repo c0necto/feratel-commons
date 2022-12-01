@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\CountryListType:
+    properties:
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            xml_list:
+                inline: true
+                entry_name: Country
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\CountryType>

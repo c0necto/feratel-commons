@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\CartItemBrochureType:
+    properties:
+        variationId:
+            expose: true
+            access_type: public_method
+            serialized_name: VariationId
+            accessor:
+                getter: getVariationId
+                setter: setVariationId
+            xml_attribute: true
+            type: string
+        guestSettlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestSettlerCode
+            accessor:
+                getter: getGuestSettlerCode
+                setter: setGuestSettlerCode
+            xml_attribute: true
+            type: string
+        numberOfItems:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfItems
+            accessor:
+                getter: getNumberOfItems
+                setter: setNumberOfItems
+            xml_attribute: true
+            type: int

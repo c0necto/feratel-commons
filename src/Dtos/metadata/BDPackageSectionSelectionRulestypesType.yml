@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionSelectionRulestypesType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        addPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: AddPrice
+            accessor:
+                getter: getAddPrice
+                setter: setAddPrice
+            xml_attribute: true
+            type: bool
+        showPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowPrice
+            accessor:
+                getter: getShowPrice
+                setter: setShowPrice
+            xml_attribute: true
+            type: bool

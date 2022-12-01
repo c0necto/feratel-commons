@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\TransactionListType:
+    properties:
+        transaction:
+            expose: true
+            access_type: public_method
+            serialized_name: Transaction
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTransaction
+                setter: setTransaction
+            xml_list:
+                inline: true
+                entry_name: Transaction
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\TransactionType>

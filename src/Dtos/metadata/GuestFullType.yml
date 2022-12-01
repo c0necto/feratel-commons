@@ -1,0 +1,182 @@
+Conecto\FeratelDsi\Dtos\GuestFullType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: Email
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            xml_attribute: true
+            type: string
+        password:
+            expose: true
+            access_type: public_method
+            serialized_name: Password
+            accessor:
+                getter: getPassword
+                setter: setPassword
+            xml_attribute: true
+            type: string
+        salutationId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalutationId
+            accessor:
+                getter: getSalutationId
+                setter: setSalutationId
+            xml_attribute: true
+            type: string
+        company:
+            expose: true
+            access_type: public_method
+            serialized_name: Company
+            accessor:
+                getter: getCompany
+                setter: setCompany
+            xml_attribute: true
+            type: string
+        firstName:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstName
+            accessor:
+                getter: getFirstName
+                setter: setFirstName
+            xml_attribute: true
+            type: string
+        lastName:
+            expose: true
+            access_type: public_method
+            serialized_name: LastName
+            accessor:
+                getter: getLastName
+                setter: setLastName
+            xml_attribute: true
+            type: string
+        phone:
+            expose: true
+            access_type: public_method
+            serialized_name: Phone
+            accessor:
+                getter: getPhone
+                setter: setPhone
+            xml_attribute: true
+            type: string
+        mobile:
+            expose: true
+            access_type: public_method
+            serialized_name: Mobile
+            accessor:
+                getter: getMobile
+                setter: setMobile
+            xml_attribute: true
+            type: string
+        fax:
+            expose: true
+            access_type: public_method
+            serialized_name: Fax
+            accessor:
+                getter: getFax
+                setter: setFax
+            xml_attribute: true
+            type: string
+        address:
+            expose: true
+            access_type: public_method
+            serialized_name: Address
+            accessor:
+                getter: getAddress
+                setter: setAddress
+            xml_attribute: true
+            type: string
+        altAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: AltAddress
+            accessor:
+                getter: getAltAddress
+                setter: setAltAddress
+            xml_attribute: true
+            type: string
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            xml_attribute: true
+            type: string
+        zipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ZipCode
+            accessor:
+                getter: getZipCode
+                setter: setZipCode
+            xml_attribute: true
+            type: string
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: City
+            accessor:
+                getter: getCity
+                setter: setCity
+            xml_attribute: true
+            type: string
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            xml_attribute: true
+            type: string
+        reusable:
+            expose: true
+            access_type: public_method
+            serialized_name: Reusable
+            accessor:
+                getter: getReusable
+                setter: setReusable
+            xml_attribute: true
+            type: bool
+        reusableType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReusableType
+            accessor:
+                getter: getReusableType
+                setter: setReusableType
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\SimpleListOf<string>
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            xml_attribute: true
+            type: string
+        rating:
+            expose: true
+            access_type: public_method
+            serialized_name: Rating
+            accessor:
+                getter: getRating
+                setter: setRating
+            xml_attribute: true
+            type: bool

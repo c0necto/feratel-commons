@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDCancellationPaymentTemplateType\CancellationInformationAType:
+    properties:
+        useOwnCancellationSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: UseOwnCancellationSettings
+            accessor:
+                getter: getUseOwnCancellationSettings
+                setter: setUseOwnCancellationSettings
+            xml_attribute: true
+            type: bool
+        freeCancellation:
+            expose: true
+            access_type: public_method
+            serialized_name: FreeCancellation
+            accessor:
+                getter: getFreeCancellation
+                setter: setFreeCancellation
+            xml_attribute: true
+            type: bool

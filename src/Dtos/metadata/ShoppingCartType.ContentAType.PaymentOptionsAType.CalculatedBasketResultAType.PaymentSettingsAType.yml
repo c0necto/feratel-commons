@@ -1,0 +1,68 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentSettingsAType:
+    properties:
+        useCancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: UseCancellationInsurance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUseCancellationInsurance
+                setter: setUseCancellationInsurance
+            type: bool
+        cancellationInsuranceChecked:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsuranceChecked
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsuranceChecked
+                setter: setCancellationInsuranceChecked
+            type: bool
+        useBookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: UseBookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUseBookingFee
+                setter: setUseBookingFee
+            type: bool
+        isOnlyGuarantee:
+            expose: true
+            access_type: public_method
+            serialized_name: IsOnlyGuarantee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getIsOnlyGuarantee
+                setter: setIsOnlyGuarantee
+            type: bool
+        settlerIsTourOperator:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerIsTourOperator
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlerIsTourOperator
+                setter: setSettlerIsTourOperator
+            type: bool
+        promotionCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPromotionCode
+                setter: setPromotionCode
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentSettingsAType\PromotionCodeAType

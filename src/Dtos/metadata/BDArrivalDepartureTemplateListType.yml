@@ -1,0 +1,26 @@
+Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateListType:
+    properties:
+        minStayFromArrivalDay:
+            expose: true
+            access_type: public_method
+            serialized_name: MinStayFromArrivalDay
+            accessor:
+                getter: getMinStayFromArrivalDay
+                setter: setMinStayFromArrivalDay
+            xml_attribute: true
+            type: bool
+        arrivalDepartureTemplate:
+            expose: true
+            access_type: public_method
+            serialized_name: ArrivalDepartureTemplate
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getArrivalDepartureTemplate
+                setter: setArrivalDepartureTemplate
+            xml_list:
+                inline: true
+                entry_name: ArrivalDepartureTemplate
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateType>

@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDInfrastructureFilterType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: int
+        systems:
+            expose: true
+            access_type: public_method
+            serialized_name: Systems
+            accessor:
+                getter: getSystems
+                setter: setSystems
+            xml_attribute: true
+            type: string

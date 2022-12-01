@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\HotSpotListType\ItemAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        distance:
+            expose: true
+            access_type: public_method
+            serialized_name: Distance
+            accessor:
+                getter: getDistance
+                setter: setDistance
+            xml_attribute: true
+            type: float

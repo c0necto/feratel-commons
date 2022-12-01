@@ -1,0 +1,26 @@
+Conecto\FeratelDsi\Dtos\BDAdditionalServiceDetailsType\DatesAType:
+    properties:
+        hideStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: HideStartDate
+            accessor:
+                getter: getHideStartDate
+                setter: setHideStartDate
+            xml_attribute: true
+            type: bool
+        date:
+            expose: true
+            access_type: public_method
+            serialized_name: Date
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDate
+                setter: setDate
+            xml_list:
+                inline: true
+                entry_name: Date
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDAdditionalServiceDetailsType\DatesAType\DateAType>

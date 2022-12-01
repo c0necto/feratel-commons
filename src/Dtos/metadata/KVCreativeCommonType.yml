@@ -1,0 +1,83 @@
+Conecto\FeratelDsi\Dtos\KVCreativeCommonType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: Version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: float
+        approvedFree:
+            expose: true
+            access_type: public_method
+            serialized_name: ApprovedFree
+            accessor:
+                getter: getApprovedFree
+                setter: setApprovedFree
+            xml_attribute: true
+            type: bool
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            accessor:
+                getter: getURL
+                setter: setURL
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

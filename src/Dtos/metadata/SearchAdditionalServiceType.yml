@@ -1,0 +1,36 @@
+Conecto\FeratelDsi\Dtos\SearchAdditionalServiceType:
+    properties:
+        lastAvailabilityChangeDays:
+            expose: true
+            access_type: public_method
+            serialized_name: LastAvailabilityChangeDays
+            accessor:
+                getter: getLastAvailabilityChangeDays
+                setter: setLastAvailabilityChangeDays
+            xml_attribute: true
+            type: int
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        serviceFacility:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceFacility
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceFacility
+                setter: setServiceFacility
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

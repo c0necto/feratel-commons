@@ -1,0 +1,65 @@
+Conecto\FeratelDsi\Dtos\ONAXServiceItemType:
+    properties:
+        srvIdentity:
+            expose: true
+            access_type: public_method
+            serialized_name: srvIdentity
+            accessor:
+                getter: getSrvIdentity
+                setter: setSrvIdentity
+            xml_attribute: true
+            type: string
+        srvProviderID:
+            expose: true
+            access_type: public_method
+            serialized_name: srvProviderID
+            accessor:
+                getter: getSrvProviderID
+                setter: setSrvProviderID
+            xml_attribute: true
+            type: string
+        srvName:
+            expose: true
+            access_type: public_method
+            serialized_name: srvName
+            accessor:
+                getter: getSrvName
+                setter: setSrvName
+            xml_attribute: true
+            type: string
+        srvCode:
+            expose: true
+            access_type: public_method
+            serialized_name: srvCode
+            accessor:
+                getter: getSrvCode
+                setter: setSrvCode
+            xml_attribute: true
+            type: string
+        srvCreateDate:
+            expose: true
+            access_type: public_method
+            serialized_name: srvCreateDate
+            accessor:
+                getter: getSrvCreateDate
+                setter: setSrvCreateDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        srvChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: srvChangeDate
+            accessor:
+                getter: getSrvChangeDate
+                setter: setSrvChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        srvLoginID:
+            expose: true
+            access_type: public_method
+            serialized_name: srvLoginID
+            accessor:
+                getter: getSrvLoginID
+                setter: setSrvLoginID
+            xml_attribute: true
+            type: string

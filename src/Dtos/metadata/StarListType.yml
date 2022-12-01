@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\StarListType:
+    properties:
+        star:
+            expose: true
+            access_type: public_method
+            serialized_name: Star
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStar
+                setter: setStar
+            xml_list:
+                inline: true
+                entry_name: Star
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\ClassificationType>

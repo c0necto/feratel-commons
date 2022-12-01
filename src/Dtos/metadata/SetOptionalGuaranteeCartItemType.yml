@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\SetOptionalGuaranteeCartItemType:
+    properties:
+        shoppingCartItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ShoppingCartItemId
+            accessor:
+                getter: getShoppingCartItemId
+                setter: setShoppingCartItemId
+            xml_attribute: true
+            type: string
+        optionalGuaranteeSelected:
+            expose: true
+            access_type: public_method
+            serialized_name: OptionalGuaranteeSelected
+            accessor:
+                getter: getOptionalGuaranteeSelected
+                setter: setOptionalGuaranteeSelected
+            xml_attribute: true
+            type: bool

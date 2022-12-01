@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDCancellationPaymentTemplateType\CancellationFeeAType:
+    properties:
+        calculationBase:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculationBase
+            accessor:
+                getter: getCalculationBase
+                setter: setCalculationBase
+            xml_attribute: true
+            type: int
+        percentage:
+            expose: true
+            access_type: public_method
+            serialized_name: Percentage
+            accessor:
+                getter: getPercentage
+                setter: setPercentage
+            xml_attribute: true
+            type: float
+        daysUntil:
+            expose: true
+            access_type: public_method
+            serialized_name: DaysUntil
+            accessor:
+                getter: getDaysUntil
+                setter: setDaysUntil
+            xml_attribute: true
+            type: int
+        timeUntil:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeUntil
+            accessor:
+                getter: getTimeUntil
+                setter: setTimeUntil
+            xml_attribute: true
+            type: string

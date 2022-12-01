@@ -1,0 +1,88 @@
+Conecto\FeratelDsi\Dtos\UpdateShoppingCartSettingsType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        wishNotes:
+            expose: true
+            access_type: public_method
+            serialized_name: WishNotes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getWishNotes
+                setter: setWishNotes
+            type: string
+        notes:
+            expose: true
+            access_type: public_method
+            serialized_name: Notes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNotes
+                setter: setNotes
+            type: string
+        accompaniedBy:
+            expose: true
+            access_type: public_method
+            serialized_name: AccompaniedBy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAccompaniedBy
+                setter: setAccompaniedBy
+            type: string
+        cancellationInsuranceChecked:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsuranceChecked
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsuranceChecked
+                setter: setCancellationInsuranceChecked
+            type: bool
+        useBookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: UseBookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUseBookingFee
+                setter: setUseBookingFee
+            type: bool
+        settlerIsTourOperator:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerIsTourOperator
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlerIsTourOperator
+                setter: setSettlerIsTourOperator
+            type: bool
+        promotionCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPromotionCode
+                setter: setPromotionCode
+            type: string

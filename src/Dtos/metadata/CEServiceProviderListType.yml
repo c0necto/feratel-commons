@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\CEServiceProviderListType:
+    properties:
+        serviceProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProvider
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProvider
+                setter: setServiceProvider
+            xml_list:
+                inline: true
+                entry_name: ServiceProvider
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\CEServiceProviderItemType>

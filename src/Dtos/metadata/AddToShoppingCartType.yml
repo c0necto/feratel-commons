@@ -1,0 +1,84 @@
+Conecto\FeratelDsi\Dtos\AddToShoppingCartType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        dbCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DbCode
+            accessor:
+                getter: getDbCode
+                setter: setDbCode
+            xml_attribute: true
+            type: string
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        cartItemAccommodation:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItemAccommodation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItemAccommodation
+                setter: setCartItemAccommodation
+            type: Conecto\FeratelDsi\Dtos\CartItemAccommodationType
+        cartItemBrochure:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItemBrochure
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItemBrochure
+                setter: setCartItemBrochure
+            type: Conecto\FeratelDsi\Dtos\CartItemBrochureType
+        cartItemAdditionalService:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItemAdditionalService
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItemAdditionalService
+                setter: setCartItemAdditionalService
+            type: Conecto\FeratelDsi\Dtos\CartItemAdditionalServiceType
+        cartItemPackage:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItemPackage
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItemPackage
+                setter: setCartItemPackage
+            type: Conecto\FeratelDsi\Dtos\CartItemPackageType
+        cartItemShopArticle:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItemShopArticle
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItemShopArticle
+                setter: setCartItemShopArticle
+            type: Conecto\FeratelDsi\Dtos\CartItemShopArticleType

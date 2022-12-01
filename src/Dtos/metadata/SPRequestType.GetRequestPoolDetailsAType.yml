@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\SPRequestType\GetRequestPoolDetailsAType:
+    properties:
+        hotelCode:
+            expose: true
+            access_type: public_method
+            serialized_name: HotelCode
+            accessor:
+                getter: getHotelCode
+                setter: setHotelCode
+            xml_attribute: true
+            type: string
+        requestPoolId:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestPoolId
+            accessor:
+                getter: getRequestPoolId
+                setter: setRequestPoolId
+            xml_attribute: true
+            type: string

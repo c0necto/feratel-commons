@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\BDDeletedItemsType:
+    properties:
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        dateTimeFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTimeFrom
+            accessor:
+                getter: getDateTimeFrom
+                setter: setDateTimeFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        deletedItem:
+            expose: true
+            access_type: public_method
+            serialized_name: DeletedItem
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDeletedItem
+                setter: setDeletedItem
+            xml_list:
+                inline: true
+                entry_name: DeletedItem
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDDeletedItemType>

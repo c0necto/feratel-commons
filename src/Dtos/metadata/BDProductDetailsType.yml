@@ -1,0 +1,111 @@
+Conecto\FeratelDsi\Dtos\BDProductDetailsType:
+    properties:
+        productType:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProductType
+                setter: setProductType
+            type: string
+        accommodationType:
+            expose: true
+            access_type: public_method
+            serialized_name: AccommodationType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAccommodationType
+                setter: setAccommodationType
+            type: string
+        searchCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SearchCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSearchCode
+                setter: setSearchCode
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            type: int
+        occupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: Occupancy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOccupancy
+                setter: setOccupancy
+            type: Conecto\FeratelDsi\Dtos\BDOccupancyType
+        holidayThemes:
+            expose: true
+            access_type: public_method
+            serialized_name: HolidayThemes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHolidayThemes
+                setter: setHolidayThemes
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        validDates:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidDates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getValidDates
+                setter: setValidDates
+            type: Conecto\FeratelDsi\Dtos\BDProductValidDatesType
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getActive
+                setter: setActive
+            type: bool

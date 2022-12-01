@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\BDServiceProvidersType\AddressesAType:
+    properties:
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        getSettlementAddresses:
+            expose: true
+            access_type: public_method
+            serialized_name: GetSettlementAddresses
+            accessor:
+                getter: getGetSettlementAddresses
+                setter: setGetSettlementAddresses
+            xml_attribute: true
+            type: bool
+        detailedInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: DetailedInformation
+            accessor:
+                getter: getDetailedInformation
+                setter: setDetailedInformation
+            xml_attribute: true
+            type: bool

@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\CancellationInsurancesListType:
+    properties:
+        cancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsurance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsurance
+                setter: setCancellationInsurance
+            xml_list:
+                inline: true
+                entry_name: CancellationInsurance
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\CancellationInsuranceType>

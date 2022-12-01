@@ -1,0 +1,26 @@
+Conecto\FeratelDsi\Dtos\BDProductValidDatesType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        validDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidDate
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getValidDate
+                setter: setValidDate
+            xml_list:
+                inline: true
+                entry_name: ValidDate
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDProductValidDateType>

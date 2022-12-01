@@ -1,0 +1,341 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderItemType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        mappingId:
+            expose: true
+            access_type: public_method
+            serialized_name: MappingId
+            accessor:
+                getter: getMappingId
+                setter: setMappingId
+            xml_attribute: true
+            type: string
+        details:
+            expose: true
+            access_type: public_method
+            serialized_name: Details
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDetails
+                setter: setDetails
+            type: Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType
+        documents:
+            expose: true
+            access_type: public_method
+            serialized_name: Documents
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDocuments
+                setter: setDocuments
+            type: array<Conecto\FeratelDsi\Dtos\DocumentType>
+            xml_list:
+                inline: false
+                entry_name: Document
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        descriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: Descriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescriptions
+                setter: setDescriptions
+            type: array<Conecto\FeratelDsi\Dtos\DescriptionType>
+            xml_list:
+                inline: false
+                entry_name: Description
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        links:
+            expose: true
+            access_type: public_method
+            serialized_name: Links
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLinks
+                setter: setLinks
+            type: array<Conecto\FeratelDsi\Dtos\LinkType>
+            xml_list:
+                inline: false
+                entry_name: Link
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        facilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Facilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFacilities
+                setter: setFacilities
+            type: Conecto\FeratelDsi\Dtos\FacilityItemListType
+        addresses:
+            expose: true
+            access_type: public_method
+            serialized_name: Addresses
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddresses
+                setter: setAddresses
+            type: array<Conecto\FeratelDsi\Dtos\BDAddressType>
+            xml_list:
+                inline: false
+                entry_name: Address
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        customAttributes:
+            expose: true
+            access_type: public_method
+            serialized_name: CustomAttributes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCustomAttributes
+                setter: setCustomAttributes
+            type: Conecto\FeratelDsi\Dtos\CustomAttributeListType
+        hotSpots:
+            expose: true
+            access_type: public_method
+            serialized_name: HotSpots
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHotSpots
+                setter: setHotSpots
+            type: Conecto\FeratelDsi\Dtos\BDHotSpotsListType
+        handicapFacilities:
+            expose: true
+            access_type: public_method
+            serialized_name: HandicapFacilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHandicapFacilities
+                setter: setHandicapFacilities
+            type: Conecto\FeratelDsi\Dtos\HandicapFacilitiesItemListType
+        gTCs:
+            expose: true
+            access_type: public_method
+            serialized_name: GTCs
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGTCs
+                setter: setGTCs
+            type: array<Conecto\FeratelDsi\Dtos\BDGTCItemType>
+            xml_list:
+                inline: false
+                entry_name: GTC
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        qualityDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: QualityDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getQualityDetails
+                setter: setQualityDetails
+            type: Conecto\FeratelDsi\Dtos\BDQualityDetailsType
+        housePackageMasters:
+            expose: true
+            access_type: public_method
+            serialized_name: HousePackageMasters
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHousePackageMasters
+                setter: setHousePackageMasters
+            type: array<Conecto\FeratelDsi\Dtos\BDHousePackageMasterType>
+            xml_list:
+                inline: false
+                entry_name: HousePackageMaster
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        housePackageMastersSelfAssign:
+            expose: true
+            access_type: public_method
+            serialized_name: HousePackageMastersSelfAssign
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHousePackageMastersSelfAssign
+                setter: setHousePackageMastersSelfAssign
+            type: array<Conecto\FeratelDsi\Dtos\BDHousePackageMasterType>
+            xml_list:
+                inline: false
+                entry_name: HousePackageMaster
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        revenueSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRevenueSettings
+                setter: setRevenueSettings
+            type: array<Conecto\FeratelDsi\Dtos\BDRevenueSettingType>
+            xml_list:
+                inline: false
+                entry_name: RevenueSetting
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        annotations:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotations
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAnnotations
+                setter: setAnnotations
+            type: array<Conecto\FeratelDsi\Dtos\BDAnnotationsItemType>
+            xml_list:
+                inline: false
+                entry_name: Annotation
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        services:
+            expose: true
+            access_type: public_method
+            serialized_name: Services
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServices
+                setter: setServices
+            type: array<Conecto\FeratelDsi\Dtos\BDServiceItemType>
+            xml_list:
+                inline: false
+                entry_name: Service
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        additionalServices:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalServices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdditionalServices
+                setter: setAdditionalServices
+            type: array<Conecto\FeratelDsi\Dtos\BDAdditionalServiceItemType>
+            xml_list:
+                inline: false
+                entry_name: AdditionalService
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        ratingsAverage:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingsAverage
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRatingsAverage
+                setter: setRatingsAverage
+            type: array<Conecto\FeratelDsi\Dtos\BDRatingAverageItemType>
+            xml_list:
+                inline: false
+                entry_name: RatingAverage
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        metaRating:
+            expose: true
+            access_type: public_method
+            serialized_name: MetaRating
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMetaRating
+                setter: setMetaRating
+            type: Conecto\FeratelDsi\Dtos\BDMetaRatingsType
+        closedPeriods:
+            expose: true
+            access_type: public_method
+            serialized_name: ClosedPeriods
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getClosedPeriods
+                setter: setClosedPeriods
+            type: array<Conecto\FeratelDsi\Dtos\BDClosedPeriodType>
+            xml_list:
+                inline: false
+                entry_name: ClosedPeriod
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        cancellationPaymentInfos:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationPaymentInfos
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationPaymentInfos
+                setter: setCancellationPaymentInfos
+            type: array<Conecto\FeratelDsi\Dtos\BDCancellationPaymentTemplateType>
+            xml_list:
+                inline: false
+                entry_name: CancellationPaymentTemplate
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        handicapClassifications:
+            expose: true
+            access_type: public_method
+            serialized_name: HandicapClassifications
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHandicapClassifications
+                setter: setHandicapClassifications
+            type: Conecto\FeratelDsi\Dtos\BDHandicapClassificationsType

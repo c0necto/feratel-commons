@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\BasketCalculationType:
+    properties:
+        basketSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: BasketSummary
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBasketSummary
+                setter: setBasketSummary
+            type: Conecto\FeratelDsi\Dtos\BasketSummaryType

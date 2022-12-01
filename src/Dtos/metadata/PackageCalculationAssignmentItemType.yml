@@ -1,0 +1,76 @@
+Conecto\FeratelDsi\Dtos\PackageCalculationAssignmentItemType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        transactionDetailType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionDetailType
+            accessor:
+                getter: getTransactionDetailType
+                setter: setTransactionDetailType
+            xml_attribute: true
+            type: string
+        parentId:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentId
+            accessor:
+                getter: getParentId
+                setter: setParentId
+            xml_attribute: true
+            type: string
+        parentName:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentName
+            accessor:
+                getter: getParentName
+                setter: setParentName
+            xml_attribute: true
+            type: string
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            xml_attribute: true
+            type: string
+        productName:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductName
+            accessor:
+                getter: getProductName
+                setter: setProductName
+            xml_attribute: true
+            type: string
+        providerTown:
+            expose: true
+            access_type: public_method
+            serialized_name: ProviderTown
+            accessor:
+                getter: getProviderTown
+                setter: setProviderTown
+            xml_attribute: true
+            type: string
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            type: Conecto\FeratelDsi\Dtos\PackageCalculationAssignmentItemType\PriceAType

@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\ONAXAddressContactCodeItemType:
+    properties:
+        accContactID:
+            expose: true
+            access_type: public_method
+            serialized_name: accContactID
+            accessor:
+                getter: getAccContactID
+                setter: setAccContactID
+            xml_attribute: true
+            type: string
+        accCode:
+            expose: true
+            access_type: public_method
+            serialized_name: accCode
+            accessor:
+                getter: getAccCode
+                setter: setAccCode
+            xml_attribute: true
+            type: string
+        accValue:
+            expose: true
+            access_type: public_method
+            serialized_name: accValue
+            accessor:
+                getter: getAccValue
+                setter: setAccValue
+            xml_attribute: true
+            type: string

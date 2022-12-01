@@ -1,0 +1,134 @@
+Conecto\FeratelDsi\Dtos\MappingResponseType\ServiceProviderAType:
+    properties:
+        hotelCode:
+            expose: true
+            access_type: public_method
+            serialized_name: HotelCode
+            accessor:
+                getter: getHotelCode
+                setter: setHotelCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string
+        addressName:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressName
+            accessor:
+                getter: getAddressName
+                setter: setAddressName
+            xml_attribute: true
+            type: string
+        address1:
+            expose: true
+            access_type: public_method
+            serialized_name: Address1
+            accessor:
+                getter: getAddress1
+                setter: setAddress1
+            xml_attribute: true
+            type: string
+        zipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ZipCode
+            accessor:
+                getter: getZipCode
+                setter: setZipCode
+            xml_attribute: true
+            type: string
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: City
+            accessor:
+                getter: getCity
+                setter: setCity
+            xml_attribute: true
+            type: string
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: Email
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            xml_attribute: true
+            type: string
+        organisation:
+            expose: true
+            access_type: public_method
+            serialized_name: Organisation
+            accessor:
+                getter: getOrganisation
+                setter: setOrganisation
+            xml_attribute: true
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        checkAvailabiltyChange:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckAvailabiltyChange
+            accessor:
+                getter: getCheckAvailabiltyChange
+                setter: setCheckAvailabiltyChange
+            xml_attribute: true
+            type: bool
+        availabilityChangeDays:
+            expose: true
+            access_type: public_method
+            serialized_name: AvailabilityChangeDays
+            accessor:
+                getter: getAvailabilityChangeDays
+                setter: setAvailabilityChangeDays
+            xml_attribute: true
+            type: int
+        useIndividualPaymentCancellationPolicy:
+            expose: true
+            access_type: public_method
+            serialized_name: UseIndividualPaymentCancellationPolicy
+            accessor:
+                getter: getUseIndividualPaymentCancellationPolicy
+                setter: setUseIndividualPaymentCancellationPolicy
+            xml_attribute: true
+            type: bool
+        service:
+            expose: true
+            access_type: public_method
+            serialized_name: Service
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getService
+                setter: setService
+            xml_list:
+                inline: true
+                entry_name: Service
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\MappingResponseType\ServiceProviderAType\ServiceAType>

@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\PossiblePaymentsMethodsAType\OptionAType:
+    properties:
+        transactionPrePaymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionPrePaymentMethod
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTransactionPrePaymentMethod
+                setter: setTransactionPrePaymentMethod
+            type: string
+        transactionFinalPaymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionFinalPaymentMethod
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTransactionFinalPaymentMethod
+                setter: setTransactionFinalPaymentMethod
+            type: string
+        transactionGuaranteePaymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionGuaranteePaymentMethod
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTransactionGuaranteePaymentMethod
+                setter: setTransactionGuaranteePaymentMethod
+            type: string

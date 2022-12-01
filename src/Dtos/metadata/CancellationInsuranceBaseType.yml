@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\CancellationInsuranceBaseType:
+    properties:
+        amountFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountFrom
+            accessor:
+                getter: getAmountFrom
+                setter: setAmountFrom
+            xml_attribute: true
+            type: float
+        amountTo:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountTo
+            accessor:
+                getter: getAmountTo
+                setter: setAmountTo
+            xml_attribute: true
+            type: float
+        calculationRule:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculationRule
+            accessor:
+                getter: getCalculationRule
+                setter: setCalculationRule
+            xml_attribute: true
+            type: string
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            xml_attribute: true
+            type: float

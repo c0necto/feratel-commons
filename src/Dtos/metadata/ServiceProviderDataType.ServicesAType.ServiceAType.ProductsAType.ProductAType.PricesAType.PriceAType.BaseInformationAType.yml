@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType\BaseInformationAType:
+    properties:
+        basePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: BasePrice
+            accessor:
+                getter: getBasePrice
+                setter: setBasePrice
+            xml_attribute: true
+            type: float
+        standardMealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardMealCode
+            accessor:
+                getter: getStandardMealCode
+                setter: setStandardMealCode
+            xml_attribute: true
+            type: string
+        basePriceWithMeal:
+            expose: true
+            access_type: public_method
+            serialized_name: BasePriceWithMeal
+            accessor:
+                getter: getBasePriceWithMeal
+                setter: setBasePriceWithMeal
+            xml_attribute: true
+            type: float
+        mealPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: MealPrice
+            accessor:
+                getter: getMealPrice
+                setter: setMealPrice
+            xml_attribute: true
+            type: float

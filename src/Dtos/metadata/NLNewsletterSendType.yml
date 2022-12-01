@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\NLNewsletterSendType:
+    properties:
+        addressId:
+            expose: true
+            access_type: public_method
+            serialized_name: AddressId
+            accessor:
+                getter: getAddressId
+                setter: setAddressId
+            xml_attribute: true
+            type: string
+        info:
+            expose: true
+            access_type: public_method
+            serialized_name: Info
+            accessor:
+                getter: getInfo
+                setter: setInfo
+            xml_attribute: true
+            type: string

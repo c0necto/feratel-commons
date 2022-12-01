@@ -1,0 +1,56 @@
+Conecto\FeratelDsi\Dtos\GetOrganisationInformationType:
+    properties:
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        showPaymentInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowPaymentInformation
+            accessor:
+                getter: getShowPaymentInformation
+                setter: setShowPaymentInformation
+            xml_attribute: true
+            type: bool
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        showInsuranceAndFeeInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowInsuranceAndFeeInformation
+            accessor:
+                getter: getShowInsuranceAndFeeInformation
+                setter: setShowInsuranceAndFeeInformation
+            xml_attribute: true
+            type: bool
+        showSettlementInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowSettlementInformation
+            accessor:
+                getter: getShowSettlementInformation
+                setter: setShowSettlementInformation
+            xml_attribute: true
+            type: bool
+        showRevenueSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowRevenueSettings
+            accessor:
+                getter: getShowRevenueSettings
+                setter: setShowRevenueSettings
+            xml_attribute: true
+            type: bool

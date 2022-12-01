@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\PackageDetailsAssignmentItemType\PriceAType\AdultsAType:
+    properties:
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            xml_attribute: true
+            type: float

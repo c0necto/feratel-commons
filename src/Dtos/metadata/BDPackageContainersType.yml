@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\BDPackageContainersType:
+    properties:
+        assignedProducts:
+            expose: true
+            access_type: public_method
+            serialized_name: AssignedProducts
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAssignedProducts
+                setter: setAssignedProducts
+            type: Conecto\FeratelDsi\Dtos\BasicElementType

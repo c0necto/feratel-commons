@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\PositionAType:
+    properties:
+        latitude:
+            expose: true
+            access_type: public_method
+            serialized_name: Latitude
+            accessor:
+                getter: getLatitude
+                setter: setLatitude
+            xml_attribute: true
+            type: float
+        longitude:
+            expose: true
+            access_type: public_method
+            serialized_name: Longitude
+            accessor:
+                getter: getLongitude
+                setter: setLongitude
+            xml_attribute: true
+            type: float

@@ -1,0 +1,112 @@
+Conecto\FeratelDsi\Dtos\BDChangedProductsType:
+    properties:
+        details:
+            expose: true
+            access_type: public_method
+            serialized_name: Details
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDetails
+                setter: setDetails
+            type: string
+        documents:
+            expose: true
+            access_type: public_method
+            serialized_name: Documents
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDocuments
+                setter: setDocuments
+            type: string
+        descriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: Descriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescriptions
+                setter: setDescriptions
+            type: string
+        links:
+            expose: true
+            access_type: public_method
+            serialized_name: Links
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLinks
+                setter: setLinks
+            type: string
+        priceDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceDetails
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceDetails
+                setter: setPriceDetails
+            type: string
+        arrivalDepartureTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: ArrivalDepartureTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getArrivalDepartureTemplates
+                setter: setArrivalDepartureTemplates
+            type: string
+        salesRuleTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesRuleTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalesRuleTemplates
+                setter: setSalesRuleTemplates
+            type: string
+        availabilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Availabilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAvailabilities
+                setter: setAvailabilities
+            type: string
+        gaps:
+            expose: true
+            access_type: public_method
+            serialized_name: Gaps
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGaps
+                setter: setGaps
+            type: string
+        cancellationPaymentTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationPaymentTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationPaymentTemplates
+                setter: setCancellationPaymentTemplates
+            type: string

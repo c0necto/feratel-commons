@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\ExpandedEventType:
+    properties:
+        images:
+            expose: true
+            access_type: public_method
+            serialized_name: Images
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getImages
+                setter: setImages
+            type: array<Conecto\FeratelDsi\Dtos\EventCalendarImageType>
+            xml_list:
+                inline: false
+                entry_name: Image
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: string

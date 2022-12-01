@@ -1,0 +1,22 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\CartItemsAType\PackagesAType\PackageItemAType\PriceAType\DetailsAType\PackageProductItemAType\OccupancyAType:
+    properties:
+        numberOfAdults:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfAdults
+            accessor:
+                getter: getNumberOfAdults
+                setter: setNumberOfAdults
+            xml_attribute: true
+            type: int
+        childrenAges:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildrenAges
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildrenAges
+                setter: setChildrenAges
+            type: string

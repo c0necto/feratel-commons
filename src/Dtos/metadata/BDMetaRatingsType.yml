@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\BDMetaRatingsType:
+    properties:
+        ratingSystem:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingSystem
+            accessor:
+                getter: getRatingSystem
+                setter: setRatingSystem
+            xml_attribute: true
+            type: string
+        ratingCode:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingCode
+            accessor:
+                getter: getRatingCode
+                setter: setRatingCode
+            xml_attribute: true
+            type: string
+        partnerRatingCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PartnerRatingCode
+            accessor:
+                getter: getPartnerRatingCode
+                setter: setPartnerRatingCode
+            xml_attribute: true
+            type: string
+        average:
+            expose: true
+            access_type: public_method
+            serialized_name: Average
+            accessor:
+                getter: getAverage
+                setter: setAverage
+            xml_attribute: true
+            type: float
+        count:
+            expose: true
+            access_type: public_method
+            serialized_name: Count
+            accessor:
+                getter: getCount
+                setter: setCount
+            xml_attribute: true
+            type: int

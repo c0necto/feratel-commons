@@ -1,0 +1,62 @@
+Conecto\FeratelDsi\Dtos\BDPriceType:
+    properties:
+        inclVT:
+            expose: true
+            access_type: public_method
+            serialized_name: InclVT
+            accessor:
+                getter: getInclVT
+                setter: setInclVT
+            xml_attribute: true
+            type: int
+        fromTo:
+            expose: true
+            access_type: public_method
+            serialized_name: FromTo
+            accessor:
+                getter: getFromTo
+                setter: setFromTo
+            xml_attribute: true
+            type: int
+        rule:
+            expose: true
+            access_type: public_method
+            serialized_name: Rule
+            accessor:
+                getter: getRule
+                setter: setRule
+            xml_attribute: true
+            type: string
+        nights:
+            expose: true
+            access_type: public_method
+            serialized_name: Nights
+            accessor:
+                getter: getNights
+                setter: setNights
+            xml_attribute: true
+            type: int
+        standardMealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardMealCode
+            accessor:
+                getter: getStandardMealCode
+                setter: setStandardMealCode
+            xml_attribute: true
+            type: string
+        range:
+            expose: true
+            access_type: public_method
+            serialized_name: Range
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRange
+                setter: setRange
+            xml_list:
+                inline: true
+                entry_name: Range
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceRangeType>

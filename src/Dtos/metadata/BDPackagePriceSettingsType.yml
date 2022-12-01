@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDPackagePriceSettingsType:
+    properties:
+        priceType:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceType
+            accessor:
+                getter: getPriceType
+                setter: setPriceType
+            xml_attribute: true
+            type: string
+        packagePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: PackagePrice
+            accessor:
+                getter: getPackagePrice
+                setter: setPackagePrice
+            xml_attribute: true
+            type: string

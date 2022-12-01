@@ -1,0 +1,75 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\OrganisationPaymentAType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        amountTotal:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountTotal
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountTotal
+                setter: setAmountTotal
+            type: float
+        amountPrePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountPrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountPrePayment
+                setter: setAmountPrePayment
+            type: float
+        dueDatePrePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: DueDatePrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDueDatePrePayment
+                setter: setDueDatePrePayment
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        amountFinalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountFinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountFinalPayment
+                setter: setAmountFinalPayment
+            type: float
+        dueDateFinalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: DueDateFinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDueDateFinalPayment
+                setter: setDueDateFinalPayment
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

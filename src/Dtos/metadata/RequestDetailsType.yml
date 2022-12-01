@@ -1,0 +1,99 @@
+Conecto\FeratelDsi\Dtos\RequestDetailsType:
+    properties:
+        sessionID:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionID
+            accessor:
+                getter: getSessionID
+                setter: setSessionID
+            xml_attribute: true
+            type: \AnyType
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getType
+                setter: setType
+            type: string
+        userId:
+            expose: true
+            access_type: public_method
+            serialized_name: UserId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUserId
+                setter: setUserId
+            type: string
+        guestToPOSComment:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestToPOSComment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGuestToPOSComment
+                setter: setGuestToPOSComment
+            type: string
+        linkKey:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkKey
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLinkKey
+                setter: setLinkKey
+            type: string
+        offerRequestSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: OfferRequestSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOfferRequestSettings
+                setter: setOfferRequestSettings
+            type: Conecto\FeratelDsi\Dtos\OfferRequestSettingsType
+        requestPoolSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestPoolSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRequestPoolSettings
+                setter: setRequestPoolSettings
+            type: Conecto\FeratelDsi\Dtos\RequestPoolSettingsType
+        packageId:
+            expose: true
+            access_type: public_method
+            serialized_name: PackageId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPackageId
+                setter: setPackageId
+            type: string
+        serviceProviderRequestSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderRequestSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProviderRequestSettings
+                setter: setServiceProviderRequestSettings
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderRequestSettingsType

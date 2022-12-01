@@ -1,0 +1,83 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\OccupancyAType:
+    properties:
+        standardOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardOccupancy
+            accessor:
+                getter: getStandardOccupancy
+                setter: setStandardOccupancy
+            xml_attribute: true
+            type: int
+        minOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: MinOccupancy
+            accessor:
+                getter: getMinOccupancy
+                setter: setMinOccupancy
+            xml_attribute: true
+            type: int
+        maxOccupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxOccupancy
+            accessor:
+                getter: getMaxOccupancy
+                setter: setMaxOccupancy
+            xml_attribute: true
+            type: int
+        minAdults:
+            expose: true
+            access_type: public_method
+            serialized_name: MinAdults
+            accessor:
+                getter: getMinAdults
+                setter: setMinAdults
+            xml_attribute: true
+            type: int
+        maxAdults:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxAdults
+            accessor:
+                getter: getMaxAdults
+                setter: setMaxAdults
+            xml_attribute: true
+            type: int
+        minChild:
+            expose: true
+            access_type: public_method
+            serialized_name: MinChild
+            accessor:
+                getter: getMinChild
+                setter: setMinChild
+            xml_attribute: true
+            type: int
+        maxChild:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxChild
+            accessor:
+                getter: getMaxChild
+                setter: setMaxChild
+            xml_attribute: true
+            type: int
+        priceRule:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceRule
+            accessor:
+                getter: getPriceRule
+                setter: setPriceRule
+            xml_attribute: true
+            type: string
+        perNights:
+            expose: true
+            access_type: public_method
+            serialized_name: PerNights
+            accessor:
+                getter: getPerNights
+                setter: setPerNights
+            xml_attribute: true
+            type: int

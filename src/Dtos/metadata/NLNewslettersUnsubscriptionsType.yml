@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\NLNewslettersUnsubscriptionsType:
+    properties:
+        newsletterUnsubscribe:
+            expose: true
+            access_type: public_method
+            serialized_name: NewsletterUnsubscribe
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNewsletterUnsubscribe
+                setter: setNewsletterUnsubscribe
+            xml_list:
+                inline: true
+                entry_name: NewsletterUnsubscribe
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\NLNewsletterUnsubscribeType>

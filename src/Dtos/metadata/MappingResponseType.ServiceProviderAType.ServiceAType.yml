@@ -1,0 +1,62 @@
+Conecto\FeratelDsi\Dtos\MappingResponseType\ServiceProviderAType\ServiceAType:
+    properties:
+        mappingCode:
+            expose: true
+            access_type: public_method
+            serialized_name: MappingCode
+            accessor:
+                getter: getMappingCode
+                setter: setMappingCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        useAvailability:
+            expose: true
+            access_type: public_method
+            serialized_name: UseAvailability
+            accessor:
+                getter: getUseAvailability
+                setter: setUseAvailability
+            xml_attribute: true
+            type: bool
+        product:
+            expose: true
+            access_type: public_method
+            serialized_name: Product
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProduct
+                setter: setProduct
+            xml_list:
+                inline: true
+                entry_name: Product
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\MappingResponseType\ServiceProviderAType\ServiceAType\ProductAType>

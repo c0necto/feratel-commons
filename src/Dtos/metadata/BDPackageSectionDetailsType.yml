@@ -1,0 +1,133 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionDetailsType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        parentSection:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentSection
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getParentSection
+                setter: setParentSection
+            type: Conecto\FeratelDsi\Dtos\BDPackageParentSectionType
+        productType:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProductType
+                setter: setProductType
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            type: int
+        useAvailability:
+            expose: true
+            access_type: public_method
+            serialized_name: UseAvailability
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUseAvailability
+                setter: setUseAvailability
+            type: int
+        assignedProducts:
+            expose: true
+            access_type: public_method
+            serialized_name: AssignedProducts
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAssignedProducts
+                setter: setAssignedProducts
+            type: string
+        selectionRules:
+            expose: true
+            access_type: public_method
+            serialized_name: SelectionRules
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSelectionRules
+                setter: setSelectionRules
+            type: Conecto\FeratelDsi\Dtos\BDPackageSectionSelectionRulestypesType
+        dependency:
+            expose: true
+            access_type: public_method
+            serialized_name: Dependency
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDependency
+                setter: setDependency
+            type: Conecto\FeratelDsi\Dtos\BDPackageSectionDependencyType
+        bookingRules:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingRules
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingRules
+                setter: setBookingRules
+            type: Conecto\FeratelDsi\Dtos\BDPackageSectionBookingRulesType
+        sectionDuration:
+            expose: true
+            access_type: public_method
+            serialized_name: SectionDuration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSectionDuration
+                setter: setSectionDuration
+            type: array<Conecto\FeratelDsi\Dtos\BDPackageSectionDurationItemType>
+            xml_list:
+                inline: false
+                entry_name: DurationDays
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        validPersonGroups:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidPersonGroups
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getValidPersonGroups
+                setter: setValidPersonGroups
+            type: Conecto\FeratelDsi\Dtos\BDPackageSectionValidPersonGroupsType

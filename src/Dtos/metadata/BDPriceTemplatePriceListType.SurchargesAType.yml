@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType\SurchargesAType:
+    properties:
+        surcharge:
+            expose: true
+            access_type: public_method
+            serialized_name: Surcharge
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSurcharge
+                setter: setSurcharge
+            xml_list:
+                inline: true
+                entry_name: Surcharge
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType\SurchargesAType\SurchargeAType>

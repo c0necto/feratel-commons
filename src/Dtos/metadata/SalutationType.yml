@@ -1,0 +1,65 @@
+Conecto\FeratelDsi\Dtos\SalutationType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            xml_attribute: true
+            type: string
+        gender:
+            expose: true
+            access_type: public_method
+            serialized_name: Gender
+            accessor:
+                getter: getGender
+                setter: setGender
+            xml_attribute: true
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_attribute: true
+            type: string
+        default:
+            expose: true
+            access_type: public_method
+            serialized_name: Default
+            accessor:
+                getter: getDefault
+                setter: setDefault
+            xml_attribute: true
+            type: bool
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

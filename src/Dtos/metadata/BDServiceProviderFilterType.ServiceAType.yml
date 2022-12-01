@@ -1,0 +1,40 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderFilterType\ServiceAType:
+    properties:
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        product:
+            expose: true
+            access_type: public_method
+            serialized_name: Product
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProduct
+                setter: setProduct
+            type: Conecto\FeratelDsi\Dtos\BDServiceProviderFilterType\ServiceAType\ProductAType

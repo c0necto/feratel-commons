@@ -1,0 +1,48 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\ServiceProviderPaymentAType\AmountPrePaymentAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: float
+            xml_element:
+                cdata: false
+        paymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentMethod
+            accessor:
+                getter: getPaymentMethod
+                setter: setPaymentMethod
+            xml_attribute: true
+            type: string
+        paymentLink:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentLink
+            accessor:
+                getter: getPaymentLink
+                setter: setPaymentLink
+            xml_attribute: true
+            type: bool
+        stripePaymentMethods:
+            expose: true
+            access_type: public_method
+            serialized_name: StripePaymentMethods
+            accessor:
+                getter: getStripePaymentMethods
+                setter: setStripePaymentMethods
+            xml_attribute: true
+            type: string
+        datatransPaymentMethods:
+            expose: true
+            access_type: public_method
+            serialized_name: DatatransPaymentMethods
+            accessor:
+                getter: getDatatransPaymentMethods
+                setter: setDatatransPaymentMethods
+            xml_attribute: true
+            type: string

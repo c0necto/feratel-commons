@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\NLInsertedAddressType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: Email
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: int
+        message:
+            expose: true
+            access_type: public_method
+            serialized_name: Message
+            accessor:
+                getter: getMessage
+                setter: setMessage
+            xml_attribute: true
+            type: string

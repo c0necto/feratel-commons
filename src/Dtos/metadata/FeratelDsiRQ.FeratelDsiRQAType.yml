@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\FeratelDsiRQ\FeratelDsiRQAType:
+    properties:
+        request:
+            expose: true
+            access_type: public_method
+            serialized_name: Request
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRequest
+                setter: setRequest
+            type: Conecto\FeratelDsi\Dtos\RequestType
+        mappingRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: MappingRequest
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMappingRequest
+                setter: setMappingRequest
+            type: Conecto\FeratelDsi\Dtos\MappingRequestType
+        sPRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: SPRequest
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSPRequest
+                setter: setSPRequest
+            type: Conecto\FeratelDsi\Dtos\SPRequestType

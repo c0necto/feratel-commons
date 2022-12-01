@@ -1,0 +1,98 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderFilterType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        onlyBookable:
+            expose: true
+            access_type: public_method
+            serialized_name: OnlyBookable
+            accessor:
+                getter: getOnlyBookable
+                setter: setOnlyBookable
+            xml_attribute: true
+            type: bool
+        usage:
+            expose: true
+            access_type: public_method
+            serialized_name: Usage
+            accessor:
+                getter: getUsage
+                setter: setUsage
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\SimpleListOf<string>
+        housePackageMasters:
+            expose: true
+            access_type: public_method
+            serialized_name: HousePackageMasters
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHousePackageMasters
+                setter: setHousePackageMasters
+            type: Conecto\FeratelDsi\Dtos\BDHousePackageMastersFilterType
+        housePackageMastersSelfAssign:
+            expose: true
+            access_type: public_method
+            serialized_name: HousePackageMastersSelfAssign
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHousePackageMastersSelfAssign
+                setter: setHousePackageMastersSelfAssign
+            type: Conecto\FeratelDsi\Dtos\BDHousePackageMastersFilterType
+        service:
+            expose: true
+            access_type: public_method
+            serialized_name: Service
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getService
+                setter: setService
+            type: Conecto\FeratelDsi\Dtos\BDServiceProviderFilterType\ServiceAType

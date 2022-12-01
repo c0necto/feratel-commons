@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\TranslatableListType:
+    properties:
+        translation:
+            expose: true
+            access_type: public_method
+            serialized_name: Translation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTranslation
+                setter: setTranslation
+            xml_list:
+                inline: true
+                entry_name: Translation
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>

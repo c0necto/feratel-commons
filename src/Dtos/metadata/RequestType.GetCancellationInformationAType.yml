@@ -1,0 +1,92 @@
+Conecto\FeratelDsi\Dtos\RequestType\GetCancellationInformationAType:
+    properties:
+        dBCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DBCode
+            accessor:
+                getter: getDBCode
+                setter: setDBCode
+            xml_attribute: true
+            type: string
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        serviceProviderId:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderId
+            accessor:
+                getter: getServiceProviderId
+                setter: setServiceProviderId
+            xml_attribute: true
+            type: string
+        productId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductId
+            accessor:
+                getter: getProductId
+                setter: setProductId
+            xml_attribute: true
+            type: string
+        adults:
+            expose: true
+            access_type: public_method
+            serialized_name: Adults
+            accessor:
+                getter: getAdults
+                setter: setAdults
+            xml_attribute: true
+            type: int
+        children:
+            expose: true
+            access_type: public_method
+            serialized_name: Children
+            accessor:
+                getter: getChildren
+                setter: setChildren
+            xml_attribute: true
+            type: string
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            xml_attribute: true
+            type: int
+        units:
+            expose: true
+            access_type: public_method
+            serialized_name: Units
+            accessor:
+                getter: getUnits
+                setter: setUnits
+            xml_attribute: true
+            type: int

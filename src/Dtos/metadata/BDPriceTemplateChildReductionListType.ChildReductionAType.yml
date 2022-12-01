@@ -1,0 +1,56 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplateChildReductionListType\ChildReductionAType:
+    properties:
+        ageFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: AgeFrom
+            accessor:
+                getter: getAgeFrom
+                setter: setAgeFrom
+            xml_attribute: true
+            type: int
+        ageTo:
+            expose: true
+            access_type: public_method
+            serialized_name: AgeTo
+            accessor:
+                getter: getAgeTo
+                setter: setAgeTo
+            xml_attribute: true
+            type: int
+        calcRule:
+            expose: true
+            access_type: public_method
+            serialized_name: CalcRule
+            accessor:
+                getter: getCalcRule
+                setter: setCalcRule
+            xml_attribute: true
+            type: string
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: float
+        withMeals:
+            expose: true
+            access_type: public_method
+            serialized_name: WithMeals
+            accessor:
+                getter: getWithMeals
+                setter: setWithMeals
+            xml_attribute: true
+            type: bool
+        useBasePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: UseBasePrice
+            accessor:
+                getter: getUseBasePrice
+                setter: setUseBasePrice
+            xml_attribute: true
+            type: bool

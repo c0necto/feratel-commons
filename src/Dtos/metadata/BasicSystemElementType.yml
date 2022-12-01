@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\BasicSystemElementType:
+    properties:
+        systems:
+            expose: true
+            access_type: public_method
+            serialized_name: Systems
+            accessor:
+                getter: getSystems
+                setter: setSystems
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\SimpleListOf<string>

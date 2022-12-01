@@ -1,0 +1,115 @@
+Conecto\FeratelDsi\Dtos\SearchPackageResultType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        startDates:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStartDates
+                setter: setStartDates
+            type: array<Conecto\FeratelDsi\Dtos\SearchPackageStartDatesResultType\StartDateAType>
+            xml_list:
+                inline: false
+                entry_name: StartDate
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        settlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SettlerCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettlerCode
+                setter: setSettlerCode
+            type: string
+        headerSectionPriceType:
+            expose: true
+            access_type: public_method
+            serialized_name: HeaderSectionPriceType
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHeaderSectionPriceType
+                setter: setHeaderSectionPriceType
+            type: string
+        minChild:
+            expose: true
+            access_type: public_method
+            serialized_name: MinChild
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMinChild
+                setter: setMinChild
+            type: int
+        minAdult:
+            expose: true
+            access_type: public_method
+            serialized_name: MinAdult
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMinAdult
+                setter: setMinAdult
+            type: int
+        maxChild:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxChild
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMaxChild
+                setter: setMaxChild
+            type: int
+        maxAdult:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxAdult
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMaxAdult
+                setter: setMaxAdult
+            type: int
+        dbCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DbCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDbCode
+                setter: setDbCode
+            type: string

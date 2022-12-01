@@ -1,0 +1,46 @@
+Conecto\FeratelDsi\Dtos\DirectPaymentType:
+    properties:
+        prePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrePayment
+                setter: setPrePayment
+            type: float
+        prePaymentUntil:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePaymentUntil
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrePaymentUntil
+                setter: setPrePaymentUntil
+            type: float
+        finalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: FinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFinalPayment
+                setter: setFinalPayment
+            type: float
+        usePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: UsePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUsePayment
+                setter: setUsePayment
+            type: float

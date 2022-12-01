@@ -1,0 +1,67 @@
+Conecto\FeratelDsi\Dtos\BDPackageSettingsType:
+    properties:
+        priceSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceSettings
+                setter: setPriceSettings
+            type: Conecto\FeratelDsi\Dtos\BDPackagePriceSettingsType
+        packageDuration:
+            expose: true
+            access_type: public_method
+            serialized_name: PackageDuration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPackageDuration
+                setter: setPackageDuration
+            type: array<Conecto\FeratelDsi\Dtos\BDPackageDurationDaysType>
+            xml_list:
+                inline: false
+                entry_name: DurationDays
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        occupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: Occupancy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOccupancy
+                setter: setOccupancy
+            type: Conecto\FeratelDsi\Dtos\BDPackageOccupancyType
+        childAgeGroups:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildAgeGroups
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildAgeGroups
+                setter: setChildAgeGroups
+            type: array<Conecto\FeratelDsi\Dtos\BDChildAgeGroupsType\ChildAgeGroupAType>
+            xml_list:
+                inline: false
+                entry_name: ChildAgeGroup
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        calculation:
+            expose: true
+            access_type: public_method
+            serialized_name: Calculation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCalculation
+                setter: setCalculation
+            type: Conecto\FeratelDsi\Dtos\BDPackageCalculationType

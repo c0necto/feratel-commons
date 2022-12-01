@@ -1,0 +1,29 @@
+Conecto\FeratelDsi\Dtos\ONAXAddressIndividualFieldItemType:
+    properties:
+        aifAddressID:
+            expose: true
+            access_type: public_method
+            serialized_name: aifAddressID
+            accessor:
+                getter: getAifAddressID
+                setter: setAifAddressID
+            xml_attribute: true
+            type: string
+        aifName:
+            expose: true
+            access_type: public_method
+            serialized_name: aifName
+            accessor:
+                getter: getAifName
+                setter: setAifName
+            xml_attribute: true
+            type: string
+        aifValue:
+            expose: true
+            access_type: public_method
+            serialized_name: aifValue
+            accessor:
+                getter: getAifValue
+                setter: setAifValue
+            xml_attribute: true
+            type: string

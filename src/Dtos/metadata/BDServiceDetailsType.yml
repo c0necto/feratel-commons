@@ -1,0 +1,150 @@
+Conecto\FeratelDsi\Dtos\BDServiceDetailsType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getType
+                setter: setType
+            type: string
+        rooms:
+            expose: true
+            access_type: public_method
+            serialized_name: Rooms
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRooms
+                setter: setRooms
+            type: float
+        bedrooms:
+            expose: true
+            access_type: public_method
+            serialized_name: Bedrooms
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBedrooms
+                setter: setBedrooms
+            type: int
+        size:
+            expose: true
+            access_type: public_method
+            serialized_name: Size
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSize
+                setter: setSize
+            type: int
+        useAvailability:
+            expose: true
+            access_type: public_method
+            serialized_name: UseAvailability
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUseAvailability
+                setter: setUseAvailability
+            type: int
+        lastAvailabilityChange:
+            expose: true
+            access_type: public_method
+            serialized_name: LastAvailabilityChange
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLastAvailabilityChange
+                setter: setLastAvailabilityChange
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        maxAvailability:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxAvailability
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMaxAvailability
+                setter: setMaxAvailability
+            type: int
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serviceClassification:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceClassification
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceClassification
+                setter: setServiceClassification
+            type: Conecto\FeratelDsi\Dtos\ItemType
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCode
+                setter: setCode
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getActive
+                setter: setActive
+            type: bool
+        licenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenceNumber
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLicenceNumber
+                setter: setLicenceNumber
+            type: string

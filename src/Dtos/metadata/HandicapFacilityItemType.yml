@@ -1,0 +1,52 @@
+Conecto\FeratelDsi\Dtos\HandicapFacilityItemType:
+    properties:
+        groupID:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupID
+            accessor:
+                getter: getGroupID
+                setter: setGroupID
+            xml_attribute: true
+            type: string
+        valueType:
+            expose: true
+            access_type: public_method
+            serialized_name: ValueType
+            accessor:
+                getter: getValueType
+                setter: setValueType
+            xml_attribute: true
+            type: string
+        handicapTypes:
+            expose: true
+            access_type: public_method
+            serialized_name: HandicapTypes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHandicapTypes
+                setter: setHandicapTypes
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        handicapGroups:
+            expose: true
+            access_type: public_method
+            serialized_name: HandicapGroups
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHandicapGroups
+                setter: setHandicapGroups
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

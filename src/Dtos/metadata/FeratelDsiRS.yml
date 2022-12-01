@@ -1,0 +1,3 @@
+Conecto\FeratelDsi\Dtos\FeratelDsiRS:
+    xml_root_name: FeratelDsiRS
+    xml_root_namespace: 'http://interface.deskline.net/DSI/XSD'

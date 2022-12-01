@@ -1,0 +1,63 @@
+Conecto\FeratelDsi\Dtos\SearchProductType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        productType:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductType
+            accessor:
+                getter: getProductType
+                setter: setProductType
+            xml_attribute: true
+            type: string
+        accommodationType:
+            expose: true
+            access_type: public_method
+            serialized_name: AccommodationType
+            accessor:
+                getter: getAccommodationType
+                setter: setAccommodationType
+            xml_attribute: true
+            type: string
+        searchCode:
+            expose: true
+            access_type: public_method
+            serialized_name: SearchCode
+            accessor:
+                getter: getSearchCode
+                setter: setSearchCode
+            xml_attribute: true
+            type: string
+        basePriceOnly:
+            expose: true
+            access_type: public_method
+            serialized_name: BasePriceOnly
+            accessor:
+                getter: getBasePriceOnly
+                setter: setBasePriceOnly
+            xml_attribute: true
+            type: bool
+        holidayThemes:
+            expose: true
+            access_type: public_method
+            serialized_name: HolidayThemes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHolidayThemes
+                setter: setHolidayThemes
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

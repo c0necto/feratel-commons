@@ -1,0 +1,200 @@
+Conecto\FeratelDsi\Dtos\DocumentType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        class:
+            expose: true
+            access_type: public_method
+            serialized_name: Class
+            accessor:
+                getter: getClass
+                setter: setClass
+            xml_attribute: true
+            type: string
+        systems:
+            expose: true
+            access_type: public_method
+            serialized_name: Systems
+            accessor:
+                getter: getSystems
+                setter: setSystems
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\SimpleListOf<string>
+        systemId:
+            expose: true
+            access_type: public_method
+            serialized_name: SystemId
+            accessor:
+                getter: getSystemId
+                setter: setSystemId
+            xml_attribute: true
+            type: string
+        order:
+            expose: true
+            access_type: public_method
+            serialized_name: Order
+            accessor:
+                getter: getOrder
+                setter: setOrder
+            xml_attribute: true
+            type: int
+        showFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowFrom
+            accessor:
+                getter: getShowFrom
+                setter: setShowFrom
+            xml_attribute: true
+            type: int
+        showTo:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowTo
+            accessor:
+                getter: getShowTo
+                setter: setShowTo
+            xml_attribute: true
+            type: int
+        copyright:
+            expose: true
+            access_type: public_method
+            serialized_name: Copyright
+            accessor:
+                getter: getCopyright
+                setter: setCopyright
+            xml_attribute: true
+            type: string
+        extension:
+            expose: true
+            access_type: public_method
+            serialized_name: Extension
+            accessor:
+                getter: getExtension
+                setter: setExtension
+            xml_attribute: true
+            type: string
+        size:
+            expose: true
+            access_type: public_method
+            serialized_name: Size
+            accessor:
+                getter: getSize
+                setter: setSize
+            xml_attribute: true
+            type: int
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        width:
+            expose: true
+            access_type: public_method
+            serialized_name: Width
+            accessor:
+                getter: getWidth
+                setter: setWidth
+            xml_attribute: true
+            type: int
+        height:
+            expose: true
+            access_type: public_method
+            serialized_name: Height
+            accessor:
+                getter: getHeight
+                setter: setHeight
+            xml_attribute: true
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        cCId:
+            expose: true
+            access_type: public_method
+            serialized_name: CCId
+            accessor:
+                getter: getCCId
+                setter: setCCId
+            xml_attribute: true
+            type: string
+        cCAuthor:
+            expose: true
+            access_type: public_method
+            serialized_name: CCAuthor
+            accessor:
+                getter: getCCAuthor
+                setter: setCCAuthor
+            xml_attribute: true
+            type: string
+        cCCopyright:
+            expose: true
+            access_type: public_method
+            serialized_name: CCCopyright
+            accessor:
+                getter: getCCCopyright
+                setter: setCCCopyright
+            xml_attribute: true
+            type: string
+        cCChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CCChangeDate
+            accessor:
+                getter: getCCChangeDate
+                setter: setCCChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        names:
+            expose: true
+            access_type: public_method
+            serialized_name: Names
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getNames
+                setter: setNames
+            type: array<Conecto\FeratelDsi\Dtos\TranslatableItemType>
+            xml_list:
+                inline: false
+                entry_name: Translation
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string

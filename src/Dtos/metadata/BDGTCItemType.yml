@@ -1,0 +1,75 @@
+Conecto\FeratelDsi\Dtos\BDGTCItemType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            xml_attribute: true
+            type: string
+        systems:
+            expose: true
+            access_type: public_method
+            serialized_name: Systems
+            accessor:
+                getter: getSystems
+                setter: setSystems
+            xml_attribute: true
+            type: string
+        systemId:
+            expose: true
+            access_type: public_method
+            serialized_name: SystemId
+            accessor:
+                getter: getSystemId
+                setter: setSystemId
+            xml_attribute: true
+            type: string
+        showFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowFrom
+            accessor:
+                getter: getShowFrom
+                setter: setShowFrom
+            xml_attribute: true
+            type: int
+        showTo:
+            expose: true
+            access_type: public_method
+            serialized_name: ShowTo
+            accessor:
+                getter: getShowTo
+                setter: setShowTo
+            xml_attribute: true
+            type: int
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

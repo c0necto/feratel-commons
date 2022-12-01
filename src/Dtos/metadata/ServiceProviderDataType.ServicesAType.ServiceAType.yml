@@ -1,0 +1,83 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        useAvailability:
+            expose: true
+            access_type: public_method
+            serialized_name: UseAvailability
+            accessor:
+                getter: getUseAvailability
+                setter: setUseAvailability
+            xml_attribute: true
+            type: bool
+        rooms:
+            expose: true
+            access_type: public_method
+            serialized_name: Rooms
+            accessor:
+                getter: getRooms
+                setter: setRooms
+            xml_attribute: true
+            type: float
+        bedRooms:
+            expose: true
+            access_type: public_method
+            serialized_name: BedRooms
+            accessor:
+                getter: getBedRooms
+                setter: setBedRooms
+            xml_attribute: true
+            type: int
+        size:
+            expose: true
+            access_type: public_method
+            serialized_name: Size
+            accessor:
+                getter: getSize
+                setter: setSize
+            xml_attribute: true
+            type: int
+        match:
+            expose: true
+            access_type: public_method
+            serialized_name: Match
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMatch
+                setter: setMatch
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\MatchAType
+        products:
+            expose: true
+            access_type: public_method
+            serialized_name: Products
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getProducts
+                setter: setProducts
+            type: array<Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType>
+            xml_list:
+                inline: false
+                entry_name: Product
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

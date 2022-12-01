@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\BDShopItemsType:
+    properties:
+        variations:
+            expose: true
+            access_type: public_method
+            serialized_name: Variations
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getVariations
+                setter: setVariations
+            type: Conecto\FeratelDsi\Dtos\BasicInfoType

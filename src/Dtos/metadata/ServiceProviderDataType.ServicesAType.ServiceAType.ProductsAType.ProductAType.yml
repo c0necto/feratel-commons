@@ -1,0 +1,103 @@
+Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        orgPaymentRequired:
+            expose: true
+            access_type: public_method
+            serialized_name: OrgPaymentRequired
+            accessor:
+                getter: getOrgPaymentRequired
+                setter: setOrgPaymentRequired
+            xml_attribute: true
+            type: bool
+        inclVT:
+            expose: true
+            access_type: public_method
+            serialized_name: InclVT
+            accessor:
+                getter: getInclVT
+                setter: setInclVT
+            xml_attribute: true
+            type: bool
+        availability:
+            expose: true
+            access_type: public_method
+            serialized_name: Availability
+            accessor:
+                getter: getAvailability
+                setter: setAvailability
+            xml_attribute: true
+            type: int
+        availabilityReference:
+            expose: true
+            access_type: public_method
+            serialized_name: AvailabilityReference
+            accessor:
+                getter: getAvailabilityReference
+                setter: setAvailabilityReference
+            xml_attribute: true
+            type: string
+        searchLineNo:
+            expose: true
+            access_type: public_method
+            serialized_name: SearchLineNo
+            accessor:
+                getter: getSearchLineNo
+                setter: setSearchLineNo
+            xml_attribute: true
+            type: int
+        occupancy:
+            expose: true
+            access_type: public_method
+            serialized_name: Occupancy
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOccupancy
+                setter: setOccupancy
+            type: Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\OccupancyAType
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: array<Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType>
+            xml_list:
+                inline: false
+                entry_name: Price
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        paymentInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentInformation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentInformation
+                setter: setPaymentInformation
+            type: Conecto\FeratelDsi\Dtos\PaymentInformationType

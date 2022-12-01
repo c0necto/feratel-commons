@@ -1,0 +1,109 @@
+Conecto\FeratelDsi\Dtos\PaymentInformationType:
+    properties:
+        hasPrePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: HasPrePayment
+            accessor:
+                getter: getHasPrePayment
+                setter: setHasPrePayment
+            xml_attribute: true
+            type: bool
+        prePaymentPercent:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePaymentPercent
+            accessor:
+                getter: getPrePaymentPercent
+                setter: setPrePaymentPercent
+            xml_attribute: true
+            type: float
+        prePaymentFixedAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePaymentFixedAmount
+            accessor:
+                getter: getPrePaymentFixedAmount
+                setter: setPrePaymentFixedAmount
+            xml_attribute: true
+            type: float
+        prePaymentDueRule:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePaymentDueRule
+            accessor:
+                getter: getPrePaymentDueRule
+                setter: setPrePaymentDueRule
+            xml_attribute: true
+            type: string
+        prePayDueDays:
+            expose: true
+            access_type: public_method
+            serialized_name: PrePayDueDays
+            accessor:
+                getter: getPrePayDueDays
+                setter: setPrePayDueDays
+            xml_attribute: true
+            type: int
+        finalPayDueDays:
+            expose: true
+            access_type: public_method
+            serialized_name: FinalPayDueDays
+            accessor:
+                getter: getFinalPayDueDays
+                setter: setFinalPayDueDays
+            xml_attribute: true
+            type: int
+        paymentProvider:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentProvider
+            accessor:
+                getter: getPaymentProvider
+                setter: setPaymentProvider
+            xml_attribute: true
+            type: string
+        possiblePaymentMethods:
+            expose: true
+            access_type: public_method
+            serialized_name: PossiblePaymentMethods
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPossiblePaymentMethods
+                setter: setPossiblePaymentMethods
+            type: Conecto\FeratelDsi\Dtos\PaymentInformationType\PossiblePaymentMethodsAType
+        serviceProviderPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceProviderPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getServiceProviderPayment
+                setter: setServiceProviderPayment
+            type: Conecto\FeratelDsi\Dtos\PaymentInformationType\ServiceProviderPaymentAType
+        splitPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: SplitPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSplitPayment
+                setter: setSplitPayment
+            type: Conecto\FeratelDsi\Dtos\PaymentInformationType\SplitPaymentAType
+        organisationPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: OrganisationPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getOrganisationPayment
+                setter: setOrganisationPayment
+            type: Conecto\FeratelDsi\Dtos\PaymentInformationType\OrganisationPaymentAType

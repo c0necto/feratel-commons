@@ -1,0 +1,134 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\TotalAType:
+    properties:
+        amountServiceProviderPrePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountServiceProviderPrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountServiceProviderPrePayment
+                setter: setAmountServiceProviderPrePayment
+            type: float
+        amountServiceProviderFinalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountServiceProviderFinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountServiceProviderFinalPayment
+                setter: setAmountServiceProviderFinalPayment
+            type: float
+        amountOrganisationPrePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountOrganisationPrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountOrganisationPrePayment
+                setter: setAmountOrganisationPrePayment
+            type: float
+        amountOrganisationFinalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountOrganisationFinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountOrganisationFinalPayment
+                setter: setAmountOrganisationFinalPayment
+            type: float
+        bookingFeeSet:
+            expose: true
+            access_type: public_method
+            serialized_name: BookingFeeSet
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBookingFeeSet
+                setter: setBookingFeeSet
+            type: bool
+        amountBookingFee:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountBookingFee
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountBookingFee
+                setter: setAmountBookingFee
+            type: float
+        cancellationInsuranceSet:
+            expose: true
+            access_type: public_method
+            serialized_name: CancellationInsuranceSet
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCancellationInsuranceSet
+                setter: setCancellationInsuranceSet
+            type: bool
+        amountCancellationInsurance:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountCancellationInsurance
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountCancellationInsurance
+                setter: setAmountCancellationInsurance
+            type: float
+        amountVisitorTax:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountVisitorTax
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountVisitorTax
+                setter: setAmountVisitorTax
+            type: float
+        amountVat:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountVat
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountVat
+                setter: setAmountVat
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType\TotalAType\AmountVatAType
+        amountPrePayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountPrePayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountPrePayment
+                setter: setAmountPrePayment
+            type: float
+        amountFinalPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountFinalPayment
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountFinalPayment
+                setter: setAmountFinalPayment
+            type: float

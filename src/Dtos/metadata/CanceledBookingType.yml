@@ -1,0 +1,24 @@
+Conecto\FeratelDsi\Dtos\CanceledBookingType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getId
+                setter: setId
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: string

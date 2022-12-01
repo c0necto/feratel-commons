@@ -1,0 +1,81 @@
+Conecto\FeratelDsi\Dtos\SearchPackageParametersType:
+    properties:
+        index:
+            expose: true
+            access_type: public_method
+            serialized_name: Index
+            accessor:
+                getter: getIndex
+                setter: setIndex
+            xml_attribute: true
+            type: int
+        salesChannel:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannel
+            accessor:
+                getter: getSalesChannel
+                setter: setSalesChannel
+            xml_attribute: true
+            type: string
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        providerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ProviderCode
+            accessor:
+                getter: getProviderCode
+                setter: setProviderCode
+            xml_attribute: true
+            type: string
+        providerName:
+            expose: true
+            access_type: public_method
+            serialized_name: ProviderName
+            accessor:
+                getter: getProviderName
+                setter: setProviderName
+            xml_attribute: true
+            type: string
+        toleranceDays:
+            expose: true
+            access_type: public_method
+            serialized_name: ToleranceDays
+            accessor:
+                getter: getToleranceDays
+                setter: setToleranceDays
+            xml_attribute: true
+            type: int
+        preSelectedHolidayThemeIDs:
+            expose: true
+            access_type: public_method
+            serialized_name: PreSelectedHolidayThemeIDs
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPreSelectedHolidayThemeIDs
+                setter: setPreSelectedHolidayThemeIDs
+            type: array<Conecto\FeratelDsi\Dtos\GuidListType\ItemAType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

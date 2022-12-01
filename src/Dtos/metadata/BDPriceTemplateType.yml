@@ -1,0 +1,170 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplateType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        validFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidFrom
+            accessor:
+                getter: getValidFrom
+                setter: setValidFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        isBestPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBestPrice
+            accessor:
+                getter: getIsBestPrice
+                setter: setIsBestPrice
+            xml_attribute: true
+            type: bool
+        defaultMealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DefaultMealCode
+            accessor:
+                getter: getDefaultMealCode
+                setter: setDefaultMealCode
+            xml_attribute: true
+            type: string
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        periods:
+            expose: true
+            access_type: public_method
+            serialized_name: Periods
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPeriods
+                setter: setPeriods
+            type: array<Conecto\FeratelDsi\Dtos\BDPeriodListType\PeriodAType>
+            xml_list:
+                inline: false
+                entry_name: Period
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType
+        childReductions:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildReductions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildReductions
+                setter: setChildReductions
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplateChildReductionListType
+        priceSplittings:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceSplittings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceSplittings
+                setter: setPriceSplittings
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceSplittingListType
+        specialPrices:
+            expose: true
+            access_type: public_method
+            serialized_name: SpecialPrices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSpecialPrices
+                setter: setSpecialPrices
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplateSpecialPriceListType
+        meals:
+            expose: true
+            access_type: public_method
+            serialized_name: Meals
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMeals
+                setter: setMeals
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplateMealListType\MealAType>
+            xml_list:
+                inline: false
+                entry_name: Meal
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        bedLinen:
+            expose: true
+            access_type: public_method
+            serialized_name: BedLinen
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBedLinen
+                setter: setBedLinen
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplateType\BedLinenAType
+        finalCleaning:
+            expose: true
+            access_type: public_method
+            serialized_name: FinalCleaning
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFinalCleaning
+                setter: setFinalCleaning
+            type: Conecto\FeratelDsi\Dtos\BDPriceTemplateType\FinalCleaningAType
+        extras:
+            expose: true
+            access_type: public_method
+            serialized_name: Extras
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getExtras
+                setter: setExtras
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplateExtraListType\ExtraAType>
+            xml_list:
+                inline: false
+                entry_name: Extra
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

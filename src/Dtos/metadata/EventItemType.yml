@@ -1,0 +1,82 @@
+Conecto\FeratelDsi\Dtos\EventItemType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        location:
+            expose: true
+            access_type: public_method
+            serialized_name: Location
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLocation
+                setter: setLocation
+            type: string
+        town:
+            expose: true
+            access_type: public_method
+            serialized_name: Town
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTown
+                setter: setTown
+            type: string
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: Conecto\FeratelDsi\Dtos\EventItemType\DurationAType
+        times:
+            expose: true
+            access_type: public_method
+            serialized_name: Times
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTimes
+                setter: setTimes
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: Time
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        expanded:
+            expose: true
+            access_type: public_method
+            serialized_name: Expanded
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getExpanded
+                setter: setExpanded
+            type: Conecto\FeratelDsi\Dtos\ExpandedEventType

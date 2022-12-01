@@ -1,0 +1,36 @@
+Conecto\FeratelDsi\Dtos\SearchPackageDetailsResultType\CategoriesAType\CategoryAType\SectionAType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        assignmentItems:
+            expose: true
+            access_type: public_method
+            serialized_name: AssignmentItems
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAssignmentItems
+                setter: setAssignmentItems
+            type: array<Conecto\FeratelDsi\Dtos\PackageDetailsAssignmentItemType>
+            xml_list:
+                inline: false
+                entry_name: AssignmentItem
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

@@ -1,0 +1,101 @@
+Conecto\FeratelDsi\Dtos\PackageDetailsSearchType:
+    properties:
+        dbCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DbCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDbCode
+                setter: setDbCode
+            type: string
+        packageId:
+            expose: true
+            access_type: public_method
+            serialized_name: PackageId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPackageId
+                setter: setPackageId
+            type: string
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: int
+        adults:
+            expose: true
+            access_type: public_method
+            serialized_name: Adults
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAdults
+                setter: setAdults
+            type: int
+        children:
+            expose: true
+            access_type: public_method
+            serialized_name: Children
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getChildren
+                setter: setChildren
+            type: string
+        units:
+            expose: true
+            access_type: public_method
+            serialized_name: Units
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUnits
+                setter: setUnits
+            type: int
+        settler:
+            expose: true
+            access_type: public_method
+            serialized_name: Settler
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSettler
+                setter: setSettler
+            type: string
+        salesChannelID:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelID
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalesChannelID
+                setter: setSalesChannelID
+            type: string

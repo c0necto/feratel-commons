@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\CommitShoppingCartType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        userId:
+            expose: true
+            access_type: public_method
+            serialized_name: UserId
+            accessor:
+                getter: getUserId
+                setter: setUserId
+            xml_attribute: true
+            type: string
+        linkKey:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkKey
+            accessor:
+                getter: getLinkKey
+                setter: setLinkKey
+            xml_attribute: true
+            type: string
+        commissionFromSP:
+            expose: true
+            access_type: public_method
+            serialized_name: CommissionFromSP
+            accessor:
+                getter: getCommissionFromSP
+                setter: setCommissionFromSP
+            xml_attribute: true
+            type: float
+        commissionToPOS:
+            expose: true
+            access_type: public_method
+            serialized_name: CommissionToPOS
+            accessor:
+                getter: getCommissionToPOS
+                setter: setCommissionToPOS
+            xml_attribute: true
+            type: float

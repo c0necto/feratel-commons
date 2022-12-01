@@ -1,0 +1,35 @@
+Conecto\FeratelDsi\Dtos\BDPackagesType:
+    properties:
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\BasicElementType
+        contentDescriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: ContentDescriptions
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getContentDescriptions
+                setter: setContentDescriptions
+            type: Conecto\FeratelDsi\Dtos\BDDescriptionsFilterType
+        sections:
+            expose: true
+            access_type: public_method
+            serialized_name: Sections
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSections
+                setter: setSections
+            type: Conecto\FeratelDsi\Dtos\BDPackageSectionsType

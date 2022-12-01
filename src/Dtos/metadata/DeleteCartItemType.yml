@@ -1,0 +1,11 @@
+Conecto\FeratelDsi\Dtos\DeleteCartItemType:
+    properties:
+        shoppingCartItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ShoppingCartItemId
+            accessor:
+                getter: getShoppingCartItemId
+                setter: setShoppingCartItemId
+            xml_attribute: true
+            type: string

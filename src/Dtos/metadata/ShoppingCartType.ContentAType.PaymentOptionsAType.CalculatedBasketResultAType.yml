@@ -1,0 +1,46 @@
+Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType:
+    properties:
+        paymentMethods:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentMethods
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentMethods
+                setter: setPaymentMethods
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentMethodsAType
+        paymentSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentSettings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPaymentSettings
+                setter: setPaymentSettings
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentSettingsAType
+        payments:
+            expose: true
+            access_type: public_method
+            serialized_name: Payments
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPayments
+                setter: setPayments
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PaymentsAType
+        promotionCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPromotionCode
+                setter: setPromotionCode
+            type: Conecto\FeratelDsi\Dtos\ShoppingCartType\ContentAType\PaymentOptionsAType\CalculatedBasketResultAType\PromotionCodeAType

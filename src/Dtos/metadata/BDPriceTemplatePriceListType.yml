@@ -1,0 +1,50 @@
+Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType:
+    properties:
+        basePrices:
+            expose: true
+            access_type: public_method
+            serialized_name: BasePrices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBasePrices
+                setter: setBasePrices
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType\BasePricesAType\BasePriceAType>
+            xml_list:
+                inline: false
+                entry_name: BasePrice
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        surcharges:
+            expose: true
+            access_type: public_method
+            serialized_name: Surcharges
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSurcharges
+                setter: setSurcharges
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType\SurchargesAType\SurchargeAType>
+            xml_list:
+                inline: false
+                entry_name: Surcharge
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        discounts:
+            expose: true
+            access_type: public_method
+            serialized_name: Discounts
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDiscounts
+                setter: setDiscounts
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplatePriceListType\DiscountsAType\DiscountAType>
+            xml_list:
+                inline: false
+                entry_name: Discount
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

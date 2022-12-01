@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\BDRevenueSettingType\ObjectTypeAType:
+    properties:
+        hotelRoom:
+            expose: true
+            access_type: public_method
+            serialized_name: HotelRoom
+            accessor:
+                getter: getHotelRoom
+                setter: setHotelRoom
+            xml_attribute: true
+            type: bool
+        apartment:
+            expose: true
+            access_type: public_method
+            serialized_name: Apartment
+            accessor:
+                getter: getApartment
+                setter: setApartment
+            xml_attribute: true
+            type: bool
+        camping:
+            expose: true
+            access_type: public_method
+            serialized_name: Camping
+            accessor:
+                getter: getCamping
+                setter: setCamping
+            xml_attribute: true
+            type: bool
+        additionalService:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalService
+            accessor:
+                getter: getAdditionalService
+                setter: setAdditionalService
+            xml_attribute: true
+            type: bool
+        package:
+            expose: true
+            access_type: public_method
+            serialized_name: Package
+            accessor:
+                getter: getPackage
+                setter: setPackage
+            xml_attribute: true
+            type: bool

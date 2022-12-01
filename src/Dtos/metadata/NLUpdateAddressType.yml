@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\NLUpdateAddressType:
+    properties:
+        address:
+            expose: true
+            access_type: public_method
+            serialized_name: Address
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddress
+                setter: setAddress
+            type: Conecto\FeratelDsi\Dtos\NLUpdateAddressDetailType

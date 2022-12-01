@@ -1,0 +1,63 @@
+Conecto\FeratelDsi\Dtos\BDRatingAverageItemType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: float
+        count:
+            expose: true
+            access_type: public_method
+            serialized_name: Count
+            accessor:
+                getter: getCount
+                setter: setCount
+            xml_attribute: true
+            type: int
+        satisfaction:
+            expose: true
+            access_type: public_method
+            serialized_name: Satisfaction
+            accessor:
+                getter: getSatisfaction
+                setter: setSatisfaction
+            xml_attribute: true
+            type: float
+        recommended:
+            expose: true
+            access_type: public_method
+            serialized_name: Recommended
+            accessor:
+                getter: getRecommended
+                setter: setRecommended
+            xml_attribute: true
+            type: int
+        ratings:
+            expose: true
+            access_type: public_method
+            serialized_name: Ratings
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRatings
+                setter: setRatings
+            type: array<Conecto\FeratelDsi\Dtos\BDRatingItemType>
+            xml_list:
+                inline: false
+                entry_name: Rating
+                skip_when_empty: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'

@@ -1,0 +1,81 @@
+Conecto\FeratelDsi\Dtos\PricesType:
+    properties:
+        currency:
+            expose: true
+            access_type: public_method
+            serialized_name: Currency
+            accessor:
+                getter: getCurrency
+                setter: setCurrency
+            xml_attribute: true
+            type: string
+        basePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: BasePrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getBasePrice
+                setter: setBasePrice
+            type: float
+        totalPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTotalPrice
+                setter: setTotalPrice
+            type: float
+        specialPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SpecialPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSpecialPrice
+                setter: setSpecialPrice
+            xml_list:
+                inline: true
+                entry_name: SpecialPrice
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<string>
+        insteadPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: InsteadPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getInsteadPrice
+                setter: setInsteadPrice
+            type: float
+        amountSaved:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountSaved
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAmountSaved
+                setter: setAmountSaved
+            type: float
+        isBestPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBestPrice
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getIsBestPrice
+                setter: setIsBestPrice
+            type: bool

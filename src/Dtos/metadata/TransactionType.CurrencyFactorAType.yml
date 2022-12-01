@@ -1,0 +1,21 @@
+Conecto\FeratelDsi\Dtos\TransactionType\CurrencyFactorAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: float
+            xml_element:
+                cdata: false
+        guestCurrency:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestCurrency
+            accessor:
+                getter: getGuestCurrency
+                setter: setGuestCurrency
+            xml_attribute: true
+            type: string

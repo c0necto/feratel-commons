@@ -1,0 +1,56 @@
+Conecto\FeratelDsi\Dtos\KVGuestCardType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            accessor:
+                getter: getURL
+                setter: setURL
+            xml_attribute: true
+            type: string
+        global:
+            expose: true
+            access_type: public_method
+            serialized_name: Global
+            accessor:
+                getter: getGlobal
+                setter: setGlobal
+            xml_attribute: true
+            type: bool
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: bool
+        changeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ChangeDate
+            accessor:
+                getter: getChangeDate
+                setter: setChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

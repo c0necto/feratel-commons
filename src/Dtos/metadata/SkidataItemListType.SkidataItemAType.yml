@@ -1,0 +1,24 @@
+Conecto\FeratelDsi\Dtos\SkidataItemListType\SkidataItemAType:
+    properties:
+        person:
+            expose: true
+            access_type: public_method
+            serialized_name: Person
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPerson
+                setter: setPerson
+            type: Conecto\FeratelDsi\Dtos\SkidataItemListType\SkidataItemAType\PersonAType
+        keyCard:
+            expose: true
+            access_type: public_method
+            serialized_name: KeyCard
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getKeyCard
+                setter: setKeyCard
+            type: Conecto\FeratelDsi\Dtos\SkidataItemListType\SkidataItemAType\KeyCardAType

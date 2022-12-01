@@ -1,0 +1,72 @@
+Conecto\FeratelDsi\Dtos\BDPriceDetailType:
+    properties:
+        inclVT:
+            expose: true
+            access_type: public_method
+            serialized_name: InclVT
+            accessor:
+                getter: getInclVT
+                setter: setInclVT
+            xml_attribute: true
+            type: int
+        fromTo:
+            expose: true
+            access_type: public_method
+            serialized_name: FromTo
+            accessor:
+                getter: getFromTo
+                setter: setFromTo
+            xml_attribute: true
+            type: int
+        rule:
+            expose: true
+            access_type: public_method
+            serialized_name: Rule
+            accessor:
+                getter: getRule
+                setter: setRule
+            xml_attribute: true
+            type: string
+        nights:
+            expose: true
+            access_type: public_method
+            serialized_name: Nights
+            accessor:
+                getter: getNights
+                setter: setNights
+            xml_attribute: true
+            type: int
+        orgPaymentRequired:
+            expose: true
+            access_type: public_method
+            serialized_name: OrgPaymentRequired
+            accessor:
+                getter: getOrgPaymentRequired
+                setter: setOrgPaymentRequired
+            xml_attribute: true
+            type: int
+        priceOfArrival:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceOfArrival
+            accessor:
+                getter: getPriceOfArrival
+                setter: setPriceOfArrival
+            xml_attribute: true
+            type: bool
+        priceTemplates:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceTemplates
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPriceTemplates
+                setter: setPriceTemplates
+            type: array<Conecto\FeratelDsi\Dtos\BDPriceTemplateType>
+            xml_list:
+                inline: false
+                entry_name: PriceTemplate
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

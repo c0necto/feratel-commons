@@ -1,0 +1,42 @@
+Conecto\FeratelDsi\Dtos\UpdateShoppingCartExternalType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        shoppingCartItem:
+            expose: true
+            access_type: public_method
+            serialized_name: ShoppingCartItem
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getShoppingCartItem
+                setter: setShoppingCartItem
+            xml_list:
+                inline: true
+                entry_name: ShoppingCartItem
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\UpdateShoppingCartExternalType\ShoppingCartItemAType>
+        eRVInsuredPersons:
+            expose: true
+            access_type: public_method
+            serialized_name: ERVInsuredPersons
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getERVInsuredPersons
+                setter: setERVInsuredPersons
+            type: array<Conecto\FeratelDsi\Dtos\UpdateShoppingCartExternalType\ERVInsuredPersonsAType\PersonAType>
+            xml_list:
+                inline: false
+                entry_name: Person
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

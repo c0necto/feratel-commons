@@ -1,0 +1,110 @@
+Conecto\FeratelDsi\Dtos\CartItemAccommodationType:
+    properties:
+        itemId:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemId
+            accessor:
+                getter: getItemId
+                setter: setItemId
+            xml_attribute: true
+            type: string
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        adults:
+            expose: true
+            access_type: public_method
+            serialized_name: Adults
+            accessor:
+                getter: getAdults
+                setter: setAdults
+            xml_attribute: true
+            type: int
+        childrenAges:
+            expose: true
+            access_type: public_method
+            serialized_name: ChildrenAges
+            accessor:
+                getter: getChildrenAges
+                setter: setChildrenAges
+            xml_attribute: true
+            type: string
+        mealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: MealCode
+            accessor:
+                getter: getMealCode
+                setter: setMealCode
+            xml_attribute: true
+            type: string
+        guestSettlerCode:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestSettlerCode
+            accessor:
+                getter: getGuestSettlerCode
+                setter: setGuestSettlerCode
+            xml_attribute: true
+            type: string
+        paymentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentType
+            accessor:
+                getter: getPaymentType
+                setter: setPaymentType
+            xml_attribute: true
+            type: string
+        paymentMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: PaymentMethod
+            accessor:
+                getter: getPaymentMethod
+                setter: setPaymentMethod
+            xml_attribute: true
+            type: string
+        numberOfItems:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfItems
+            accessor:
+                getter: getNumberOfItems
+                setter: setNumberOfItems
+            xml_attribute: true
+            type: int
+        itemName:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemName
+            accessor:
+                getter: getItemName
+                setter: setItemName
+            xml_attribute: true
+            type: string
+        itemPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemPrice
+            accessor:
+                getter: getItemPrice
+                setter: setItemPrice
+            xml_attribute: true
+            type: float

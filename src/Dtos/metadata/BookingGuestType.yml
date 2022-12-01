@@ -1,0 +1,211 @@
+Conecto\FeratelDsi\Dtos\BookingGuestType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getId
+                setter: setId
+            type: string
+        firstName:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFirstName
+                setter: setFirstName
+            type: string
+        lastName:
+            expose: true
+            access_type: public_method
+            serialized_name: LastName
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLastName
+                setter: setLastName
+            type: string
+        company:
+            expose: true
+            access_type: public_method
+            serialized_name: Company
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCompany
+                setter: setCompany
+            type: string
+        salutationId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalutationId
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalutationId
+                setter: setSalutationId
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: string
+        salutation:
+            expose: true
+            access_type: public_method
+            serialized_name: Salutation
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSalutation
+                setter: setSalutation
+            type: string
+        address:
+            expose: true
+            access_type: public_method
+            serialized_name: Address
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAddress
+                setter: setAddress
+            type: string
+        altAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: AltAddress
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getAltAddress
+                setter: setAltAddress
+            type: string
+        phone:
+            expose: true
+            access_type: public_method
+            serialized_name: Phone
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPhone
+                setter: setPhone
+            type: string
+        fax:
+            expose: true
+            access_type: public_method
+            serialized_name: Fax
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFax
+                setter: setFax
+            type: string
+        mobile:
+            expose: true
+            access_type: public_method
+            serialized_name: Mobile
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMobile
+                setter: setMobile
+            type: string
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: Email
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            type: string
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            type: string
+        zipCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ZipCode
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getZipCode
+                setter: setZipCode
+            type: string
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: City
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCity
+                setter: setCity
+            type: string
+        language:
+            expose: true
+            access_type: public_method
+            serialized_name: Language
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getLanguage
+                setter: setLanguage
+            type: string
+        reusable:
+            expose: true
+            access_type: public_method
+            serialized_name: Reusable
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getReusable
+                setter: setReusable
+            type: bool
+        confirmationUrl:
+            expose: true
+            access_type: public_method
+            serialized_name: ConfirmationUrl
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getConfirmationUrl
+                setter: setConfirmationUrl
+            type: string

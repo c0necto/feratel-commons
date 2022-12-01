@@ -1,0 +1,40 @@
+Conecto\FeratelDsi\Dtos\DeleteFromShoppingCartType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        dbCode:
+            expose: true
+            access_type: public_method
+            serialized_name: DbCode
+            accessor:
+                getter: getDbCode
+                setter: setDbCode
+            xml_attribute: true
+            type: string
+        salesChannelId:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannelId
+            accessor:
+                getter: getSalesChannelId
+                setter: setSalesChannelId
+            xml_attribute: true
+            type: string
+        cartItem:
+            expose: true
+            access_type: public_method
+            serialized_name: CartItem
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getCartItem
+                setter: setCartItem
+            type: Conecto\FeratelDsi\Dtos\DeleteCartItemType

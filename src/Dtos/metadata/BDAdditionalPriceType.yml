@@ -1,0 +1,13 @@
+Conecto\FeratelDsi\Dtos\BDAdditionalPriceType:
+    properties:
+        range:
+            expose: true
+            access_type: public_method
+            serialized_name: Range
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRange
+                setter: setRange
+            type: Conecto\FeratelDsi\Dtos\BDAdditionalPriceType\RangeAType

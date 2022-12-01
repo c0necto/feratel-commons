@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDRevenueSettingItemListType:
+    properties:
+        revenueSetting:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueSetting
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRevenueSetting
+                setter: setRevenueSetting
+            xml_list:
+                inline: true
+                entry_name: RevenueSetting
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDRevenueSettingType>

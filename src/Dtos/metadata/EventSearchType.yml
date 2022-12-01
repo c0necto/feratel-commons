@@ -1,0 +1,97 @@
+Conecto\FeratelDsi\Dtos\EventSearchType:
+    properties:
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: To
+            accessor:
+                getter: getTo
+                setter: setTo
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        location:
+            expose: true
+            access_type: public_method
+            serialized_name: Location
+            accessor:
+                getter: getLocation
+                setter: setLocation
+            xml_attribute: true
+            type: string
+        serialEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: SerialEvent
+            accessor:
+                getter: getSerialEvent
+                setter: setSerialEvent
+            xml_attribute: true
+            type: string
+        profile:
+            expose: true
+            access_type: public_method
+            serialized_name: Profile
+            accessor:
+                getter: getProfile
+                setter: setProfile
+            xml_attribute: true
+            type: string
+        isTopEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: IsTopEvent
+            accessor:
+                getter: getIsTopEvent
+                setter: setIsTopEvent
+            xml_attribute: true
+            type: bool
+        holidayThemes:
+            expose: true
+            access_type: public_method
+            serialized_name: HolidayThemes
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getHolidayThemes
+                setter: setHolidayThemes
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        facilities:
+            expose: true
+            access_type: public_method
+            serialized_name: Facilities
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getFacilities
+                setter: setFacilities
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'

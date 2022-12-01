@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\BDClosedPeriodsType:
+    properties:
+        closedPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: ClosedPeriod
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getClosedPeriod
+                setter: setClosedPeriod
+            xml_list:
+                inline: true
+                entry_name: ClosedPeriod
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\BDClosedPeriodType>

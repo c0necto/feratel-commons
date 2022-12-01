@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDPackageSectionDurationItemType:
+    properties:
+        packageDays:
+            expose: true
+            access_type: public_method
+            serialized_name: PackageDays
+            accessor:
+                getter: getPackageDays
+                setter: setPackageDays
+            xml_attribute: true
+            type: int
+        sectionDays:
+            expose: true
+            access_type: public_method
+            serialized_name: SectionDays
+            accessor:
+                getter: getSectionDays
+                setter: setSectionDays
+            xml_attribute: true
+            type: int

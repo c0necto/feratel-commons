@@ -1,0 +1,47 @@
+Conecto\FeratelDsi\Dtos\ShowBookingType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        userId:
+            expose: true
+            access_type: public_method
+            serialized_name: UserId
+            accessor:
+                getter: getUserId
+                setter: setUserId
+            xml_attribute: true
+            type: string
+        includePriceDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludePriceDetails
+            accessor:
+                getter: getIncludePriceDetails
+                setter: setIncludePriceDetails
+            xml_attribute: true
+            type: bool
+        includePaymentDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludePaymentDetails
+            accessor:
+                getter: getIncludePaymentDetails
+                setter: setIncludePaymentDetails
+            xml_attribute: true
+            type: bool
+        includeCancellationDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludeCancellationDetails
+            accessor:
+                getter: getIncludeCancellationDetails
+                setter: setIncludeCancellationDetails
+            xml_attribute: true
+            type: bool
