@@ -4,6 +4,7 @@ namespace Conecto\FeratelDsi;
 
 
 use Conecto\FeratelDsi\Connectors\SoapConnector;
+use Conecto\FeratelDsi\Dtos\GuestNewType;
 use Conecto\FeratelDsi\Util\DsiException;
 use Conecto\FeratelDsi\Dtos\BasicDataType;
 use Conecto\FeratelDsi\Dtos\FeratelDsiRQ;
@@ -13,6 +14,18 @@ use Conecto\FeratelDsi\Dtos\KeyValuesType;
 use Conecto\FeratelDsi\Dtos\RangeType;
 use Conecto\FeratelDsi\Dtos\RequestType;
 use Conecto\FeratelDsi\Dtos\ResponseType;
+use Conecto\FeratelDsi\Dtos\AddToShoppingCartType;
+use Conecto\FeratelDsi\Dtos\CalculateOptionalFeesForShoppingCartType;
+use Conecto\FeratelDsi\Dtos\CancelBookingType;
+use Conecto\FeratelDsi\Dtos\CommitShoppingCartType;
+use Conecto\FeratelDsi\Dtos\CreateShoppingCartType;
+use Conecto\FeratelDsi\Dtos\DeleteFromShoppingCartType;
+use Conecto\FeratelDsi\Dtos\ElectronicPaymentCheckOutTypeRQType;
+use Conecto\FeratelDsi\Dtos\SearchLinesType;
+use Conecto\FeratelDsi\Dtos\ShowShoppingCartType;
+use Conecto\FeratelDsi\Dtos\UpdateShoppingCartExternalType;
+use Conecto\FeratelDsi\Dtos\UpdateShoppingCartPaymentMethodType;
+use Conecto\FeratelDsi\Dtos\UpdateShoppingCartSettingsType;
 use JMS\Serializer\Serializer;
 
 
@@ -47,6 +60,36 @@ class CommunicationsHub
             $requestType->setKeyValues($request);
         elseif ($request instanceof BasicDataType)
             $requestType->setBasicData($request);
+        elseif ($request instanceof SearchLinesType)
+            $requestType->setSearchLines($request);
+        elseif ($request instanceof CreateShoppingCartType)
+            $requestType->setCreateShoppingCart($request);
+        elseif ($request instanceof AddToShoppingCartType)
+            $requestType->setAddToShoppingCart($request);
+        elseif ($request instanceof ShowShoppingCartType)
+            $requestType->setShowShoppingCart($request);
+        elseif ($request instanceof DeleteFromShoppingCartType)
+            $requestType->setDeleteFromShoppingCart($request);
+        elseif ($request instanceof CommitShoppingCartType)
+            $requestType->setCommitShoppingCart($request);
+        elseif ($request instanceof ElectronicPaymentCheckOutTypeRQType)
+            $requestType->setElectronicPaymentCheckOut($request);
+        elseif ($request instanceof UpdateShoppingCartPaymentMethodType)
+            $requestType->setUpdateShoppingCartPaymentMethod($request);
+        elseif ($request instanceof CancelBookingType)
+            $requestType->setCancelBooking($request);
+        elseif ($request instanceof CalculateOptionalFeesForShoppingCartType)
+            $requestType->setCalculateOptionalFeesForShoppingCart($request);
+        elseif ($request instanceof UpdateShoppingCartSettingsType)
+            $requestType->setUpdateShoppingCartSettings($request);
+        elseif ($request instanceof UpdateShoppingCartExternalType)
+            $requestType->setUpdateShoppingCartExternal($request);
+        elseif ($request instanceof GuestNewType)
+            $requestType->setGuestInsert($request);
+        elseif ($request instanceof RequestType\GetPaymentInformationAType)
+            $requestType->setGetPaymentInformation($request);
+        elseif ($request instanceof RequestType\GetCancellationInformationAType)
+            $requestType->setGetCancellationInformation($request);
     }
 
     /**
