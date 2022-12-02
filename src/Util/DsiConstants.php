@@ -50,4 +50,9 @@ class DsiConstants
 
     // filter types for service provider search
     const SERVICE_PROVIDER_FILTER_TYPE_ACCOMMODATION = 'Accommodation';
+
+    // payment method options
+    public const PAYMENT_METHOD_NO_PAYMENT = "NoPayment";
+    public const PAYMENT_METHOD_ELECTRONIC_PAYMENT = "ElectronicPayment";
+    public const PAYMENT_METHOD_CREDIT_CARD = "CreditCard";
 }
