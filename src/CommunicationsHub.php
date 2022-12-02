@@ -13,11 +13,7 @@ use Conecto\FeratelDsi\Dtos\KeyValuesType;
 use Conecto\FeratelDsi\Dtos\RangeType;
 use Conecto\FeratelDsi\Dtos\RequestType;
 use Conecto\FeratelDsi\Dtos\ResponseType;
-use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
-use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
-use JMS\Serializer\Handler\HandlerRegistryInterface;
 use JMS\Serializer\Serializer;
-use JMS\Serializer\SerializerBuilder;
 
 
 class CommunicationsHub
@@ -38,22 +34,9 @@ class CommunicationsHub
 
     private function __construct()
     {
-        // setup serializer with custom types to deal with xsd2php's way of dates and lists.
-        $serializerBuilder = SerializerBuilder::create();
+        $this->serializer = FeratelConfig::getSerializer();
 
-        $reflection = new \ReflectionClass(CommunicationsHub::class);
-        $vendorDir = dirname($reflection->getFileName(), 2);
-
-        $serializerBuilder->addMetadataDir(str_replace("/", DIRECTORY_SEPARATOR, $vendorDir . '/src/Dtos/metadata'), 'Conecto\FeratelDsi\Dtos');
-        $serializerBuilder->configureHandlers(function (HandlerRegistryInterface $handler) use ($serializerBuilder) {
-            $serializerBuilder->addDefaultHandlers();
-            $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling
-            $handler->registerSubscribingHandler(new XmlSchemaDateHandler()); // XMLSchema date handling
-        });
-        $this->serializer = $serializerBuilder->build();
-
-        // load config
-        $this->config = include($vendorDir . DIRECTORY_SEPARATOR . 'feratel.conf.php');
+        $this->config = FeratelConfig::getConfig();
 
         $this->connector = new SoapConnector();
     }
