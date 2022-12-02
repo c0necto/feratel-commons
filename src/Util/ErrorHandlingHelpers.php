@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace Conecto\FeratelDsi;
 
 use Error;
 use Exception;
