@@ -69,11 +69,11 @@ class CommunicationsHub
     /**
      * @throws DsiException
      */
-    public function send(mixed $request): ResponseType
+    public function send(mixed $request, string $language = 'de'): ResponseType
     {
         // create request
         // - add authentication information
-        $requestType = new RequestType($this->config->pointOfSale, $this->config->company);
+        $requestType = new RequestType($this->config->pointOfSale, $this->config->company, language: $language);
         // - add provided range
         $requestType->setRange(new RangeType($this->config->topLocationRangeCode, [new ItemType($this->config->topLocationRangeId)]));
         // - add provided request
