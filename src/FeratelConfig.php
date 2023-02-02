@@ -33,9 +33,10 @@ class FeratelConfig
         return $serializerBuilder->build();
     }
 
-    public static function setConfig(object $config): void
+    public static function setConfig(object $config, bool $override = false): void
     {
-        self::$config = $config;
+        if ($override || !isset(self::$config))
+            self::$config = $config;
     }
 
     public static function getConfig(): object
