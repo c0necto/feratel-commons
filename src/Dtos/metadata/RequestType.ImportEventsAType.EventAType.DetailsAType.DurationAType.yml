@@ -7,7 +7,7 @@ Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\Du
             accessor:
                 getter: value
                 setter: value
-            type: int
+            type: string
             xml_element:
                 cdata: false
         type:

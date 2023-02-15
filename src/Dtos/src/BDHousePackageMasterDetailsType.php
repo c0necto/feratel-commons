@@ -41,6 +41,11 @@ class BDHousePackageMasterDetailsType
     private $validDates = null;
 
     /**
+     * @var \Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings
+     */
+    private $settings = null;
+
+    /**
      * @var string $owner
      */
     private $owner = null;
@@ -50,7 +55,7 @@ class BDHousePackageMasterDetailsType
      */
     private $accommodationServicesOnly = null;
 
-    public function __construct(array $name = null, int $priority = null, array $holidayThemes = null, bool $active = null, string $dBCode = null, \Conecto\FeratelDsi\Dtos\BDProductValidDatesType $validDates = null, string $owner = null, bool $accommodationServicesOnly = null)
+    public function __construct(array $name = null, int $priority = null, array $holidayThemes = null, bool $active = null, string $dBCode = null, \Conecto\FeratelDsi\Dtos\BDProductValidDatesType $validDates = null, \Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings = null, string $owner = null, bool $accommodationServicesOnly = null)
     {
         $this->name = $name;
         $this->priority = $priority;
@@ -58,6 +63,7 @@ class BDHousePackageMasterDetailsType
         $this->active = $active;
         $this->dBCode = $dBCode;
         $this->validDates = $validDates;
+        $this->settings = $settings;
         $this->owner = $owner;
         $this->accommodationServicesOnly = $accommodationServicesOnly;
     }
@@ -259,6 +265,28 @@ class BDHousePackageMasterDetailsType
     public function setValidDates(\Conecto\FeratelDsi\Dtos\BDProductValidDatesType $validDates)
     {
         $this->validDates = $validDates;
+        return $this;
+    }
+
+    /**
+     * Gets as settings
+     *
+     * @return \Conecto\FeratelDsi\Dtos\BDPackageSettingsType
+     */
+    public function getSettings()
+    {
+        return $this->settings;
+    }
+
+    /**
+     * Sets a new settings
+     *
+     * @param \Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings
+     * @return self
+     */
+    public function setSettings(\Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings)
+    {
+        $this->settings = $settings;
         return $this;
     }
 

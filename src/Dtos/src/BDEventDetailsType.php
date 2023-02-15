@@ -71,11 +71,6 @@ class BDEventDetailsType
     private $dates = null;
 
     /**
-     * @var \Conecto\FeratelDsi\Dtos\BDEventDetailsType\StartTimesAType\StartTimeAType[] $startTimes
-     */
-    private $startTimes = null;
-
-    /**
      * @var \Conecto\FeratelDsi\Dtos\BDEventDetailsType\DurationAType $duration
      */
     private $duration = null;
@@ -95,7 +90,7 @@ class BDEventDetailsType
      */
     private $mainFacilityId = null;
 
-    public function __construct(string $partnerId = null, array $names = null, array $location = null, bool $active = null, array $towns = null, \Conecto\FeratelDsi\Dtos\BDEventDetailsType\PositionAType $position = null, bool $isTopEvent = null, array $holidayThemes = null, array $connectedEntries = null, array $serialEvents = null, string $visibility = null, array $dates = null, array $startTimes = null, \Conecto\FeratelDsi\Dtos\BDEventDetailsType\DurationAType $duration = null, string $dataOwner = null, string $guestCardClassificationId = null, string $mainFacilityId = null)
+    public function __construct(string $partnerId = null, array $names = null, array $location = null, bool $active = null, array $towns = null, \Conecto\FeratelDsi\Dtos\BDEventDetailsType\PositionAType $position = null, bool $isTopEvent = null, array $holidayThemes = null, array $connectedEntries = null, array $serialEvents = null, string $visibility = null, array $dates = null, \Conecto\FeratelDsi\Dtos\BDEventDetailsType\DurationAType $duration = null, string $dataOwner = null, string $guestCardClassificationId = null, string $mainFacilityId = null)
     {
         $this->partnerId = $partnerId;
         $this->names = $names;
@@ -109,7 +104,6 @@ class BDEventDetailsType
         $this->serialEvents = $serialEvents;
         $this->visibility = $visibility;
         $this->dates = $dates;
-        $this->startTimes = $startTimes;
         $this->duration = $duration;
         $this->dataOwner = $dataOwner;
         $this->guestCardClassificationId = $guestCardClassificationId;
@@ -615,62 +609,6 @@ class BDEventDetailsType
     public function setDates(array $dates)
     {
         $this->dates = $dates;
-        return $this;
-    }
-
-    /**
-     * Adds as startTime
-     *
-     * @return self
-     * @param \Conecto\FeratelDsi\Dtos\BDEventDetailsType\StartTimesAType\StartTimeAType $startTime
-     */
-    public function addToStartTimes(\Conecto\FeratelDsi\Dtos\BDEventDetailsType\StartTimesAType\StartTimeAType $startTime)
-    {
-        $this->startTimes[] = $startTime;
-        return $this;
-    }
-
-    /**
-     * isset startTimes
-     *
-     * @param int|string $index
-     * @return bool
-     */
-    public function issetStartTimes($index)
-    {
-        return isset($this->startTimes[$index]);
-    }
-
-    /**
-     * unset startTimes
-     *
-     * @param int|string $index
-     * @return void
-     */
-    public function unsetStartTimes($index)
-    {
-        unset($this->startTimes[$index]);
-    }
-
-    /**
-     * Gets as startTimes
-     *
-     * @return \Conecto\FeratelDsi\Dtos\BDEventDetailsType\StartTimesAType\StartTimeAType[]
-     */
-    public function getStartTimes()
-    {
-        return $this->startTimes;
-    }
-
-    /**
-     * Sets a new startTimes
-     *
-     * @param \Conecto\FeratelDsi\Dtos\BDEventDetailsType\StartTimesAType\StartTimeAType[] $startTimes
-     * @return self
-     */
-    public function setStartTimes(array $startTimes)
-    {
-        $this->startTimes = $startTimes;
         return $this;
     }
 

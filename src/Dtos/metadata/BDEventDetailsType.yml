@@ -165,22 +165,6 @@ Conecto\FeratelDsi\Dtos\BDEventDetailsType:
                 entry_name: Date
                 skip_when_empty: false
                 namespace: 'http://interface.deskline.net/DSI/XSD'
-        startTimes:
-            expose: true
-            access_type: public_method
-            serialized_name: StartTimes
-            xml_element:
-                cdata: false
-                namespace: 'http://interface.deskline.net/DSI/XSD'
-            accessor:
-                getter: getStartTimes
-                setter: setStartTimes
-            type: array<Conecto\FeratelDsi\Dtos\BDEventDetailsType\StartTimesAType\StartTimeAType>
-            xml_list:
-                inline: false
-                entry_name: StartTime
-                skip_when_empty: false
-                namespace: 'http://interface.deskline.net/DSI/XSD'
         duration:
             expose: true
             access_type: public_method

@@ -18,6 +18,11 @@ class PriceAType
     private $commissionBasePrice = null;
 
     /**
+     * @var float $commissionInPercents
+     */
+    private $commissionInPercents = null;
+
+    /**
      * Construct
      *
      * @param float $value
@@ -70,6 +75,28 @@ class PriceAType
     public function setCommissionBasePrice($commissionBasePrice)
     {
         $this->commissionBasePrice = $commissionBasePrice;
+        return $this;
+    }
+
+    /**
+     * Gets as commissionInPercents
+     *
+     * @return float
+     */
+    public function getCommissionInPercents()
+    {
+        return $this->commissionInPercents;
+    }
+
+    /**
+     * Sets a new commissionInPercents
+     *
+     * @param float $commissionInPercents
+     * @return self
+     */
+    public function setCommissionInPercents($commissionInPercents)
+    {
+        $this->commissionInPercents = $commissionInPercents;
         return $this;
     }
 }

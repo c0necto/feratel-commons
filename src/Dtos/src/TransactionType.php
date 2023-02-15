@@ -71,6 +71,11 @@ class TransactionType
     private $bookingOptions = null;
 
     /**
+     * @var string $user
+     */
+    private $user = null;
+
+    /**
      * @var \Conecto\FeratelDsi\Dtos\BookingDetailType[] $details
      */
     private $details = null;
@@ -80,7 +85,7 @@ class TransactionType
      */
     private $guest = null;
 
-    public function __construct(string $id = null, \DateTime $createDateTime = null, \DateTime $lastChangeDateTime = null, string $settlerCode = null, string $dbCode = null, int $number = null, \Conecto\FeratelDsi\Dtos\TransactionType\TypeAType $type = null, string $salesChannelId = null, string $currencyCode = null, \Conecto\FeratelDsi\Dtos\TransactionType\CurrencyFactorAType $currencyFactor = null, string $toscLinkKey = null, \Conecto\FeratelDsi\Dtos\BookingOptionsType $bookingOptions = null, array $details = null, \Conecto\FeratelDsi\Dtos\BookingGuestType $guest = null)
+    public function __construct(string $id = null, \DateTime $createDateTime = null, \DateTime $lastChangeDateTime = null, string $settlerCode = null, string $dbCode = null, int $number = null, \Conecto\FeratelDsi\Dtos\TransactionType\TypeAType $type = null, string $salesChannelId = null, string $currencyCode = null, \Conecto\FeratelDsi\Dtos\TransactionType\CurrencyFactorAType $currencyFactor = null, string $toscLinkKey = null, \Conecto\FeratelDsi\Dtos\BookingOptionsType $bookingOptions = null, string $user = null, array $details = null, \Conecto\FeratelDsi\Dtos\BookingGuestType $guest = null)
     {
         $this->id = $id;
         $this->createDateTime = $createDateTime;
@@ -94,6 +99,7 @@ class TransactionType
         $this->currencyFactor = $currencyFactor;
         $this->toscLinkKey = $toscLinkKey;
         $this->bookingOptions = $bookingOptions;
+        $this->user = $user;
         $this->details = $details;
         $this->guest = $guest;
     }
@@ -359,6 +365,28 @@ class TransactionType
     public function setBookingOptions(\Conecto\FeratelDsi\Dtos\BookingOptionsType $bookingOptions)
     {
         $this->bookingOptions = $bookingOptions;
+        return $this;
+    }
+
+    /**
+     * Gets as user
+     *
+     * @return string
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Sets a new user
+     *
+     * @param string $user
+     * @return self
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
         return $this;
     }
 

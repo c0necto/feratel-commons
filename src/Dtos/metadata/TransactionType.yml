@@ -130,6 +130,17 @@ Conecto\FeratelDsi\Dtos\TransactionType:
                 getter: getBookingOptions
                 setter: setBookingOptions
             type: Conecto\FeratelDsi\Dtos\BookingOptionsType
+        user:
+            expose: true
+            access_type: public_method
+            serialized_name: User
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getUser
+                setter: setUser
+            type: string
         details:
             expose: true
             access_type: public_method

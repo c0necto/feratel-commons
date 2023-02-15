@@ -7,7 +7,7 @@ Conecto\FeratelDsi\Dtos\BDEventDetailsType\DurationAType:
             accessor:
                 getter: value
                 setter: value
-            type: int
+            type: string
             xml_element:
                 cdata: false
         type:

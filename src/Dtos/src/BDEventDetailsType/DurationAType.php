@@ -8,7 +8,7 @@ namespace Conecto\FeratelDsi\Dtos\BDEventDetailsType;
 class DurationAType
 {
     /**
-     * @var int $__value
+     * @var string $__value
      */
     private $__value = null;
 
@@ -20,7 +20,7 @@ class DurationAType
     /**
      * Construct
      *
-     * @param int $value
+     * @param string $value
      */
     public function __construct($value)
     {
@@ -30,8 +30,8 @@ class DurationAType
     /**
      * Gets or sets the inner value
      *
-     * @param int $value
-     * @return int
+     * @param string $value
+     * @return string
      */
     public function value()
     {

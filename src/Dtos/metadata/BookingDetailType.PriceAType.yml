@@ -19,3 +19,12 @@ Conecto\FeratelDsi\Dtos\BookingDetailType\PriceAType:
                 setter: setCommissionBasePrice
             xml_attribute: true
             type: float
+        commissionInPercents:
+            expose: true
+            access_type: public_method
+            serialized_name: CommissionInPercents
+            accessor:
+                getter: getCommissionInPercents
+                setter: setCommissionInPercents
+            xml_attribute: true
+            type: float
