@@ -2,7 +2,6 @@
 
 namespace Conecto\FeratelDsi;
 
-
 use Conecto\FeratelDsi\Connectors\SoapConnector;
 use Conecto\FeratelDsi\Dtos\GuestNewType;
 use Conecto\FeratelDsi\Util\DsiException;
@@ -35,7 +34,7 @@ class CommunicationsHub
     private static ?CommunicationsHub $instance = null;
 
     private Serializer $serializer;
-    private mixed $config;
+    private object $config;
     private Connector $connector;
 
     public static function getInstance(): CommunicationsHub
@@ -55,7 +54,7 @@ class CommunicationsHub
         $this->connector = new SoapConnector();
     }
 
-    private function setRequest(RequestType $requestType, mixed $request): void
+    private function setRequest(RequestType $requestType, $request): void
     {
         if ($request instanceof KeyValuesType)
             $requestType->setKeyValues($request);
@@ -98,7 +97,7 @@ class CommunicationsHub
     /**
      * @throws DsiException
      */
-    public function send(mixed $request, string $language = 'de'): ResponseType
+    public function send($request, string $language = 'de'): ResponseType
     {
         // create request
         // - add authentication information
