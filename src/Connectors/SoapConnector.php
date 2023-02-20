@@ -34,6 +34,7 @@ class SoapConnector implements Connector
                 || str_contains($xmlRequest, "<AddToShoppingCart")
                 || str_contains($xmlRequest, "<ShowShoppingCart")
                 || str_contains($xmlRequest, "<DeleteFromShoppingCart")
+                || str_contains($xmlRequest, "<ShowBooking")
                 || str_contains($xmlRequest, "<CancelBooking")
                 || str_contains($xmlRequest, "<UpdateShoppingCartPaymentMethod")
                 || str_contains($xmlRequest, "<ElectronicPaymentCheckOut")

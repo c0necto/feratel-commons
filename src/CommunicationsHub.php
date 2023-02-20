@@ -16,6 +16,7 @@ use Conecto\FeratelDsi\Dtos\RequestType;
 use Conecto\FeratelDsi\Dtos\ResponseType;
 use Conecto\FeratelDsi\Dtos\AddToShoppingCartType;
 use Conecto\FeratelDsi\Dtos\CalculateOptionalFeesForShoppingCartType;
+use Conecto\FeratelDsi\Dtos\ShowBookingType;
 use Conecto\FeratelDsi\Dtos\CancelBookingType;
 use Conecto\FeratelDsi\Dtos\CommitShoppingCartType;
 use Conecto\FeratelDsi\Dtos\CreateShoppingCartType;
@@ -76,6 +77,8 @@ class CommunicationsHub
             $requestType->setElectronicPaymentCheckOut($request);
         elseif ($request instanceof UpdateShoppingCartPaymentMethodType)
             $requestType->setUpdateShoppingCartPaymentMethod($request);
+        elseif ($request instanceof ShowBookingType)
+            $requestType->setShowBooking($request);
         elseif ($request instanceof CancelBookingType)
             $requestType->setCancelBooking($request);
         elseif ($request instanceof CalculateOptionalFeesForShoppingCartType)
