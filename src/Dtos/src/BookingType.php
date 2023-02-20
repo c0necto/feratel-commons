@@ -125,7 +125,7 @@ class BookingType
      */
     private $guest = null;
 
-    public function __construct(string $id = null, string $settlerCode = null, int $number = null, string $type = null, string $salesChannelId = null, string $currencyCode = null, \Conecto\FeratelDsi\Dtos\BookingType\CurrencyFactorAType $currencyFactor = null, \DateTime $validUntil = null, string $depositType = null, float $depositAmount = null, \DateTime $depositDueDate = null, float $depositPaid = null, \DateTime $depositPaidDate = null, string $finalType = null, float $finalAmount = null, \DateTime $finalDueDate = null, float $finalPaid = null, \DateTime $finalPaidDate = null, string $toscLinkKey = null, string $user = null, \Conecto\FeratelDsi\Dtos\BookingOptionsType $bookingOptions = null, array $details = null, \Conecto\FeratelDsi\Dtos\BookingGuestType $guest = null)
+    public function __construct(string $id = null, \DateTime $validUntil = null, \Conecto\FeratelDsi\Dtos\BookingOptionsType $bookingOptions = null, string $toscLinkKey = null, float $finalPaid = null, int $number = null, string $type = null, string $salesChannelId = null, string $currencyCode = null, \Conecto\FeratelDsi\Dtos\BookingType\CurrencyFactorAType $currencyFactor = null, string $settlerCode = null, float $depositAmount = null, string $depositType = null, \DateTime $depositDueDate = null, float $depositPaid = null, \DateTime $depositPaidDate = null, string $finalType = null, float $finalAmount = null, \DateTime $finalDueDate = null, \DateTime $finalPaidDate = null, string $user = null, array $details = null, \Conecto\FeratelDsi\Dtos\BookingGuestType $guest = null)
     {
         $this->id = $id;
         $this->settlerCode = $settlerCode;

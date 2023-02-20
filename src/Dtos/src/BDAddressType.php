@@ -132,7 +132,7 @@ class BDAddressType
      */
     private $email2 = null;
 
-    public function __construct(string $type = null, \DateTime $changeDate = null, string $id = null, string $contactId = null, string $company = null, string $title = null, string $firstName = null, string $lastName = null, string $addressLine1 = null, string $addressLine2 = null, string $country = null, string $zipCode = null, string $town = null, string $email = null, string $fax = null, string $uRL = null, string $phone = null, string $mobile = null, \DateTime $birthDate = null, string $language = null, string $currency = null, array $documents = null, array $descriptions = null, string $email2 = null)
+    public function __construct(string $type = null, string $addressLine2 = null, array $documents = null, string $language = null, string $mobile = null, string $uRL = null, string $fax = null, string $email = null, string $town = null, string $zipCode = null, string $country = null, string $addressLine1 = null, \DateTime $changeDate = null, string $lastName = null, string $firstName = null, string $title = null, string $company = null, string $contactId = null, string $id = null, string $phone = null, \DateTime $birthDate = null, string $currency = null, array $descriptions = null, string $email2 = null)
     {
         $this->type = $type;
         $this->changeDate = $changeDate;

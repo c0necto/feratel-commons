@@ -115,7 +115,7 @@ class GuestFullInfoType
      */
     private $rating = null;
 
-    public function __construct(string $id = null, string $email = null, string $salutationId = null, string $title = null, string $salutation = null, string $company = null, string $firstName = null, string $lastName = null, string $phone = null, string $mobile = null, string $fax = null, string $address = null, string $altAddress = null, string $country = null, string $zipCode = null, string $city = null, string $language = null, bool $reusable = null, array $reusableType = null, string $currencyCode = null, bool $rating = null)
+    public function __construct(string $id = null, string $email = null, array $reusableType = null, string $language = null, string $salutationId = null, string $title = null, string $salutation = null, string $company = null, string $firstName = null, string $lastName = null, string $phone = null, string $mobile = null, string $fax = null, string $address = null, string $altAddress = null, string $country = null, string $zipCode = null, string $city = null, bool $reusable = null, string $currencyCode = null, bool $rating = null)
     {
         $this->id = $id;
         $this->email = $email;

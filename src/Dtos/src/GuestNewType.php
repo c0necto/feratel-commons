@@ -105,7 +105,7 @@ class GuestNewType
      */
     private $rating = null;
 
-    public function __construct(string $email = null, string $password = null, string $salutationId = null, string $company = null, string $firstName = null, string $lastName = null, string $phone = null, string $mobile = null, string $fax = null, string $address = null, string $altAddress = null, string $country = null, string $zipCode = null, string $city = null, string $language = null, bool $reusable = null, array $reusableType = null, string $currencyCode = null, bool $rating = null)
+    public function __construct(string $email = null, string $mobile = null, array $reusableType = null, string $salutationId = null, string $company = null, string $firstName = null, string $lastName = null, string $phone = null, string $password = null, string $address = null, string $fax = null, string $altAddress = null, string $country = null, string $zipCode = null, string $city = null, string $language = null, bool $reusable = null, string $currencyCode = null, bool $rating = null)
     {
         $this->email = $email;
         $this->password = $password;

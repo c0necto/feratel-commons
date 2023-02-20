@@ -40,7 +40,7 @@ class NLAddressDetailType extends NLBaseAddressDetailType
      */
     private $marketingCodes = null;
 
-    public function __construct(bool $newsletterActive = null, bool $marketingInfoActive = null, bool $ratingsActive = null, bool $active = null, array $holidayThemes = null, array $marketingCodes = null, string $eMail = null, string $eMail2 = null, string $sex = null, string $language = null, string $firstName = null, string $lastName = null, string $street = null, string $street2 = null, string $zipCode = null, string $city = null, string $country = null, string $phone = null, string $mobile = null, string $fax = null, string $uRL = null, string $companyName = null, string $function = null, \DateTime $birthday = null, string $type = null, string $memo = null, string $contactType = null)
+    public function __construct(bool $newsletterActive = null, string $eMail2 = null, string $type = null, string $function = null, string $uRL = null, string $mobile = null, string $country = null, bool $ratingsActive = null, bool $active = null, array $holidayThemes = null, array $marketingCodes = null, string $eMail = null, bool $marketingInfoActive = null, string $language = null, string $sex = null, string $firstName = null, string $lastName = null, string $street = null, string $street2 = null, string $zipCode = null, string $city = null, string $phone = null, string $fax = null, string $companyName = null, \DateTime $birthday = null, string $memo = null, string $contactType = null)
     {
         $this->newsletterActive = $newsletterActive;
         $this->marketingInfoActive = $marketingInfoActive;

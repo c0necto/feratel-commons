@@ -15,7 +15,7 @@ class NLUpdateAddressDetailType extends NLBaseAddressDetailType
      */
     private $id = null;
 
-    public function __construct(string $id = null, string $eMail = null, string $eMail2 = null, string $sex = null, string $language = null, string $firstName = null, string $lastName = null, string $street = null, string $street2 = null, string $zipCode = null, string $city = null, string $country = null, string $phone = null, string $mobile = null, string $fax = null, string $uRL = null, string $companyName = null, string $function = null, \DateTime $birthday = null, string $type = null, string $memo = null, string $contactType = null)
+    public function __construct(string $id = null, string $street2 = null, string $type = null, string $function = null, string $uRL = null, string $fax = null, string $mobile = null, string $phone = null, string $country = null, string $city = null, string $zipCode = null, string $street = null, string $eMail = null, string $lastName = null, string $firstName = null, string $language = null, string $sex = null, string $eMail2 = null, string $companyName = null, \DateTime $birthday = null, string $memo = null, string $contactType = null)
     {
         $this->id = $id;
         parent::__construct($eMail,$eMail2,$sex,$language,$firstName,$lastName,$street,$street2,$zipCode,$city,$country,$phone,$mobile,$fax,$uRL,$companyName,$function,$birthday,$type,$memo,$contactType);

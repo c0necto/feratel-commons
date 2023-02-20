@@ -14,7 +14,7 @@ final class FeratelHelperTest extends FeratelTestCase
     public function testConfigNotLoaded(): void
     {
         $this->expectError();
-        FeratelConfig::setConfig(null);
+        FeratelConfig::setConfig((object)null);
         CommunicationsHub::getInstance();
     }
     /**
@@ -25,7 +25,9 @@ final class FeratelHelperTest extends FeratelTestCase
         $dut = CommunicationsHub::getInstance();
 
         // specify request content
-        $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
+        $keyvalues = new KeyValuesType();
+        $keyvalues->setDateFrom(new DateTime("2000-01-01"));
+
         $keyvalues->setTranslations([new LanguageType("de")]);
         $keyvalues->setTowns(new RequestedWithTranslationType(false, true));
 

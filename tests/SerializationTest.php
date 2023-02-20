@@ -14,14 +14,17 @@ final class SerializationTest extends FeratelTestCase
     public function testSerialization(): void
     {
         // authenticate the request
-        $request = new RequestType("FERATEL", "FERATEL");
+        $request = new RequestType("FERATEL");
+        $request->setCompany("FERATEL");
 
         // limit scope to range
         $range = new RangeType("RG", [new ItemType("F180FFD5-4FBF-4F2C-AC00-7E8B94462F2C")]);
         $request->setRange($range);
 
         // specify request content
-        $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
+        $keyvalues = new KeyValuesType();
+        $keyvalues->setDateFrom(new DateTime("2000-01-01"));
+        $keyvalues->setGetLocalValues(false);
         $keyvalues->setTowns(new RequestedWithTranslationType(false, true));
         $request->setKeyValues($keyvalues);
 

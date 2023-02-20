@@ -101,7 +101,10 @@ class CommunicationsHub
     {
         // create request
         // - add authentication information
-        $requestType = new RequestType($this->config->pointOfSale, $this->config->company, language: $language);
+        $requestType = new RequestType($this->config->pointOfSale);
+        $requestType->setCompany($this->config->company);
+        $requestType->setLanguage($language);
+
         // - add provided range
         $requestType->setRange(new RangeType($this->config->topLocationRangeCode, [new ItemType($this->config->topLocationRangeId)]));
         // - add provided request
