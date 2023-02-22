@@ -8,18 +8,19 @@
     "process-timeout": 0
   },
   "require": {
-    "ext-soap": "*",
-    "goetas-webservices/xsd2php-runtime": "^0.2.2",
-    "jms/serializer": "^3.17"
+    "goetas-webservices/xsd2php-runtime": "^0.2.2"
   },
   "require-dev": {
     "goetas-webservices/xsd2php": "0.4.7",
-    "goetas-webservices/xsd-reader": "0.3.13",
-    "phpunit/phpunit": "^9.5"
+    "goetas-webservices/xsd-reader": "0.3.13"
   },
   "autoload": {
     "classmap": [
-      "src/",
+      "src/"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
       "tests/"
     ]
   },
