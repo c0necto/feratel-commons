@@ -10,7 +10,6 @@ class DsiException extends Exception
     /**
      * @param $status
      * @param $message
-     * @param null $previous
      */
     public function __construct($status, $message, $previous = null)
     {

@@ -7,13 +7,6 @@ use Conecto\FeratelDsi\Util\DsiException;
 use SoapClient;
 use SoapFault;
 
-if (!function_exists('str_contains')) {
-    function str_contains($haystack, $needle): bool
-    {
-        return $needle !== '' && mb_strpos($haystack, $needle) !== false;
-    }
-}
-
 class SoapConnector implements Connector
 {
     /**
