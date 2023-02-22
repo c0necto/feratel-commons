@@ -15,7 +15,7 @@ diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vend
          foreach ($type->getProperties() as $prop) {
              if ($prop->getName() !== '__value') {
                  $this->handleProperty($class, $prop);
-@@ -37,6 +39,55 @@
+@@ -37,6 +39,57 @@
          return true;
      }
  
@@ -64,7 +64,9 @@ diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vend
 +    {
 +        $parameter = new ParameterGenerator($property->getName());
 +        $parameter->setDefaultValue($property->getDefault());
-+        $parameter->setType($property->getType()->getPhpType());
++        $phpType = $property->getType()->getPhpType();
++        if($phpType !== 'mixed')
++            $parameter->setType($phpType);
 +        return $parameter;
 +    }
 +

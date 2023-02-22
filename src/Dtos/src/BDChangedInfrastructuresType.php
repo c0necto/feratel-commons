@@ -70,7 +70,7 @@ class BDChangedInfrastructuresType
      */
     private $guestCards = null;
 
-    public function __construct(mixed $details = null, mixed $documents = null, mixed $descriptions = null, mixed $links = null, mixed $addresses = null, mixed $facilities = null, mixed $hotSpots = null, mixed $customAttributes = null, mixed $handicapFacilities = null, mixed $handicapClassifications = null, mixed $qualityDetails = null, mixed $guestCards = null)
+    public function __construct($details = null, $documents = null, $descriptions = null, $links = null, $addresses = null, $facilities = null, $hotSpots = null, $customAttributes = null, $handicapFacilities = null, $handicapClassifications = null, $qualityDetails = null, $guestCards = null)
     {
         $this->details = $details;
         $this->documents = $documents;

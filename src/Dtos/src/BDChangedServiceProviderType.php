@@ -105,7 +105,7 @@ class BDChangedServiceProviderType
      */
     private $additionalServices = null;
 
-    public function __construct(string $details = null, string $documents = null, string $descriptions = null, string $links = null, string $facilities = null, mixed $addresses = null, mixed $ratingsAverage = null, string $customAttributes = null, string $hotSpots = null, string $metaRating = null, string $closedPeriods = null, string $handicapFacilities = null, string $handicapClassifications = null, string $gTC = null, string $qualityDetails = null, string $housePackageMasters = null, string $cancellationPaymentInfo = null, \Conecto\FeratelDsi\Dtos\BDChangedServicesType $services = null, \Conecto\FeratelDsi\Dtos\BDChangedAdditionalServicesType $additionalServices = null)
+    public function __construct(string $details = null, string $documents = null, string $descriptions = null, string $links = null, string $facilities = null, $addresses = null, $ratingsAverage = null, string $customAttributes = null, string $hotSpots = null, string $metaRating = null, string $closedPeriods = null, string $handicapFacilities = null, string $handicapClassifications = null, string $gTC = null, string $qualityDetails = null, string $housePackageMasters = null, string $cancellationPaymentInfo = null, \Conecto\FeratelDsi\Dtos\BDChangedServicesType $services = null, \Conecto\FeratelDsi\Dtos\BDChangedAdditionalServicesType $additionalServices = null)
     {
         $this->details = $details;
         $this->documents = $documents;

@@ -14,7 +14,7 @@ final class FeratelHelperTest extends FeratelTestCase
     public function testConfigNotLoaded(): void
     {
         $this->expectError();
-        FeratelConfig::setConfig(null);
+        FeratelConfig::setConfig(null, true);
         CommunicationsHub::getInstance();
     }
     /**

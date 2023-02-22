@@ -12,7 +12,7 @@ use JMS\Serializer\SerializerBuilder;
 
 class FeratelConfig
 {
-    private static object $config;
+    private static ?object $config;
 
     private static function getVendorDir(): string
     {
@@ -33,7 +33,7 @@ class FeratelConfig
         return $serializerBuilder->build();
     }
 
-    public static function setConfig(object $config, bool $override = false): void
+    public static function setConfig(?object $config, bool $override = false): void
     {
         if ($override || !isset(self::$config))
             self::$config = $config;
