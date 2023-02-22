@@ -32,6 +32,9 @@ final class SerializationTest extends FeratelTestCase
         // - serialize
         $result = $this->serializer->serialize($dsiRequest, 'xml');
 
+        // adjust line endings
+        $result = str_replace("\n", PHP_EOL, $result);
+
         // fixture taken from their documentation - a part of an example they provided
         $expected = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
