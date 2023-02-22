@@ -6,8 +6,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php
 --- a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php	
 +++ b/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php	(date 1646215110318)
-@@ -19,6 +19,8 @@
- {
+@@ -26,6 +26,8 @@
+
      private function handleBody(Generator\ClassGenerator $class, PHPClass $type)
      {
 +        $this->createConstructor($class, $type);
@@ -15,7 +15,7 @@ diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vend
          foreach ($type->getProperties() as $prop) {
              if ($prop->getName() !== '__value') {
                  $this->handleProperty($class, $prop);
-@@ -37,6 +39,57 @@
+@@ -44,6 +46,57 @@
          return true;
      }
  

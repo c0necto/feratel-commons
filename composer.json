@@ -13,7 +13,8 @@
     "jms/serializer": "^3.17"
   },
   "require-dev": {
-    "goetas-webservices/xsd2php": "^0.4",
+    "goetas-webservices/xsd2php": "0.4.7",
+    "goetas-webservices/xsd-reader": "0.3.13",
     "phpunit/phpunit": "^9.5"
   },
   "autoload": {
