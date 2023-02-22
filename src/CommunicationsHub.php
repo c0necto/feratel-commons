@@ -2,7 +2,6 @@
 
 namespace Conecto\FeratelDsi;
 
-
 use Conecto\FeratelDsi\Connectors\SoapConnector;
 use Conecto\FeratelDsi\Dtos\GuestNewType;
 use Conecto\FeratelDsi\Util\DsiException;
