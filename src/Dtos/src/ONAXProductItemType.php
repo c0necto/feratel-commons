@@ -100,7 +100,7 @@ class ONAXProductItemType
      */
     private $prdLoginID = null;
 
-    public function __construct(string $prdIdentity = null, int $prdMaxBed = null, \DateTime $prdCreateDate = null, int $prdBookable = null, int $prdStdOccupancy = null, int $prdMaxChild = null, int $prdMinChild = null, int $prdMaxAdult = null, int $prdMinAdult = null, int $prdMinBed = null, string $prdServiceID = null, int $prdActive = null, int $prdAccoType = null, int $prdProductType = null, string $prdCode = null, string $prdName = null, \DateTime $prdChangeDate = null, string $prdLoginID = null)
+    public function __construct(string $prdIdentity = null, string $prdServiceID = null, string $prdName = null, string $prdCode = null, int $prdProductType = null, int $prdAccoType = null, int $prdActive = null, int $prdMinBed = null, int $prdMaxBed = null, int $prdMinAdult = null, int $prdMaxAdult = null, int $prdMinChild = null, int $prdMaxChild = null, int $prdStdOccupancy = null, int $prdBookable = null, \DateTime $prdCreateDate = null, \DateTime $prdChangeDate = null, string $prdLoginID = null)
     {
         $this->prdIdentity = $prdIdentity;
         $this->prdServiceID = $prdServiceID;

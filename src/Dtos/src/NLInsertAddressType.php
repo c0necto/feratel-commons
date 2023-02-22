@@ -20,7 +20,7 @@ class NLInsertAddressType extends NLBaseAddressDetailType
      */
     private $marketingCodes = null;
 
-    public function __construct(array $holidayThemes = null, string $lastName = null, string $type = null, string $function = null, string $uRL = null, string $eMail = null, string $eMail2 = null, string $sex = null, string $language = null, string $firstName = null, array $marketingCodes = null, string $street2 = null, string $street = null, string $zipCode = null, string $city = null, string $country = null, string $phone = null, string $mobile = null, string $fax = null, string $companyName = null, \DateTime $birthday = null, string $memo = null, string $contactType = null)
+    public function __construct(array $holidayThemes = null, array $marketingCodes = null, string $eMail = null, string $eMail2 = null, string $sex = null, string $language = null, string $firstName = null, string $lastName = null, string $street = null, string $street2 = null, string $zipCode = null, string $city = null, string $country = null, string $phone = null, string $mobile = null, string $fax = null, string $uRL = null, string $companyName = null, string $function = null, \DateTime $birthday = null, string $type = null, string $memo = null, string $contactType = null)
     {
         $this->holidayThemes = $holidayThemes;
         $this->marketingCodes = $marketingCodes;

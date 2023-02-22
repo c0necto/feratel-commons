@@ -55,7 +55,7 @@ class RequestDetailsType
      */
     private $serviceProviderRequestSettings = null;
 
-    public function __construct($sessionID = null, string $type = null, string $userId = null, string $guestToPOSComment = null, string $linkKey = null, \Conecto\FeratelDsi\Dtos\OfferRequestSettingsType $offerRequestSettings = null, \Conecto\FeratelDsi\Dtos\RequestPoolSettingsType $requestPoolSettings = null, string $packageId = null, \Conecto\FeratelDsi\Dtos\ServiceProviderRequestSettingsType $serviceProviderRequestSettings = null)
+    public function __construct(mixed $sessionID = null, string $type = null, string $userId = null, string $guestToPOSComment = null, string $linkKey = null, \Conecto\FeratelDsi\Dtos\OfferRequestSettingsType $offerRequestSettings = null, \Conecto\FeratelDsi\Dtos\RequestPoolSettingsType $requestPoolSettings = null, string $packageId = null, \Conecto\FeratelDsi\Dtos\ServiceProviderRequestSettingsType $serviceProviderRequestSettings = null)
     {
         $this->sessionID = $sessionID;
         $this->type = $type;

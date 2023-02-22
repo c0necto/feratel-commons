@@ -115,7 +115,7 @@ class RPOfferType
      */
     private $marketingGroups = null;
 
-    public function __construct(\DateTime $arrivalDate = null, int $lengthOfStay = null, array $towns = null, array $facilities = null, \DateTime $departureDate = null, int $numAdults = null, int $numChildren = null, string $childrenAges = null, int $numUnit = null, string $productType = null, string $mealCode = null, float $maxPrice = null, int $line = null, string $multiLineCondition = null, array $categories = null, array $stars = null, array $classifications = null, array $serviceClassifications = null, array $serviceFacilities = null, array $hotSpots = null, array $marketingGroups = null)
+    public function __construct(\DateTime $arrivalDate = null, int $lengthOfStay = null, \DateTime $departureDate = null, int $numAdults = null, int $numChildren = null, string $childrenAges = null, int $numUnit = null, string $productType = null, string $mealCode = null, float $maxPrice = null, int $line = null, string $multiLineCondition = null, array $categories = null, array $stars = null, array $classifications = null, array $serviceClassifications = null, array $facilities = null, array $serviceFacilities = null, array $towns = null, array $hotSpots = null, array $marketingGroups = null)
     {
         $this->arrivalDate = $arrivalDate;
         $this->lengthOfStay = $lengthOfStay;

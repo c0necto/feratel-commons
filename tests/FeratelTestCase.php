@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class FeratelTestCase extends TestCase
 {
-    protected object $config;
+    protected mixed $config;
     protected Serializer $serializer;
 
     public function setUp(): void

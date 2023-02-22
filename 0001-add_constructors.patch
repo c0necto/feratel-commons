@@ -6,8 +6,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php
 --- a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php	
 +++ b/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php	(date 1646215110318)
-@@ -26,6 +26,8 @@
-
+@@ -19,6 +19,8 @@
+ {
      private function handleBody(Generator\ClassGenerator $class, PHPClass $type)
      {
 +        $this->createConstructor($class, $type);
@@ -15,7 +15,7 @@ diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vend
          foreach ($type->getProperties() as $prop) {
              if ($prop->getName() !== '__value') {
                  $this->handleProperty($class, $prop);
-@@ -44,6 +46,58 @@
+@@ -37,6 +39,55 @@
          return true;
      }
  
@@ -64,10 +64,7 @@ diff --git a/vendor/goetas-webservices/xsd2php/src/Php/ClassGenerator.php b/vend
 +    {
 +        $parameter = new ParameterGenerator($property->getName());
 +        $parameter->setDefaultValue($property->getDefault());
-+        $phpType = $property->getType()->getPhpType();
-+        if($phpType !== 'mixed') {
-+            $parameter->setType($phpType);
-+        }
++        $parameter->setType($property->getType()->getPhpType());
 +        return $parameter;
 +    }
 +

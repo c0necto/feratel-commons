@@ -110,7 +110,7 @@ class ONAXAddressContactItemType
      */
     private $adcLoginID = null;
 
-    public function __construct(string $adcIdentity = null, string $adcMobile = null, \DateTime $adcCreateDate = null, string $adcMemo = null, \DateTime $adcBirthday = null, int $adcCommunication = null, string $adcURL = null, string $adcEMail2 = null, string $adcEMail = null, string $adcFax = null, string $adcAddressID = null, string $adcPhone = null, string $adcSalutation = null, string $adcLastName = null, string $adcFirstName = null, string $adcTitle = null, string $adcLanguage = null, int $adcDefault = null, \DateTime $adcChangeDate = null, string $adcLoginID = null)
+    public function __construct(string $adcIdentity = null, string $adcAddressID = null, string $adcLanguage = null, string $adcTitle = null, string $adcFirstName = null, string $adcLastName = null, string $adcSalutation = null, string $adcPhone = null, string $adcFax = null, string $adcMobile = null, string $adcEMail = null, string $adcEMail2 = null, string $adcURL = null, int $adcCommunication = null, \DateTime $adcBirthday = null, string $adcMemo = null, int $adcDefault = null, \DateTime $adcCreateDate = null, \DateTime $adcChangeDate = null, string $adcLoginID = null)
     {
         $this->adcIdentity = $adcIdentity;
         $this->adcAddressID = $adcAddressID;

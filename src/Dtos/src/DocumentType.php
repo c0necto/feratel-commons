@@ -125,7 +125,7 @@ class DocumentType
      */
     private $uRL = null;
 
-    public function __construct(string $id = null, string $type = null, \DateTime $cCChangeDate = null, string $cCAuthor = null, string $class = null, array $systems = null, string $systemId = null, int $order = null, int $showFrom = null, int $showTo = null, string $copyright = null, string $extension = null, int $size = null, \DateTime $changeDate = null, int $width = null, int $height = null, string $name = null, string $cCId = null, string $cCCopyright = null, array $names = null, string $uRL = null)
+    public function __construct(string $id = null, string $type = null, string $class = null, array $systems = null, string $systemId = null, int $order = null, int $showFrom = null, int $showTo = null, string $copyright = null, string $extension = null, int $size = null, \DateTime $changeDate = null, int $width = null, int $height = null, string $name = null, string $cCId = null, string $cCAuthor = null, string $cCCopyright = null, \DateTime $cCChangeDate = null, array $names = null, string $uRL = null)
     {
         $this->id = $id;
         $this->type = $type;

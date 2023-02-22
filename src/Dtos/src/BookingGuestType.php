@@ -105,7 +105,7 @@ class BookingGuestType
      */
     private $confirmationUrl = null;
 
-    public function __construct(string $id = null, string $address = null, string $language = null, string $lastName = null, string $company = null, string $salutationId = null, string $title = null, string $salutation = null, string $firstName = null, string $phone = null, string $altAddress = null, string $fax = null, string $mobile = null, string $email = null, string $country = null, string $zipCode = null, string $city = null, bool $reusable = null, string $confirmationUrl = null)
+    public function __construct(string $id = null, string $firstName = null, string $lastName = null, string $company = null, string $salutationId = null, string $title = null, string $salutation = null, string $address = null, string $altAddress = null, string $phone = null, string $fax = null, string $mobile = null, string $email = null, string $country = null, string $zipCode = null, string $city = null, string $language = null, bool $reusable = null, string $confirmationUrl = null)
     {
         $this->id = $id;
         $this->firstName = $firstName;

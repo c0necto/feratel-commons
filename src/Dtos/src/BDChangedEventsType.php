@@ -60,7 +60,7 @@ class BDChangedEventsType
      */
     private $guestCards = null;
 
-    public function __construct($details = null, $documents = null, $descriptions = null, $links = null, $facilities = null, $addresses = null, $customAttributes = null, $handicapFacilities = null, $handicapClassifications = null, $guestCards = null)
+    public function __construct(mixed $details = null, mixed $documents = null, mixed $descriptions = null, mixed $links = null, mixed $facilities = null, mixed $addresses = null, mixed $customAttributes = null, mixed $handicapFacilities = null, mixed $handicapClassifications = null, mixed $guestCards = null)
     {
         $this->details = $details;
         $this->documents = $documents;

@@ -19,16 +19,14 @@ final class FirstContactTest extends FeratelTestCase
     public function testFirstContact(): void
     {
         // authenticate the request
-        $request = new RequestType($this->config->pointOfSale);
-        $request->setCompany($this->config->company);
+        $request = new RequestType($this->config->pointOfSale, $this->config->company);
 
         // limit scope to range
         $range = new RangeType($this->config->topLocationRangeCode, [new ItemType($this->config->topLocationRangeId)]);
         $request->setRange($range);
 
         // specify request content
-        $keyvalues = new KeyValuesType();
-        $keyvalues->setDateFrom(new DateTime("2000-01-01"));
+        $keyvalues = new KeyValuesType(false, new DateTime("2000-01-01"));
         $keyvalues->setTranslations([new LanguageType("de")]);
         $keyvalues->setTowns(new RequestedWithTranslationType(false, true));
         $request->setKeyValues($keyvalues);

@@ -99,7 +99,7 @@ class PriceAType
         
     ];
 
-    public function __construct(float $unitPrice = null, bool $inGap = null, \Conecto\FeratelDsi\Dtos\PriceDetailsType $priceDetails = null, float $revenueAmount = null, string $revenueName = null, float $amountSaved = null, string $specialPriceName = null, string $specialPrice = null, bool $isBestPrice = null, string $bookable = null, \DateTime $dateFrom = null, string $mealCode = null, bool $splitPrice = null, int $payNights = null, int $duration = null, \DateTime $dateTo = null, \Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType\BaseInformationAType $baseInformation = null, array $cancellationInformation = null)
+    public function __construct(float $unitPrice = null, \DateTime $dateFrom = null, \DateTime $dateTo = null, int $duration = null, int $payNights = null, bool $splitPrice = null, string $mealCode = null, string $bookable = null, bool $inGap = null, bool $isBestPrice = null, string $specialPrice = null, string $specialPriceName = null, float $amountSaved = null, string $revenueName = null, float $revenueAmount = null, \Conecto\FeratelDsi\Dtos\PriceDetailsType $priceDetails = null, \Conecto\FeratelDsi\Dtos\ServiceProviderDataType\ServicesAType\ServiceAType\ProductsAType\ProductAType\PricesAType\PriceAType\BaseInformationAType $baseInformation = null, array $cancellationInformation = null)
     {
         $this->unitPrice = $unitPrice;
         $this->dateFrom = $dateFrom;
