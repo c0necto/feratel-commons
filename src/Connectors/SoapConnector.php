@@ -16,25 +16,48 @@ if (!function_exists('str_contains')) {
 
 class SoapConnector implements Connector
 {
+
+    /**
+     * @param string $wsdl
+     * @return SoapClient
+     * @throws SoapFault
+     */
+    private function getSoapClient(string $wsdl): SoapClient
+    {
+        return new SoapClient($wsdl, [
+            'stream_context' => stream_context_create([
+                'http' => [
+                    'timeout' => 900,
+                ],
+                'socket' => [
+                    'connect_timeout' => 60,
+                ],
+            ]),
+            'connection_timeout' => 60,
+            'keep_alive' => false,
+        ]);
+    }
+
     /**
      * @throws DsiException
      */
     public function send(string $xmlRequest, string $url)
     {
+        ini_set('default_socket_timeout', 900);
         try {
             // TODO sifting through request contents to find a clue on which endpoint to use is not very elegant.
             if (str_contains($xmlRequest, "<KeyValue")) {
-                $client = new SoapClient($url . 'KeyValue.asmx?WSDL');
+                $client = $this->getSoapClient($url . 'KeyValue.asmx?WSDL');
                 $xmlResponse = $client->GetKeyValues(['xmlString' => $xmlRequest]);
                 return $xmlResponse->GetKeyValuesResult;
             } elseif (str_contains($xmlRequest, "<BasicData")) {
-                $client = new SoapClient($url . 'BasicData.asmx?WSDL');
+                $client = $this->getSoapClient($url . 'BasicData.asmx?WSDL');
                 $xmlResponse = $client->GetData(['xmlString' => $xmlRequest]);
                 return $xmlResponse->GetDataResult;
             } elseif (str_contains($xmlRequest, "<SearchLines")
                 || str_contains($xmlRequest, "<GetCancellationInformation")
                 || str_contains($xmlRequest, "<GetPaymentInformation")) {
-                $client = new SoapClient($url . 'Search.asmx?WSDL');
+                $client = $this->getSoapClient($url . 'Search.asmx?WSDL');
                 $xmlResponse = $client->DoSearch(['xmlString' => $xmlRequest]);
                 return $xmlResponse->DoSearchResult;
             } elseif (str_contains($xmlRequest, "<CreateShoppingCart")
@@ -49,11 +72,11 @@ class SoapConnector implements Connector
                 || str_contains($xmlRequest, "<CalculateOptionalFeesForShoppingCart")
                 || str_contains($xmlRequest, "<UpdateShoppingCartSettings")
                 || str_contains($xmlRequest, "<UpdateShoppingCartExternal")) {
-                $client = new SoapClient($url . 'ShoppingCart.asmx?WSDL');
+                $client = $this->getSoapClient($url . 'ShoppingCart.asmx?WSDL');
                 $xmlResponse = $client->ManageCart(['xmlString' => $xmlRequest]);
                 return $xmlResponse->ManageCartResult;
             } elseif (str_contains($xmlRequest, "<GuestInsert")) {
-                $client = new SoapClient($url . 'GuestUser.asmx?WSDL');
+                $client = $this->getSoapClient($url . 'GuestUser.asmx?WSDL');
                 $xmlResponse = $client->ManageUser(['xmlString' => $xmlRequest]);
                 return $xmlResponse->ManageUserResult;
             } else
