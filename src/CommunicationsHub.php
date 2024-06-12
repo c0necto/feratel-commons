@@ -37,21 +37,25 @@ class CommunicationsHub
     private object $config;
     private Connector $connector;
 
-    public static function getInstance(): CommunicationsHub
+    public static function getInstance(?string $salesChannelId = null): CommunicationsHub
     {
         if (null == self::$instance)
-            self::$instance = new CommunicationsHub();
+            self::$instance = new CommunicationsHub($salesChannelId);
 
         return self::$instance;
     }
 
-    private function __construct()
+    private function __construct(?string $salesChannelId = null)
     {
         $this->serializer = FeratelConfig::getSerializer();
 
         $this->config = FeratelConfig::getConfig();
 
         $this->connector = new SoapConnector();
+
+        if ($salesChannelId) {
+            $this->config->salesChannel = $salesChannelId;
+        }
     }
 
     private function setRequest(RequestType $requestType, $request): void
