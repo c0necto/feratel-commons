@@ -15,9 +15,15 @@ class BasicSystemDocumentElementType extends BasicSystemElementType
      */
     private $includeResolution = null;
 
-    public function __construct(bool $includeResolution = null, array $systems = null, \DateTime $dateFrom = null)
+    /**
+     * @var bool $includeDescriptions
+     */
+    private $includeDescriptions = null;
+
+    public function __construct(bool $includeResolution = null, bool $includeDescriptions = null, array $systems = null, \DateTime $dateFrom = null)
     {
         $this->includeResolution = $includeResolution;
+        $this->includeDescriptions = $includeDescriptions;
         parent::__construct($systems,$dateFrom);
     }
 
@@ -40,6 +46,28 @@ class BasicSystemDocumentElementType extends BasicSystemElementType
     public function setIncludeResolution($includeResolution)
     {
         $this->includeResolution = $includeResolution;
+        return $this;
+    }
+
+    /**
+     * Gets as includeDescriptions
+     *
+     * @return bool
+     */
+    public function getIncludeDescriptions()
+    {
+        return $this->includeDescriptions;
+    }
+
+    /**
+     * Sets a new includeDescriptions
+     *
+     * @param bool $includeDescriptions
+     * @return self
+     */
+    public function setIncludeDescriptions($includeDescriptions)
+    {
+        $this->includeDescriptions = $includeDescriptions;
         return $this;
     }
 }

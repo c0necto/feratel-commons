@@ -37,13 +37,19 @@ class BDAdditionalServicesType extends BasicInfoType
      */
     private $additionalProducts = null;
 
-    public function __construct(\Conecto\FeratelDsi\Dtos\BasicElementType $facilities = null, \Conecto\FeratelDsi\Dtos\BDAvailabilityType $availabilities = null, \Conecto\FeratelDsi\Dtos\BasicElementType $handicapClassifications = null, \Conecto\FeratelDsi\Dtos\BasicElementType $guestCards = null, \Conecto\FeratelDsi\Dtos\BDAdditionalProductsType $additionalProducts = null, \Conecto\FeratelDsi\Dtos\BasicInfoType\DetailsAType $details = null, \Conecto\FeratelDsi\Dtos\BasicSystemDocumentElementType $documents = null, \Conecto\FeratelDsi\Dtos\BDDescriptionsFilterType $descriptions = null, \Conecto\FeratelDsi\Dtos\BasicElementLinksType $links = null)
+    /**
+     * @var \Conecto\FeratelDsi\Dtos\RatingsAverageType $ratingsAverage
+     */
+    private $ratingsAverage = null;
+
+    public function __construct(\Conecto\FeratelDsi\Dtos\BasicElementType $facilities = null, \Conecto\FeratelDsi\Dtos\BDAvailabilityType $availabilities = null, \Conecto\FeratelDsi\Dtos\BasicElementType $handicapClassifications = null, \Conecto\FeratelDsi\Dtos\BasicElementType $guestCards = null, \Conecto\FeratelDsi\Dtos\BDAdditionalProductsType $additionalProducts = null, \Conecto\FeratelDsi\Dtos\RatingsAverageType $ratingsAverage = null, \Conecto\FeratelDsi\Dtos\BasicInfoType\DetailsAType $details = null, \Conecto\FeratelDsi\Dtos\BasicSystemDocumentElementType $documents = null, \Conecto\FeratelDsi\Dtos\BDDescriptionsFilterType $descriptions = null, \Conecto\FeratelDsi\Dtos\BasicElementLinksType $links = null)
     {
         $this->facilities = $facilities;
         $this->availabilities = $availabilities;
         $this->handicapClassifications = $handicapClassifications;
         $this->guestCards = $guestCards;
         $this->additionalProducts = $additionalProducts;
+        $this->ratingsAverage = $ratingsAverage;
         parent::__construct($details,$documents,$descriptions,$links);
     }
 
@@ -158,6 +164,28 @@ class BDAdditionalServicesType extends BasicInfoType
     public function setAdditionalProducts(?\Conecto\FeratelDsi\Dtos\BDAdditionalProductsType $additionalProducts = null)
     {
         $this->additionalProducts = $additionalProducts;
+        return $this;
+    }
+
+    /**
+     * Gets as ratingsAverage
+     *
+     * @return \Conecto\FeratelDsi\Dtos\RatingsAverageType
+     */
+    public function getRatingsAverage()
+    {
+        return $this->ratingsAverage;
+    }
+
+    /**
+     * Sets a new ratingsAverage
+     *
+     * @param \Conecto\FeratelDsi\Dtos\RatingsAverageType $ratingsAverage
+     * @return self
+     */
+    public function setRatingsAverage(?\Conecto\FeratelDsi\Dtos\RatingsAverageType $ratingsAverage = null)
+    {
+        $this->ratingsAverage = $ratingsAverage;
         return $this;
     }
 }

@@ -121,11 +121,16 @@ class DocumentType
     private $names = null;
 
     /**
+     * @var \Conecto\FeratelDsi\Dtos\TranslatableItemType[] $descriptions
+     */
+    private $descriptions = null;
+
+    /**
      * @var string $uRL
      */
     private $uRL = null;
 
-    public function __construct(string $id = null, string $type = null, string $class = null, array $systems = null, string $systemId = null, int $order = null, int $showFrom = null, int $showTo = null, string $copyright = null, string $extension = null, int $size = null, \DateTime $changeDate = null, int $width = null, int $height = null, string $name = null, string $cCId = null, string $cCAuthor = null, string $cCCopyright = null, \DateTime $cCChangeDate = null, array $names = null, string $uRL = null)
+    public function __construct(string $id = null, string $type = null, string $class = null, array $systems = null, string $systemId = null, int $order = null, int $showFrom = null, int $showTo = null, string $copyright = null, string $extension = null, int $size = null, \DateTime $changeDate = null, int $width = null, int $height = null, string $name = null, string $cCId = null, string $cCAuthor = null, string $cCCopyright = null, \DateTime $cCChangeDate = null, array $names = null, array $descriptions = null, string $uRL = null)
     {
         $this->id = $id;
         $this->type = $type;
@@ -147,6 +152,7 @@ class DocumentType
         $this->cCCopyright = $cCCopyright;
         $this->cCChangeDate = $cCChangeDate;
         $this->names = $names;
+        $this->descriptions = $descriptions;
         $this->uRL = $uRL;
     }
 
@@ -681,6 +687,62 @@ class DocumentType
     public function setNames(array $names = null)
     {
         $this->names = $names;
+        return $this;
+    }
+
+    /**
+     * Adds as description
+     *
+     * @return self
+     * @param \Conecto\FeratelDsi\Dtos\TranslatableItemType $description
+     */
+    public function addToDescriptions(\Conecto\FeratelDsi\Dtos\TranslatableItemType $description)
+    {
+        $this->descriptions[] = $description;
+        return $this;
+    }
+
+    /**
+     * isset descriptions
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetDescriptions($index)
+    {
+        return isset($this->descriptions[$index]);
+    }
+
+    /**
+     * unset descriptions
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetDescriptions($index)
+    {
+        unset($this->descriptions[$index]);
+    }
+
+    /**
+     * Gets as descriptions
+     *
+     * @return \Conecto\FeratelDsi\Dtos\TranslatableItemType[]
+     */
+    public function getDescriptions()
+    {
+        return $this->descriptions;
+    }
+
+    /**
+     * Sets a new descriptions
+     *
+     * @param \Conecto\FeratelDsi\Dtos\TranslatableItemType[] $descriptions
+     * @return self
+     */
+    public function setDescriptions(array $descriptions = null)
+    {
+        $this->descriptions = $descriptions;
         return $this;
     }
 

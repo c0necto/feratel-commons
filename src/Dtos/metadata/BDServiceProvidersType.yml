@@ -216,3 +216,14 @@ Conecto\FeratelDsi\Dtos\BDServiceProvidersType:
                 getter: getCancellationPaymentInfo
                 setter: setCancellationPaymentInfo
             type: Conecto\FeratelDsi\Dtos\BasicElementType
+        prices:
+            expose: true
+            access_type: public_method
+            serialized_name: Prices
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrices
+                setter: setPrices
+            type: Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType

@@ -92,6 +92,38 @@ Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType:
                 entry_name: Item
                 skip_when_empty: true
                 namespace: 'http://interface.deskline.net/DSI/XSD'
+        connectedEntries:
+            expose: true
+            access_type: public_method
+            serialized_name: ConnectedEntries
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getConnectedEntries
+                setter: setConnectedEntries
+            type: array<Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType>
+            xml_list:
+                inline: false
+                entry_name: ConnectedEntry
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        serialEvents:
+            expose: true
+            access_type: public_method
+            serialized_name: SerialEvents
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getSerialEvents
+                setter: setSerialEvents
+            type: array<Conecto\FeratelDsi\Dtos\ItemType>
+            xml_list:
+                inline: false
+                entry_name: Item
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
         visibility:
             expose: true
             access_type: public_method
@@ -117,22 +149,6 @@ Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType:
             xml_list:
                 inline: false
                 entry_name: Date
-                skip_when_empty: true
-                namespace: 'http://interface.deskline.net/DSI/XSD'
-        startTimes:
-            expose: true
-            access_type: public_method
-            serialized_name: StartTimes
-            xml_element:
-                cdata: false
-                namespace: 'http://interface.deskline.net/DSI/XSD'
-            accessor:
-                getter: getStartTimes
-                setter: setStartTimes
-            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\StartTimesAType\StartTimeAType>
-            xml_list:
-                inline: false
-                entry_name: StartTime
                 skip_when_empty: true
                 namespace: 'http://interface.deskline.net/DSI/XSD'
         duration:

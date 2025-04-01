@@ -291,3 +291,14 @@ Conecto\FeratelDsi\Dtos\BookingDetailType:
                 entry_name: CancellationInformation
                 skip_when_empty: true
                 namespace: 'http://interface.deskline.net/DSI/XSD'
+        dataOwner:
+            expose: true
+            access_type: public_method
+            serialized_name: DataOwner
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getDataOwner
+                setter: setDataOwner
+            type: string

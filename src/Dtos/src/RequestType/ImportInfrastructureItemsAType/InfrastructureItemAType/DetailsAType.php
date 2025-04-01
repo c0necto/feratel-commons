@@ -38,7 +38,7 @@ class DetailsAType
     private $holidayThemes = null;
 
     /**
-     * @var \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\ConnectedEntriesAType\ConnectedEntryAType[] $connectedEntries
+     * @var \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType[] $connectedEntries
      */
     private $connectedEntries = null;
 
@@ -263,9 +263,9 @@ class DetailsAType
      * Adds as connectedEntry
      *
      * @return self
-     * @param \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\ConnectedEntriesAType\ConnectedEntryAType $connectedEntry
+     * @param \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType $connectedEntry
      */
-    public function addToConnectedEntries(\Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\ConnectedEntriesAType\ConnectedEntryAType $connectedEntry)
+    public function addToConnectedEntries(\Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType $connectedEntry)
     {
         $this->connectedEntries[] = $connectedEntry;
         return $this;
@@ -296,7 +296,7 @@ class DetailsAType
     /**
      * Gets as connectedEntries
      *
-     * @return \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\ConnectedEntriesAType\ConnectedEntryAType[]
+     * @return \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType[]
      */
     public function getConnectedEntries()
     {
@@ -306,7 +306,7 @@ class DetailsAType
     /**
      * Sets a new connectedEntries
      *
-     * @param \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\ConnectedEntriesAType\ConnectedEntryAType[] $connectedEntries
+     * @param \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType[] $connectedEntries
      * @return self
      */
     public function setConnectedEntries(array $connectedEntries = null)

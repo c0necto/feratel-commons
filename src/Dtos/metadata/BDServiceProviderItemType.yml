@@ -339,3 +339,14 @@ Conecto\FeratelDsi\Dtos\BDServiceProviderItemType:
                 getter: getHandicapClassifications
                 setter: setHandicapClassifications
             type: Conecto\FeratelDsi\Dtos\BDHandicapClassificationsType
+        price:
+            expose: true
+            access_type: public_method
+            serialized_name: Price
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getPrice
+                setter: setPrice
+            type: Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType

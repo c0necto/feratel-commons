@@ -284,7 +284,7 @@ class BDHousePackageMasterDetailsType
      * @param \Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings
      * @return self
      */
-    public function setSettings(\Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings)
+    public function setSettings(?\Conecto\FeratelDsi\Dtos\BDPackageSettingsType $settings = null)
     {
         $this->settings = $settings;
         return $this;

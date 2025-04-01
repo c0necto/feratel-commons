@@ -18,6 +18,26 @@ class EventAType
     private $partnerChangeDate = null;
 
     /**
+     * @var string $cCId
+     */
+    private $cCId = null;
+
+    /**
+     * @var string $cCAuthor
+     */
+    private $cCAuthor = null;
+
+    /**
+     * @var string $cCCopyright
+     */
+    private $cCCopyright = null;
+
+    /**
+     * @var \DateTime $cCChangeDate
+     */
+    private $cCChangeDate = null;
+
+    /**
      * @var \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType $details
      */
     private $details = null;
@@ -47,16 +67,26 @@ class EventAType
      */
     private $facilities = null;
 
-    public function __construct(string $partnerId = null, \DateTime $partnerChangeDate = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType $details = null, array $addresses = null, array $descriptions = null, array $documents = null, array $links = null, array $facilities = null)
+    /**
+     * @var \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType[] $guestCards
+     */
+    private $guestCards = null;
+
+    public function __construct(string $partnerId = null, \DateTime $partnerChangeDate = null, string $cCId = null, string $cCAuthor = null, string $cCCopyright = null, \DateTime $cCChangeDate = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType $details = null, array $addresses = null, array $descriptions = null, array $documents = null, array $links = null, array $facilities = null, array $guestCards = null)
     {
         $this->partnerId = $partnerId;
         $this->partnerChangeDate = $partnerChangeDate;
+        $this->cCId = $cCId;
+        $this->cCAuthor = $cCAuthor;
+        $this->cCCopyright = $cCCopyright;
+        $this->cCChangeDate = $cCChangeDate;
         $this->details = $details;
         $this->addresses = $addresses;
         $this->descriptions = $descriptions;
         $this->documents = $documents;
         $this->links = $links;
         $this->facilities = $facilities;
+        $this->guestCards = $guestCards;
     }
 
     /**
@@ -100,6 +130,94 @@ class EventAType
     public function setPartnerChangeDate(\DateTime $partnerChangeDate)
     {
         $this->partnerChangeDate = $partnerChangeDate;
+        return $this;
+    }
+
+    /**
+     * Gets as cCId
+     *
+     * @return string
+     */
+    public function getCCId()
+    {
+        return $this->cCId;
+    }
+
+    /**
+     * Sets a new cCId
+     *
+     * @param string $cCId
+     * @return self
+     */
+    public function setCCId($cCId)
+    {
+        $this->cCId = $cCId;
+        return $this;
+    }
+
+    /**
+     * Gets as cCAuthor
+     *
+     * @return string
+     */
+    public function getCCAuthor()
+    {
+        return $this->cCAuthor;
+    }
+
+    /**
+     * Sets a new cCAuthor
+     *
+     * @param string $cCAuthor
+     * @return self
+     */
+    public function setCCAuthor($cCAuthor)
+    {
+        $this->cCAuthor = $cCAuthor;
+        return $this;
+    }
+
+    /**
+     * Gets as cCCopyright
+     *
+     * @return string
+     */
+    public function getCCCopyright()
+    {
+        return $this->cCCopyright;
+    }
+
+    /**
+     * Sets a new cCCopyright
+     *
+     * @param string $cCCopyright
+     * @return self
+     */
+    public function setCCCopyright($cCCopyright)
+    {
+        $this->cCCopyright = $cCCopyright;
+        return $this;
+    }
+
+    /**
+     * Gets as cCChangeDate
+     *
+     * @return \DateTime
+     */
+    public function getCCChangeDate()
+    {
+        return $this->cCChangeDate;
+    }
+
+    /**
+     * Sets a new cCChangeDate
+     *
+     * @param \DateTime $cCChangeDate
+     * @return self
+     */
+    public function setCCChangeDate(\DateTime $cCChangeDate)
+    {
+        $this->cCChangeDate = $cCChangeDate;
         return $this;
     }
 
@@ -402,6 +520,62 @@ class EventAType
     public function setFacilities(array $facilities = null)
     {
         $this->facilities = $facilities;
+        return $this;
+    }
+
+    /**
+     * Adds as guestCard
+     *
+     * @return self
+     * @param \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType $guestCard
+     */
+    public function addToGuestCards(\Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType $guestCard)
+    {
+        $this->guestCards[] = $guestCard;
+        return $this;
+    }
+
+    /**
+     * isset guestCards
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetGuestCards($index)
+    {
+        return isset($this->guestCards[$index]);
+    }
+
+    /**
+     * unset guestCards
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetGuestCards($index)
+    {
+        unset($this->guestCards[$index]);
+    }
+
+    /**
+     * Gets as guestCards
+     *
+     * @return \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType[]
+     */
+    public function getGuestCards()
+    {
+        return $this->guestCards;
+    }
+
+    /**
+     * Sets a new guestCards
+     *
+     * @param \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType[] $guestCards
+     * @return self
+     */
+    public function setGuestCards(array $guestCards = null)
+    {
+        $this->guestCards = $guestCards;
         return $this;
     }
 }

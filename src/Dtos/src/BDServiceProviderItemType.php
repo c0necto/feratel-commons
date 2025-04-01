@@ -135,7 +135,12 @@ class BDServiceProviderItemType
      */
     private $handicapClassifications = null;
 
-    public function __construct(string $id = null, \DateTime $changeDate = null, string $mappingId = null, \Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType $details = null, array $documents = null, array $descriptions = null, array $links = null, \Conecto\FeratelDsi\Dtos\FacilityItemListType $facilities = null, array $addresses = null, \Conecto\FeratelDsi\Dtos\CustomAttributeListType $customAttributes = null, \Conecto\FeratelDsi\Dtos\BDHotSpotsListType $hotSpots = null, \Conecto\FeratelDsi\Dtos\HandicapFacilitiesItemListType $handicapFacilities = null, array $gTCs = null, \Conecto\FeratelDsi\Dtos\BDQualityDetailsType $qualityDetails = null, array $housePackageMasters = null, array $housePackageMastersSelfAssign = null, array $revenueSettings = null, array $annotations = null, array $services = null, array $additionalServices = null, array $ratingsAverage = null, \Conecto\FeratelDsi\Dtos\BDMetaRatingsType $metaRating = null, array $closedPeriods = null, array $cancellationPaymentInfos = null, \Conecto\FeratelDsi\Dtos\BDHandicapClassificationsType $handicapClassifications = null)
+    /**
+     * @var \Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType $price
+     */
+    private $price = null;
+
+    public function __construct(string $id = null, \DateTime $changeDate = null, string $mappingId = null, \Conecto\FeratelDsi\Dtos\BDServiceProviderDetailsType $details = null, array $documents = null, array $descriptions = null, array $links = null, \Conecto\FeratelDsi\Dtos\FacilityItemListType $facilities = null, array $addresses = null, \Conecto\FeratelDsi\Dtos\CustomAttributeListType $customAttributes = null, \Conecto\FeratelDsi\Dtos\BDHotSpotsListType $hotSpots = null, \Conecto\FeratelDsi\Dtos\HandicapFacilitiesItemListType $handicapFacilities = null, array $gTCs = null, \Conecto\FeratelDsi\Dtos\BDQualityDetailsType $qualityDetails = null, array $housePackageMasters = null, array $housePackageMastersSelfAssign = null, array $revenueSettings = null, array $annotations = null, array $services = null, array $additionalServices = null, array $ratingsAverage = null, \Conecto\FeratelDsi\Dtos\BDMetaRatingsType $metaRating = null, array $closedPeriods = null, array $cancellationPaymentInfos = null, \Conecto\FeratelDsi\Dtos\BDHandicapClassificationsType $handicapClassifications = null, \Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType $price = null)
     {
         $this->id = $id;
         $this->changeDate = $changeDate;
@@ -162,6 +167,7 @@ class BDServiceProviderItemType
         $this->closedPeriods = $closedPeriods;
         $this->cancellationPaymentInfos = $cancellationPaymentInfos;
         $this->handicapClassifications = $handicapClassifications;
+        $this->price = $price;
     }
 
     /**
@@ -1187,6 +1193,28 @@ class BDServiceProviderItemType
     public function setHandicapClassifications(?\Conecto\FeratelDsi\Dtos\BDHandicapClassificationsType $handicapClassifications = null)
     {
         $this->handicapClassifications = $handicapClassifications;
+        return $this;
+    }
+
+    /**
+     * Gets as price
+     *
+     * @return \Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Sets a new price
+     *
+     * @param \Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType $price
+     * @return self
+     */
+    public function setPrice(?\Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType $price = null)
+    {
+        $this->price = $price;
         return $this;
     }
 }

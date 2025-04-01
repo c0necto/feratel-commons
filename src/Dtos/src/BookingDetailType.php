@@ -140,7 +140,12 @@ class BookingDetailType
      */
     private $cancellationDetails = null;
 
-    public function __construct(int $weight = null, int $groupNumber = null, string $type = null, int $order = null, \DateTime $dateFrom = null, \DateTime $dateTo = null, \DateTime $timeFrom = null, \DateTime $timeTo = null, int $unitNumber = null, int $adultNumber = null, int $childrenNumber = null, string $childrenAges = null, string $serviceProviderId = null, string $serviceProviderName = null, string $serviceId = null, string $serviceName = null, string $productId = null, string $productName = null, \Conecto\FeratelDsi\Dtos\BookingDetailType\PriceAType $price = null, string $mealType = null, \Conecto\FeratelDsi\Dtos\BookingDetailType\VatAmountAType $vatAmount = null, string $paymentType = null, string $externalTransactionDetails = null, \Conecto\FeratelDsi\Dtos\BookingPriceDetailsType $priceDetails = null, \Conecto\FeratelDsi\Dtos\BookingPaymentDetailsType $paymentDetails = null, array $cancellationDetails = null)
+    /**
+     * @var string $dataOwner
+     */
+    private $dataOwner = null;
+
+    public function __construct(int $weight = null, int $groupNumber = null, string $type = null, int $order = null, \DateTime $dateFrom = null, \DateTime $dateTo = null, \DateTime $timeFrom = null, \DateTime $timeTo = null, int $unitNumber = null, int $adultNumber = null, int $childrenNumber = null, string $childrenAges = null, string $serviceProviderId = null, string $serviceProviderName = null, string $serviceId = null, string $serviceName = null, string $productId = null, string $productName = null, \Conecto\FeratelDsi\Dtos\BookingDetailType\PriceAType $price = null, string $mealType = null, \Conecto\FeratelDsi\Dtos\BookingDetailType\VatAmountAType $vatAmount = null, string $paymentType = null, string $externalTransactionDetails = null, \Conecto\FeratelDsi\Dtos\BookingPriceDetailsType $priceDetails = null, \Conecto\FeratelDsi\Dtos\BookingPaymentDetailsType $paymentDetails = null, array $cancellationDetails = null, string $dataOwner = null)
     {
         $this->weight = $weight;
         $this->groupNumber = $groupNumber;
@@ -168,6 +173,7 @@ class BookingDetailType
         $this->priceDetails = $priceDetails;
         $this->paymentDetails = $paymentDetails;
         $this->cancellationDetails = $cancellationDetails;
+        $this->dataOwner = $dataOwner;
     }
 
     /**
@@ -773,6 +779,28 @@ class BookingDetailType
     public function setCancellationDetails(array $cancellationDetails = null)
     {
         $this->cancellationDetails = $cancellationDetails;
+        return $this;
+    }
+
+    /**
+     * Gets as dataOwner
+     *
+     * @return string
+     */
+    public function getDataOwner()
+    {
+        return $this->dataOwner;
+    }
+
+    /**
+     * Sets a new dataOwner
+     *
+     * @param string $dataOwner
+     * @return self
+     */
+    public function setDataOwner($dataOwner)
+    {
+        $this->dataOwner = $dataOwner;
         return $this;
     }
 }

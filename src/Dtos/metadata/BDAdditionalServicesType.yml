@@ -55,3 +55,14 @@ Conecto\FeratelDsi\Dtos\BDAdditionalServicesType:
                 getter: getAdditionalProducts
                 setter: setAdditionalProducts
             type: Conecto\FeratelDsi\Dtos\BDAdditionalProductsType
+        ratingsAverage:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingsAverage
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getRatingsAverage
+                setter: setRatingsAverage
+            type: Conecto\FeratelDsi\Dtos\RatingsAverageType

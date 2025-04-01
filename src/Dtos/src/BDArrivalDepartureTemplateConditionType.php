@@ -40,7 +40,12 @@ class BDArrivalDepartureTemplateConditionType
      */
     private $departureDays = null;
 
-    public function __construct(int $daysUntilArrival = null, int $minStay = null, int $maxStay = null, int $interval = null, \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\ArrivalDaysAType $arrivalDays = null, \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\DepartureDaysAType $departureDays = null)
+    /**
+     * @var \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\MinGapAType $minGap
+     */
+    private $minGap = null;
+
+    public function __construct(int $daysUntilArrival = null, int $minStay = null, int $maxStay = null, int $interval = null, \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\ArrivalDaysAType $arrivalDays = null, \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\DepartureDaysAType $departureDays = null, \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\MinGapAType $minGap = null)
     {
         $this->daysUntilArrival = $daysUntilArrival;
         $this->minStay = $minStay;
@@ -48,6 +53,7 @@ class BDArrivalDepartureTemplateConditionType
         $this->interval = $interval;
         $this->arrivalDays = $arrivalDays;
         $this->departureDays = $departureDays;
+        $this->minGap = $minGap;
     }
 
     /**
@@ -179,6 +185,28 @@ class BDArrivalDepartureTemplateConditionType
     public function setDepartureDays(\Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\DepartureDaysAType $departureDays)
     {
         $this->departureDays = $departureDays;
+        return $this;
+    }
+
+    /**
+     * Gets as minGap
+     *
+     * @return \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\MinGapAType
+     */
+    public function getMinGap()
+    {
+        return $this->minGap;
+    }
+
+    /**
+     * Sets a new minGap
+     *
+     * @param \Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\MinGapAType $minGap
+     * @return self
+     */
+    public function setMinGap(\Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\MinGapAType $minGap)
+    {
+        $this->minGap = $minGap;
         return $this;
     }
 }

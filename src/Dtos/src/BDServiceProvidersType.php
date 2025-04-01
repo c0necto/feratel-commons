@@ -110,7 +110,12 @@ class BDServiceProvidersType extends BasicInfoType
      */
     private $cancellationPaymentInfo = null;
 
-    public function __construct(bool $showDataOwner = null, bool $includeVTInfo = null, \Conecto\FeratelDsi\Dtos\BasicElementType $facilities = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\AddressesAType $addresses = null, \Conecto\FeratelDsi\Dtos\RatingsAverageType $ratingsAverage = null, \Conecto\FeratelDsi\Dtos\BasicElementType $customAttributes = null, \Conecto\FeratelDsi\Dtos\BDHotSpotsType $hotSpots = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\MetaRatingAType $metaRating = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\ClosedPeriodsAType $closedPeriods = null, \Conecto\FeratelDsi\Dtos\BasicElementType $handicapFacilities = null, \Conecto\FeratelDsi\Dtos\BasicElementType $handicapClassifications = null, \Conecto\FeratelDsi\Dtos\BasicSystemElementType $gTC = null, \Conecto\FeratelDsi\Dtos\BasicElementType $qualityDetails = null, \Conecto\FeratelDsi\Dtos\BasicElementType $housePackageMasters = null, \Conecto\FeratelDsi\Dtos\BasicElementType $housePackageMastersSelfAssign = null, \Conecto\FeratelDsi\Dtos\BasicSChElementType $revenueSettings = null, \Conecto\FeratelDsi\Dtos\BDAnnotationsType $annotations = null, \Conecto\FeratelDsi\Dtos\BDServicesType $services = null, \Conecto\FeratelDsi\Dtos\BDAdditionalServicesType $additionalServices = null, \Conecto\FeratelDsi\Dtos\BasicElementType $cancellationPaymentInfo = null, \Conecto\FeratelDsi\Dtos\BasicInfoType\DetailsAType $details = null, \Conecto\FeratelDsi\Dtos\BasicSystemDocumentElementType $documents = null, \Conecto\FeratelDsi\Dtos\BDDescriptionsFilterType $descriptions = null, \Conecto\FeratelDsi\Dtos\BasicElementLinksType $links = null)
+    /**
+     * @var \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType $prices
+     */
+    private $prices = null;
+
+    public function __construct(bool $showDataOwner = null, bool $includeVTInfo = null, \Conecto\FeratelDsi\Dtos\BasicElementType $facilities = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\AddressesAType $addresses = null, \Conecto\FeratelDsi\Dtos\RatingsAverageType $ratingsAverage = null, \Conecto\FeratelDsi\Dtos\BasicElementType $customAttributes = null, \Conecto\FeratelDsi\Dtos\BDHotSpotsType $hotSpots = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\MetaRatingAType $metaRating = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\ClosedPeriodsAType $closedPeriods = null, \Conecto\FeratelDsi\Dtos\BasicElementType $handicapFacilities = null, \Conecto\FeratelDsi\Dtos\BasicElementType $handicapClassifications = null, \Conecto\FeratelDsi\Dtos\BasicSystemElementType $gTC = null, \Conecto\FeratelDsi\Dtos\BasicElementType $qualityDetails = null, \Conecto\FeratelDsi\Dtos\BasicElementType $housePackageMasters = null, \Conecto\FeratelDsi\Dtos\BasicElementType $housePackageMastersSelfAssign = null, \Conecto\FeratelDsi\Dtos\BasicSChElementType $revenueSettings = null, \Conecto\FeratelDsi\Dtos\BDAnnotationsType $annotations = null, \Conecto\FeratelDsi\Dtos\BDServicesType $services = null, \Conecto\FeratelDsi\Dtos\BDAdditionalServicesType $additionalServices = null, \Conecto\FeratelDsi\Dtos\BasicElementType $cancellationPaymentInfo = null, \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType $prices = null, \Conecto\FeratelDsi\Dtos\BasicInfoType\DetailsAType $details = null, \Conecto\FeratelDsi\Dtos\BasicSystemDocumentElementType $documents = null, \Conecto\FeratelDsi\Dtos\BDDescriptionsFilterType $descriptions = null, \Conecto\FeratelDsi\Dtos\BasicElementLinksType $links = null)
     {
         $this->showDataOwner = $showDataOwner;
         $this->includeVTInfo = $includeVTInfo;
@@ -132,6 +137,7 @@ class BDServiceProvidersType extends BasicInfoType
         $this->services = $services;
         $this->additionalServices = $additionalServices;
         $this->cancellationPaymentInfo = $cancellationPaymentInfo;
+        $this->prices = $prices;
         parent::__construct($details,$documents,$descriptions,$links);
     }
 
@@ -572,6 +578,28 @@ class BDServiceProvidersType extends BasicInfoType
     public function setCancellationPaymentInfo(?\Conecto\FeratelDsi\Dtos\BasicElementType $cancellationPaymentInfo = null)
     {
         $this->cancellationPaymentInfo = $cancellationPaymentInfo;
+        return $this;
+    }
+
+    /**
+     * Gets as prices
+     *
+     * @return \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType
+     */
+    public function getPrices()
+    {
+        return $this->prices;
+    }
+
+    /**
+     * Sets a new prices
+     *
+     * @param \Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType $prices
+     * @return self
+     */
+    public function setPrices(?\Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType $prices = null)
+    {
+        $this->prices = $prices;
         return $this;
     }
 }

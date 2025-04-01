@@ -1,0 +1,20 @@
+Conecto\FeratelDsi\Dtos\BDServiceProvidersType\PricesAType:
+    properties:
+        dateFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: DateFrom
+            accessor:
+                getter: getDateFrom
+                setter: setDateFrom
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        salesChannel:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesChannel
+            accessor:
+                getter: getSalesChannel
+                setter: setSalesChannel
+            xml_attribute: true
+            type: string

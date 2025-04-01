@@ -9,3 +9,12 @@ Conecto\FeratelDsi\Dtos\BasicSystemDocumentElementType:
                 setter: setIncludeResolution
             xml_attribute: true
             type: bool
+        includeDescriptions:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludeDescriptions
+            accessor:
+                getter: getIncludeDescriptions
+                setter: setIncludeDescriptions
+            xml_attribute: true
+            type: bool

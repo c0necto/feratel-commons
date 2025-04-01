@@ -43,6 +43,16 @@ class DetailsAType
     private $holidayThemes = null;
 
     /**
+     * @var \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType[] $connectedEntries
+     */
+    private $connectedEntries = null;
+
+    /**
+     * @var \Conecto\FeratelDsi\Dtos\ItemType[] $serialEvents
+     */
+    private $serialEvents = null;
+
+    /**
      * @var string $visibility
      */
     private $visibility = null;
@@ -53,16 +63,11 @@ class DetailsAType
     private $dates = null;
 
     /**
-     * @var \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\StartTimesAType\StartTimeAType[] $startTimes
-     */
-    private $startTimes = null;
-
-    /**
      * @var \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\DurationAType $duration
      */
     private $duration = null;
 
-    public function __construct(array $names = null, array $location = null, bool $active = null, string $town = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\PositionAType $position = null, bool $isTopEvent = null, array $holidayThemes = null, string $visibility = null, array $dates = null, array $startTimes = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\DurationAType $duration = null)
+    public function __construct(array $names = null, array $location = null, bool $active = null, string $town = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\PositionAType $position = null, bool $isTopEvent = null, array $holidayThemes = null, array $connectedEntries = null, array $serialEvents = null, string $visibility = null, array $dates = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\DurationAType $duration = null)
     {
         $this->names = $names;
         $this->location = $location;
@@ -71,9 +76,10 @@ class DetailsAType
         $this->position = $position;
         $this->isTopEvent = $isTopEvent;
         $this->holidayThemes = $holidayThemes;
+        $this->connectedEntries = $connectedEntries;
+        $this->serialEvents = $serialEvents;
         $this->visibility = $visibility;
         $this->dates = $dates;
-        $this->startTimes = $startTimes;
         $this->duration = $duration;
     }
 
@@ -334,6 +340,118 @@ class DetailsAType
     }
 
     /**
+     * Adds as connectedEntry
+     *
+     * @return self
+     * @param \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType $connectedEntry
+     */
+    public function addToConnectedEntries(\Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType $connectedEntry)
+    {
+        $this->connectedEntries[] = $connectedEntry;
+        return $this;
+    }
+
+    /**
+     * isset connectedEntries
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetConnectedEntries($index)
+    {
+        return isset($this->connectedEntries[$index]);
+    }
+
+    /**
+     * unset connectedEntries
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetConnectedEntries($index)
+    {
+        unset($this->connectedEntries[$index]);
+    }
+
+    /**
+     * Gets as connectedEntries
+     *
+     * @return \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType[]
+     */
+    public function getConnectedEntries()
+    {
+        return $this->connectedEntries;
+    }
+
+    /**
+     * Sets a new connectedEntries
+     *
+     * @param \Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType[] $connectedEntries
+     * @return self
+     */
+    public function setConnectedEntries(array $connectedEntries = null)
+    {
+        $this->connectedEntries = $connectedEntries;
+        return $this;
+    }
+
+    /**
+     * Adds as item
+     *
+     * @return self
+     * @param \Conecto\FeratelDsi\Dtos\ItemType $item
+     */
+    public function addToSerialEvents(\Conecto\FeratelDsi\Dtos\ItemType $item)
+    {
+        $this->serialEvents[] = $item;
+        return $this;
+    }
+
+    /**
+     * isset serialEvents
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetSerialEvents($index)
+    {
+        return isset($this->serialEvents[$index]);
+    }
+
+    /**
+     * unset serialEvents
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetSerialEvents($index)
+    {
+        unset($this->serialEvents[$index]);
+    }
+
+    /**
+     * Gets as serialEvents
+     *
+     * @return \Conecto\FeratelDsi\Dtos\ItemType[]
+     */
+    public function getSerialEvents()
+    {
+        return $this->serialEvents;
+    }
+
+    /**
+     * Sets a new serialEvents
+     *
+     * @param \Conecto\FeratelDsi\Dtos\ItemType[] $serialEvents
+     * @return self
+     */
+    public function setSerialEvents(array $serialEvents = null)
+    {
+        $this->serialEvents = $serialEvents;
+        return $this;
+    }
+
+    /**
      * Gets as visibility
      *
      * @return string
@@ -408,62 +526,6 @@ class DetailsAType
     public function setDates(array $dates = null)
     {
         $this->dates = $dates;
-        return $this;
-    }
-
-    /**
-     * Adds as startTime
-     *
-     * @return self
-     * @param \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\StartTimesAType\StartTimeAType $startTime
-     */
-    public function addToStartTimes(\Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\StartTimesAType\StartTimeAType $startTime)
-    {
-        $this->startTimes[] = $startTime;
-        return $this;
-    }
-
-    /**
-     * isset startTimes
-     *
-     * @param int|string $index
-     * @return bool
-     */
-    public function issetStartTimes($index)
-    {
-        return isset($this->startTimes[$index]);
-    }
-
-    /**
-     * unset startTimes
-     *
-     * @param int|string $index
-     * @return void
-     */
-    public function unsetStartTimes($index)
-    {
-        unset($this->startTimes[$index]);
-    }
-
-    /**
-     * Gets as startTimes
-     *
-     * @return \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\StartTimesAType\StartTimeAType[]
-     */
-    public function getStartTimes()
-    {
-        return $this->startTimes;
-    }
-
-    /**
-     * Sets a new startTimes
-     *
-     * @param \Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType\DetailsAType\StartTimesAType\StartTimeAType[] $startTimes
-     * @return self
-     */
-    public function setStartTimes(array $startTimes = null)
-    {
-        $this->startTimes = $startTimes;
         return $this;
     }
 

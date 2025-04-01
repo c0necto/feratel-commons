@@ -26,6 +26,11 @@ class AdditionalServicesSearchType
     private $sortOrder = null;
 
     /**
+     * @var string $responseType
+     */
+    private $responseType = null;
+
+    /**
      * Provides one set of search parameters information for request of availability.
      *
      * @var \Conecto\FeratelDsi\Dtos\AdditionalServicesSearchParametersType[] $searchParameters
@@ -34,11 +39,12 @@ class AdditionalServicesSearchType
         
     ];
 
-    public function __construct(int $startIndex = null, int $pageSize = null, array $sortOrder = null, array $searchParameters = null)
+    public function __construct(int $startIndex = null, int $pageSize = null, array $sortOrder = null, string $responseType = null, array $searchParameters = null)
     {
         $this->startIndex = $startIndex;
         $this->pageSize = $pageSize;
         $this->sortOrder = $sortOrder;
+        $this->responseType = $responseType;
         $this->searchParameters = $searchParameters;
     }
 
@@ -139,6 +145,28 @@ class AdditionalServicesSearchType
     public function setSortOrder(array $sortOrder)
     {
         $this->sortOrder = $sortOrder;
+        return $this;
+    }
+
+    /**
+     * Gets as responseType
+     *
+     * @return string
+     */
+    public function getResponseType()
+    {
+        return $this->responseType;
+    }
+
+    /**
+     * Sets a new responseType
+     *
+     * @param string $responseType
+     * @return self
+     */
+    public function setResponseType($responseType)
+    {
+        $this->responseType = $responseType;
         return $this;
     }
 

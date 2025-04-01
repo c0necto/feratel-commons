@@ -1,0 +1,38 @@
+Conecto\FeratelDsi\Dtos\BDServiceProviderPriceType:
+    properties:
+        from:
+            expose: true
+            access_type: public_method
+            serialized_name: From
+            accessor:
+                getter: getFrom
+                setter: setFrom
+            xml_attribute: true
+            type: int
+        rule:
+            expose: true
+            access_type: public_method
+            serialized_name: Rule
+            accessor:
+                getter: getRule
+                setter: setRule
+            xml_attribute: true
+            type: string
+        nights:
+            expose: true
+            access_type: public_method
+            serialized_name: Nights
+            accessor:
+                getter: getNights
+                setter: setNights
+            xml_attribute: true
+            type: int
+        standardMealCode:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardMealCode
+            accessor:
+                getter: getStandardMealCode
+                setter: setStandardMealCode
+            xml_attribute: true
+            type: string

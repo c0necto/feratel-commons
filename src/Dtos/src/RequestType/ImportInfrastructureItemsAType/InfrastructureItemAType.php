@@ -18,6 +18,26 @@ class InfrastructureItemAType
     private $partnerChangeDate = null;
 
     /**
+     * @var string $cCId
+     */
+    private $cCId = null;
+
+    /**
+     * @var string $cCAuthor
+     */
+    private $cCAuthor = null;
+
+    /**
+     * @var string $cCCopyright
+     */
+    private $cCCopyright = null;
+
+    /**
+     * @var \DateTime $cCChangeDate
+     */
+    private $cCChangeDate = null;
+
+    /**
      * @var \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType $details
      */
     private $details = null;
@@ -53,14 +73,18 @@ class InfrastructureItemAType
     private $hotSpots = null;
 
     /**
-     * @var \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\GuestCardsAType\GuestCardAType[] $guestCards
+     * @var \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType[] $guestCards
      */
     private $guestCards = null;
 
-    public function __construct(string $partnerId = null, \DateTime $partnerChangeDate = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType $details = null, array $addresses = null, array $descriptions = null, array $documents = null, array $links = null, array $facilities = null, array $hotSpots = null, array $guestCards = null)
+    public function __construct(string $partnerId = null, \DateTime $partnerChangeDate = null, string $cCId = null, string $cCAuthor = null, string $cCCopyright = null, \DateTime $cCChangeDate = null, \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType $details = null, array $addresses = null, array $descriptions = null, array $documents = null, array $links = null, array $facilities = null, array $hotSpots = null, array $guestCards = null)
     {
         $this->partnerId = $partnerId;
         $this->partnerChangeDate = $partnerChangeDate;
+        $this->cCId = $cCId;
+        $this->cCAuthor = $cCAuthor;
+        $this->cCCopyright = $cCCopyright;
+        $this->cCChangeDate = $cCChangeDate;
         $this->details = $details;
         $this->addresses = $addresses;
         $this->descriptions = $descriptions;
@@ -112,6 +136,94 @@ class InfrastructureItemAType
     public function setPartnerChangeDate(\DateTime $partnerChangeDate)
     {
         $this->partnerChangeDate = $partnerChangeDate;
+        return $this;
+    }
+
+    /**
+     * Gets as cCId
+     *
+     * @return string
+     */
+    public function getCCId()
+    {
+        return $this->cCId;
+    }
+
+    /**
+     * Sets a new cCId
+     *
+     * @param string $cCId
+     * @return self
+     */
+    public function setCCId($cCId)
+    {
+        $this->cCId = $cCId;
+        return $this;
+    }
+
+    /**
+     * Gets as cCAuthor
+     *
+     * @return string
+     */
+    public function getCCAuthor()
+    {
+        return $this->cCAuthor;
+    }
+
+    /**
+     * Sets a new cCAuthor
+     *
+     * @param string $cCAuthor
+     * @return self
+     */
+    public function setCCAuthor($cCAuthor)
+    {
+        $this->cCAuthor = $cCAuthor;
+        return $this;
+    }
+
+    /**
+     * Gets as cCCopyright
+     *
+     * @return string
+     */
+    public function getCCCopyright()
+    {
+        return $this->cCCopyright;
+    }
+
+    /**
+     * Sets a new cCCopyright
+     *
+     * @param string $cCCopyright
+     * @return self
+     */
+    public function setCCCopyright($cCCopyright)
+    {
+        $this->cCCopyright = $cCCopyright;
+        return $this;
+    }
+
+    /**
+     * Gets as cCChangeDate
+     *
+     * @return \DateTime
+     */
+    public function getCCChangeDate()
+    {
+        return $this->cCChangeDate;
+    }
+
+    /**
+     * Sets a new cCChangeDate
+     *
+     * @param \DateTime $cCChangeDate
+     * @return self
+     */
+    public function setCCChangeDate(\DateTime $cCChangeDate)
+    {
+        $this->cCChangeDate = $cCChangeDate;
         return $this;
     }
 
@@ -477,9 +589,9 @@ class InfrastructureItemAType
      * Adds as guestCard
      *
      * @return self
-     * @param \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\GuestCardsAType\GuestCardAType $guestCard
+     * @param \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType $guestCard
      */
-    public function addToGuestCards(\Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\GuestCardsAType\GuestCardAType $guestCard)
+    public function addToGuestCards(\Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType $guestCard)
     {
         $this->guestCards[] = $guestCard;
         return $this;
@@ -510,7 +622,7 @@ class InfrastructureItemAType
     /**
      * Gets as guestCards
      *
-     * @return \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\GuestCardsAType\GuestCardAType[]
+     * @return \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType[]
      */
     public function getGuestCards()
     {
@@ -520,7 +632,7 @@ class InfrastructureItemAType
     /**
      * Sets a new guestCards
      *
-     * @param \Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\GuestCardsAType\GuestCardAType[] $guestCards
+     * @param \Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType[] $guestCards
      * @return self
      */
     public function setGuestCards(array $guestCards = null)

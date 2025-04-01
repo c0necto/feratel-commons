@@ -1,0 +1,17 @@
+Conecto\FeratelDsi\Dtos\GuestCardsType:
+    properties:
+        guestCard:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestCard
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGuestCard
+                setter: setGuestCard
+            xml_list:
+                inline: true
+                entry_name: GuestCard
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            type: array<Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType>

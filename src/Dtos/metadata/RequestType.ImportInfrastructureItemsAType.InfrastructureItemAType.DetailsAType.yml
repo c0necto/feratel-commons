@@ -86,7 +86,7 @@ Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\Infrastructur
             accessor:
                 getter: getConnectedEntries
                 setter: setConnectedEntries
-            type: array<Conecto\FeratelDsi\Dtos\RequestType\ImportInfrastructureItemsAType\InfrastructureItemAType\DetailsAType\ConnectedEntriesAType\ConnectedEntryAType>
+            type: array<Conecto\FeratelDsi\Dtos\ConnectedEntriesType\ConnectedEntryAType>
             xml_list:
                 inline: false
                 entry_name: ConnectedEntry

@@ -36,17 +36,23 @@ class BDChangedAdditionalServicesType
     private $facilities = null;
 
     /**
+     * @var mixed $ratingsAverage
+     */
+    private $ratingsAverage = null;
+
+    /**
      * @var \Conecto\FeratelDsi\Dtos\BDChangedAdditionalProductsType $additionalProducts
      */
     private $additionalProducts = null;
 
-    public function __construct(string $details = null, string $documents = null, string $descriptions = null, string $links = null, string $facilities = null, \Conecto\FeratelDsi\Dtos\BDChangedAdditionalProductsType $additionalProducts = null)
+    public function __construct(string $details = null, string $documents = null, string $descriptions = null, string $links = null, string $facilities = null, $ratingsAverage = null, \Conecto\FeratelDsi\Dtos\BDChangedAdditionalProductsType $additionalProducts = null)
     {
         $this->details = $details;
         $this->documents = $documents;
         $this->descriptions = $descriptions;
         $this->links = $links;
         $this->facilities = $facilities;
+        $this->ratingsAverage = $ratingsAverage;
         $this->additionalProducts = $additionalProducts;
     }
 
@@ -157,6 +163,28 @@ class BDChangedAdditionalServicesType
     public function setFacilities($facilities)
     {
         $this->facilities = $facilities;
+        return $this;
+    }
+
+    /**
+     * Gets as ratingsAverage
+     *
+     * @return mixed
+     */
+    public function getRatingsAverage()
+    {
+        return $this->ratingsAverage;
+    }
+
+    /**
+     * Sets a new ratingsAverage
+     *
+     * @param mixed $ratingsAverage
+     * @return self
+     */
+    public function setRatingsAverage($ratingsAverage)
+    {
+        $this->ratingsAverage = $ratingsAverage;
         return $this;
     }
 

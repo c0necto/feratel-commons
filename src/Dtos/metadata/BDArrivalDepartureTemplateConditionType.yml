@@ -66,3 +66,14 @@ Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType:
                 getter: getDepartureDays
                 setter: setDepartureDays
             type: Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\DepartureDaysAType
+        minGap:
+            expose: true
+            access_type: public_method
+            serialized_name: MinGap
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getMinGap
+                setter: setMinGap
+            type: Conecto\FeratelDsi\Dtos\BDArrivalDepartureTemplateConditionType\MinGapAType

@@ -18,6 +18,42 @@ Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType:
                 setter: setPartnerChangeDate
             xml_attribute: true
             type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        cCId:
+            expose: true
+            access_type: public_method
+            serialized_name: CCId
+            accessor:
+                getter: getCCId
+                setter: setCCId
+            xml_attribute: true
+            type: string
+        cCAuthor:
+            expose: true
+            access_type: public_method
+            serialized_name: CCAuthor
+            accessor:
+                getter: getCCAuthor
+                setter: setCCAuthor
+            xml_attribute: true
+            type: string
+        cCCopyright:
+            expose: true
+            access_type: public_method
+            serialized_name: CCCopyright
+            accessor:
+                getter: getCCCopyright
+                setter: setCCCopyright
+            xml_attribute: true
+            type: string
+        cCChangeDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CCChangeDate
+            accessor:
+                getter: getCCChangeDate
+                setter: setCCChangeDate
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
         details:
             expose: true
             access_type: public_method
@@ -107,5 +143,21 @@ Conecto\FeratelDsi\Dtos\RequestType\ImportEventsAType\EventAType:
             xml_list:
                 inline: false
                 entry_name: Facility
+                skip_when_empty: true
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+        guestCards:
+            expose: true
+            access_type: public_method
+            serialized_name: GuestCards
+            xml_element:
+                cdata: false
+                namespace: 'http://interface.deskline.net/DSI/XSD'
+            accessor:
+                getter: getGuestCards
+                setter: setGuestCards
+            type: array<Conecto\FeratelDsi\Dtos\GuestCardsType\GuestCardAType>
+            xml_list:
+                inline: false
+                entry_name: GuestCard
                 skip_when_empty: true
                 namespace: 'http://interface.deskline.net/DSI/XSD'
